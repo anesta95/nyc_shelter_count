@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1674524294537.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3066219642",
+    "id" : "AEE8A566",
+    "lastKnownWriteTime" : 1674528246,
+    "last_content_update" : 1674528246483,
+    "path" : "~/Documents/nyc_shelter_count/nyc_shelter_count.r",
+    "project_path" : "nyc_shelter_count.r",
+    "properties" : {
+        "cursorPosition" : "40,0",
+        "scrollLine" : "15",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
