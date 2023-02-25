@@ -10,13 +10,16 @@ library(tidyr)
 
 # TODO: Write automated pdf downloader with curl() or download.file() with
 # url: https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf
-pdf_text("dailyreport.pdf") %>%
-  nth(1) -> daily_report
+daily_report <- pdf_text("dailyreport.pdf") %>%
+  nth(1) 
 
+# Extracting the report date
 date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>% 
   strptime(format = "%B %d, %Y", tz = "UTC")
 
-extract_tables("dailyreport.pdf") -> latest_dhs
+# TODO: This at times returns "ghost" columns with no data. Will have to write code to 
+# filter them out.
+latest_dhs <- extract_tables("dailyreport.pdf")
 
 table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
                  "Total Single Adults", "FAMILIES WITH CHILDREN",
@@ -26,16 +29,31 @@ table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
 extract_dhs_daily_data <- function(table_name, list) {
   
   if (table_name == "FAMILY INTAKE") {
-    
-    detect_index(latest_dhs, ~any(str_detect(.x, "FAMILY INTAKE"))) -> idx
+    # TODO: Now grabbing by table dimentions need to decide most optimal way based on
+    # returns from extract_tables()
+    idx <- detect_index(list, ~all(dim(.x) == c(11, 5)))
     
     matrix <- list[[idx]]
     
-    as.data.frame(matrix,
-                  stringsAsFactors = F) %>% 
+    safi_initial_df <- as.data.frame(matrix,
+                                  stringsAsFactors = F)
+    
+    single_adults_row <- which(safi_initial_df$V1 == "SINGLE ADULTS")
+    family_intake_row <- which(safi_initial_df$V4 == "FAMILY INTAKE")
+    
+    if (single_adults_row != family_intake_row) {
+      stop(simpleError("SINGLE ADULTS and FAMILY INTAKE rows are not aligned."))
+    }
+    
+  
+    cleaned_safi <- safi_initial_df %>%
+      slice(single_adults_row:nrow(.)) %>% 
       row_to_names(row_number = 1) %>% 
       clean_names() %>% 
-      rename(single_adults_count = x, sites_reported = x_2, family_intake_count = x_3) -> cleaned_safi
+      rename(single_adults_count = x, sites_reported = x_2, family_intake_count = x_3)
+            
+    ### Stopped here  
+                    
     
     if (all(names(cleaned_safi)[c(1, 4)] == c("single_adults", "family_intake"))) {
       cj_count <- cleaned_safi %>% 
