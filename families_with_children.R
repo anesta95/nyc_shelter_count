@@ -3,6 +3,9 @@ library(lubridate)
 library(tidyverse)
 library(janitor)
 
+
+#this top part gets moved to the daily file
+
 DHS_Census <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.json") %>% 
   pivot_longer(cols = -date_of_census, names_to = "measure", values_to = "count") %>% 
   mutate(table = "DHS daily census",
@@ -11,6 +14,8 @@ DHS_Census <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.jso
 #write something here to update this daily
 
 #write somthing that checks if there is new LL37 data each day
+  # write code to update the csv with each of the 4 agency monthly updates
+  # if using datawrapper api only update the chart once all four agency updates are in
 
 #-----------------------------------------------------------------------------------
 
