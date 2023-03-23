@@ -162,10 +162,26 @@ extract_dhs_daily_data <- function(table_name, list) {
   
 }
 
-dhs_unhoused_report <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs)) %>% 
+dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs)) %>% 
   mutate(count = as.numeric(str_remove_all(count, ",")))
 
-write_csv(dhs_unhoused_report, paste0("./data/", unique(dhs_unhoused_report$date), "_dhs_unhoused_report.csv"))
+dhs_unhoused_report <- read_csv("./data/dhs_daily_report.csv",
+                                col_names = T,
+                                col_types = "cdcD")
+
+latest_new_data_date <- max(dhs_unhoused_report_new$date,
+                            na.rm = T)
+
+latest_old_data_date <- max(dhs_unhoused_report$date,
+                            na.rm = T)
+
+if (latest_new_data_date > latest_old_data_date) {
+  # Bind rows
+  dhs_unhoused_report_full <- bind_rows(dhs_unhoused_report_new, dhs_unhoused_report)
+  # Write to disk if new data
+  write_csv(dhs_unhoused_report_full, "./data/dhs_daily_report.csv")
+}
+
 
 
 
