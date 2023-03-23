@@ -15,7 +15,7 @@ library(readr)
 download.file(url = "https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf",
               destfile = paste0("dailyreport_", Sys.Date(), ".pdf"))
 
-daily_report <- pdf_text("dailyreport_2023-03-16.pdf") %>%
+daily_report <- pdf_text(paste0("dailyreport_", Sys.Date(), ".pdf")) %>%
   nth(1) 
 
 # Extracting the report date
@@ -24,7 +24,7 @@ report_date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>%
 
 # TODO: This at times returns "ghost" columns with no data. Will have to write code to 
 # filter them out.
-latest_dhs <- extract_tables("dailyreport_2023-03-16.pdf")
+latest_dhs <- extract_tables(paste0("dailyreport_", Sys.Date(), ".pdf"))
 
 table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
                  "Total Single Adults", "FAMILIES WITH CHILDREN",
