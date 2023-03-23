@@ -1,0 +1,49 @@
+name: daily_dhs_unhoused_runner
+
+on:
+  schedule:
+    - cron: '33 2 * * *' # 2:33 UTC everyday
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  scheduled:
+    # The type of runner that the job will run on
+    runs-on: macOS-latest
+    env:
+        RENV_PATHS_ROOT: ~/Library/Application Support/renv
+    steps:
+      # Checks-out your repository
+      - uses: actions/checkout@v3
+
+      - name: setup-r
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '3.6.3'
+      # install renv package
+      - run: |-
+          R -e 'install.packages("renv")'
+          R -e 'renv::upgrade(project = ".", reload = T, prompt = F)'
+      # set up cache
+      - name: Cache packages
+        uses: actions/cache@v3
+        with:
+           path: ${{ env.RENV_PATHS_ROOT }}
+           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+           restore-keys: |-
+              ${{ runner.os }}-renv-
+      # - run: sudo apt install -y --no-install-recommends libcurl4-openssl-dev
+      # install c++ dependencies and install necessary packages
+      - run: R -e 'renv::restore()'
+      # execute Rscript
+      - run: Rscript nyc_shelter_count.R
+        # env:
+        #   SCT_PW: ${{ secrets.SCT_PW }}
+      # push to git repo
+      - name: Add and commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: Automated
+          committer_email: actions@users.noreply.github.com
+          message: "Latest data"

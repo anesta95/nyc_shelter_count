@@ -7,24 +7,52 @@ library(janitor)
 library(stringi)
 library(tidyr)
 library(readr)
+library(RSocrata)
+
+# Reading partial DHS data from Socrata Open NYC database:
+dhs_census_socrata_new <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.json") %>% 
+  pivot_longer(cols = -date_of_census, names_to = "measure", values_to = "count") %>% 
+  mutate(table = "DHS daily census",
+         count = as.numeric(count),
+         date_of_census = base::as.Date(date_of_census))
+
+# check main dataset for date of latest data
+dhs_census_socrata <- read_csv(file = "./data/dhs_daily_report_open_data_nyc_socrata.csv",
+                               col_names = T,
+                               col_types = "Dcdc")
+
+latest_new_data_date <- max(dhs_census_socrata_new$date_of_census,
+                            na.rm = T)
+
+latest_old_data_date <- max(dhs_census_socrata$date_of_census,
+                            na.rm = T)
+
+if (latest_new_data_date > latest_old_data_date) {
+  # Write to disk if new data
+  write_csv(dhs_census_socrata_new, "./data/dhs_daily_report_open_data_nyc_socrata.csv")
+}
 
 
-# TODO: Write automated pdf downloader with curl() or download.file() with
+# DHS daily report extra data from here
 # url: https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf
 
 download.file(url = "https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf",
-              destfile = paste0("dailyreport_", Sys.Date(), ".pdf"))
+              destfile = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf")
 
-daily_report <- pdf_text(paste0("dailyreport_", Sys.Date(), ".pdf")) %>%
+# Getting latest report text
+daily_report <- pdf_text("./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf") %>%
   nth(1) 
 
 # Extracting the report date
 report_date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>% 
   base::as.Date(format = "%B %d, %Y")
 
-# TODO: This at times returns "ghost" columns with no data. Will have to write code to 
-# filter them out.
-latest_dhs <- extract_tables(paste0("dailyreport_", Sys.Date(), ".pdf"))
+# Renaming pdf with its report date
+
+file.rename(from = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf",
+            to = paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf"))
+
+latest_dhs <- extract_tables(paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf"))
 
 table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
                  "Total Single Adults", "FAMILIES WITH CHILDREN",
@@ -137,9 +165,7 @@ extract_dhs_daily_data <- function(table_name, list) {
 dhs_unhoused_report <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs)) %>% 
   mutate(count = as.numeric(str_remove_all(count, ",")))
 
-write_csv(dhs_unhoused_report, paste0("dhs_unhoused_report_", unique(dhs_unhoused_report$date), ".csv"))
+write_csv(dhs_unhoused_report, paste0("./data/", unique(dhs_unhoused_report$date), "_dhs_unhoused_report.csv"))
 
-
-# TODO: Compare data from NYC Open Data link, accessible with Socrata API: https://data.cityofnewyork.us/Social-Services/DHS-Daily-Report/k46n-sa2m
 
 

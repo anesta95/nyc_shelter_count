@@ -1,19 +1,15 @@
 library(RSocrata)
 library(lubridate)
-library(tidyverse)
+library(dplyr)
+library(readr)
+library(purrr)
+library(ggplot2)
 library(janitor)
 
 
-#this top part gets moved to the daily file
-
-DHS_Census <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.json") %>% 
-  pivot_longer(cols = -date_of_census, names_to = "measure", values_to = "count") %>% 
-  mutate(table = "DHS daily census",
-         count = as.numeric(count))
-
 #write something here to update this daily
 
-#write somthing that checks if there is new LL37 data each day
+#write something that checks if there is new LL37 data each day
   # write code to update the csv with each of the 4 agency monthly updates
   # if using datawrapper api only update the chart once all four agency updates are in
 
@@ -21,7 +17,7 @@ DHS_Census <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.jso
 
 #Local law 37 datasets
 
-#write somethiung that will update all of these datsets when there is new data
+#write something that will update all of these datsets when there is new data
 
 data_links <- list(dhs = "https://data.cityofnewyork.us/resource/2mqz-v5im.json",
                 dycd = "https://data.cityofnewyork.us/resource/2232-dj5q.json",
@@ -62,7 +58,7 @@ ll37_extract <- function(name, link) {
     raw %>%
       filter(facility_type == "HPD Facilities Combined (Census Total)" & facility_indicator == "Census Total") %>% 
       mutate(count = as.numeric(total_adults) + as.numeric(total_children),
-             date = ym(data_period)) %>% 
+             date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
       select(date, count, table)
   }
   else {
@@ -70,15 +66,31 @@ ll37_extract <- function(name, link) {
       filter({{var}} == value) %>% 
       mutate_at(c("total_single_adults", "total_adults_in_families", "total_children"), as.numeric) %>% 
       mutate(count = total_single_adults + total_adults_in_families + total_children,
-             date = ym(data_period)) %>% 
+             date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
       select(date, count, table)
   }
 }
 
-unique_by_agency <- map2_df(names(data_links), data_links, ~ll37_extract(.x, .y)) %>% 
+unique_by_agency_new <- map2_df(names(data_links), data_links, ~ll37_extract(.x, .y)) %>% 
   arrange(date)
 
-unique_by_agency %>% write_csv("unique_by_agency.csv")
+# reading in main data file
+unique_by_agency <- read_csv("./data/ll37_data_unique_by_agency.csv",
+                             col_names = T,
+                             col_types = "Ddc")
+
+latest_new_data_date <- max(unique_by_agency_new$date,
+                            na.rm = T)
+
+latest_old_data_date <- max(unique_by_agency$date,
+                            na.rm = T)
+
+if (latest_new_data_date > latest_old_data_date) {
+  # Write to disk if new data
+  unique_by_agency_new %>% write_csv("./data/ll37_data_unique_by_agency.csv")
+}
+
+
 
 
 
