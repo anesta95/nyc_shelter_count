@@ -8,6 +8,7 @@ library(stringi)
 library(tidyr)
 library(readr)
 library(RSocrata)
+library(ggplot2)
 
 # Reading partial DHS data from Socrata Open NYC database:
 dhs_census_socrata_new <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.json") %>% 
@@ -21,13 +22,13 @@ dhs_census_socrata <- read_csv(file = "./data/dhs_daily_report_open_data_nyc_soc
                                col_names = T,
                                col_types = "Dcdc")
 
-latest_new_data_date <- max(dhs_census_socrata_new$date_of_census,
+latest_socrata_new_data_date <- max(dhs_census_socrata_new$date_of_census,
                             na.rm = T)
 
-latest_old_data_date <- max(dhs_census_socrata$date_of_census,
+latest_socrata_old_data_date <- max(dhs_census_socrata$date_of_census,
                             na.rm = T)
 
-if (latest_new_data_date > latest_old_data_date) {
+if (latest_socrata_new_data_date > latest_socrata_old_data_date) {
   # Write to disk if new data
   write_csv(dhs_census_socrata_new, "./data/dhs_daily_report_open_data_nyc_socrata.csv")
 }
@@ -41,7 +42,7 @@ download.file(url = "https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.p
 
 # Getting latest report text
 daily_report <- pdf_text("./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf") %>%
-  nth(1) 
+  nth(1)
 
 # Extracting the report date
 report_date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>% 
@@ -118,14 +119,15 @@ extract_dhs_daily_data <- function(table_name, list) {
       stop(simpleError("SINGLE ADULTS and FAMILY INTAKE rows are not aligned."))
     }
     
-    # Dynamic way to only select fhour columns we need.
+    # Dynamic way to only select four columns we need.
     safi_cols <- c(single_adults_col, single_adults_col + 1, family_intake_col, family_intake_col + 1)
     
-    cleaned_safi <- safi_initial_df %>%
+    safi_unselected <- safi_initial_df %>%
       slice(single_adults_row:nrow(.)) %>% 
       row_to_names(row_number = 1) %>% 
-      clean_names() %>% 
-      select(all_of(safi_cols)) 
+      clean_names()
+    
+    cleaned_safi <- safi_unselected[, safi_cols]
 
     names(cleaned_safi) <- c("single_adults", "single_adults_count", "family_intake", "family_intake_count")    
   
@@ -169,13 +171,13 @@ dhs_unhoused_report <- read_csv("./data/dhs_daily_report.csv",
                                 col_names = T,
                                 col_types = "cdcD")
 
-latest_new_data_date <- max(dhs_unhoused_report_new$date,
+latest_dhs_pdf_new_data_date <- max(dhs_unhoused_report_new$date,
                             na.rm = T)
 
-latest_old_data_date <- max(dhs_unhoused_report$date,
+latest_dhs_pdf_old_data_date <- max(dhs_unhoused_report$date,
                             na.rm = T)
 
-if (latest_new_data_date > latest_old_data_date) {
+if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   # Bind rows
   dhs_unhoused_report_full <- bind_rows(dhs_unhoused_report_new, dhs_unhoused_report)
   # Write to disk if new data
