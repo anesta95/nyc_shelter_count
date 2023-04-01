@@ -1,4 +1,28 @@
 measure,count,table,date
+Drop-in Center Clients Served,434,single_adults,2023-03-30
+Drop-in Center Overnight Census,164,single_adults,2023-03-30
+Faith Bed Census,37,single_adults,2023-03-30
+Outreach Contacts,437,single_adults,2023-03-30
+Outreach Placements,45,single_adults,2023-03-30
+Safe Haven Utilization,1568,single_adults,2023-03-30
+Veterans In Short-term Housing,230,single_adults,2023-03-30
+Criminal Justice Short-term Housing,137,single_adults,2023-03-30
+Families with Children Requesting Temporary Housing,111,family_intake,2023-03-30
+Adult Families Requesting Temporary Housing,36,family_intake,2023-03-30
+Families Placed in Overnight Accommodations,0,family_intake,2023-03-30
+Families w/children at PATH Overnight (pre 10PM),0,family_intake,2023-03-30
+Adults,49269,total_shelter_census,2023-03-30
+Children,23560,total_shelter_census,2023-03-30
+Total Individuals,72829,total_shelter_census,2023-03-30
+Men,17276,total_single_adults,2023-03-30
+Women,4568,total_single_adults,2023-03-30
+Total Single Adults,21844,total_single_adults,2023-03-30
+Families,13866,families_with_children,2023-03-30
+Adults,21423,families_with_children,2023-03-30
+Children,23560,families_with_children,2023-03-30
+Individuals,44983,families_with_children,2023-03-30
+Families,2827,adult_families_census,2023-03-30
+Individuals (Adults),6002,adult_families_census,2023-03-30
 Drop-in Center Clients Served,299,single_adults,2023-03-29
 Drop-in Center Overnight Census,120,single_adults,2023-03-29
 Faith Bed Census,22,single_adults,2023-03-29
