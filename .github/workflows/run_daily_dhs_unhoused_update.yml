@@ -9,9 +9,9 @@ on:
 jobs:
   scheduled:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     env:
-        RENV_PATHS_ROOT: ~/.local/share/renv
+        RENV_PATHS_ROOT: ~/Library/Application Support/renv
     steps:
       # Checks-out your repository
       - uses: actions/checkout@v3
@@ -32,8 +32,6 @@ jobs:
            key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
            restore-keys: |-
               ${{ runner.os }}-renv-
-      - run: sudo apt install -y --no-install-recommends libcurl4-openssl-dev
-      - run: sudo apt install -y libpoppler-cpp-dev
       - run: R -e 'renv::restore()'
       # execute Rscript
       - run: Rscript nyc_shelter_count.R
