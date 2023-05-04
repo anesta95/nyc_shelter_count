@@ -9,9 +9,9 @@ on:
 jobs:
   scheduled:
     # The type of runner that the job will run on
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
-        RENV_PATHS_ROOT: ~/Library/Application Support/renv
+        RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       # Checks-out your repository
       - uses: actions/checkout@v3
