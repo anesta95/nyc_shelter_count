@@ -32,6 +32,7 @@ jobs:
            key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
            restore-keys: |-
               ${{ runner.os }}-renv-
+      - run: sudo apt install -y --no-install-recommends libcurl4-openssl-dev
       - run: R -e 'renv::restore()'
       # execute Rscript
       - run: Rscript families_with_children.R
