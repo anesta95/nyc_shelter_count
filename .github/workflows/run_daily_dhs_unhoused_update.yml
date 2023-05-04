@@ -33,6 +33,7 @@ jobs:
            restore-keys: |-
               ${{ runner.os }}-renv-
       - run: sudo apt install -y --no-install-recommends libcurl4-openssl-dev
+      - run: sudo apt install -y libpoppler-cpp-dev
       - run: R -e 'renv::restore()'
       # execute Rscript
       - run: Rscript nyc_shelter_count.R
