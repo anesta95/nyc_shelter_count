@@ -14243,3 +14243,7 @@ date_of_census,measure,count,table
 2023-07-22,total_single_adults_in_shelter,21604,DHS daily census
 2023-07-22,families_with_children_in_shelter,16544,DHS daily census
 2023-07-22,adult_families_in_shelter,2912,DHS daily census
+2023-07-23,total_individuals_in_shelter,82070,DHS daily census
+2023-07-23,total_single_adults_in_shelter,21681,DHS daily census
+2023-07-23,families_with_children_in_shelter,16522,DHS daily census
+2023-07-23,adult_families_in_shelter,2904,DHS daily census
