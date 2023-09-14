@@ -14447,3 +14447,7 @@ date_of_census,measure,count,table
 2023-09-11,total_single_adults_in_shelter,19768,DHS daily census
 2023-09-11,families_with_children_in_shelter,18112,DHS daily census
 2023-09-11,adult_families_in_shelter,2172,DHS daily census
+2023-09-12,total_individuals_in_shelter,84080,DHS daily census
+2023-09-12,total_single_adults_in_shelter,19870,DHS daily census
+2023-09-12,families_with_children_in_shelter,18160,DHS daily census
+2023-09-12,adult_families_in_shelter,2177,DHS daily census
