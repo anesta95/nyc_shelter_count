@@ -19,65 +19,134 @@ library(janitor)
 
 #write something that will update all of these datsets when there is new data
 
-data_links <- list(dhs = "https://data.cityofnewyork.us/resource/2mqz-v5im.json",
-                dycd = "https://data.cityofnewyork.us/resource/2232-dj5q.json",
-                hpd = "https://data.cityofnewyork.us/resource/mdht-5s6e.json",
-                hra = "https://data.cityofnewyork.us/resource/e4ty-r26d.json"
-           )
+
+################
+#OLD VERSION - OPEN DATA COMBINED FILES IN SUMMER 2023
+
+# data_links <- list(dhs = "https://data.cityofnewyork.us/resource/2mqz-v5im.json",
+#                 dycd = "https://data.cityofnewyork.us/resource/2232-dj5q.json",
+#                 hpd = "https://data.cityofnewyork.us/resource/mdht-5s6e.json",
+#                 hra = "https://data.cityofnewyork.us/resource/e4ty-r26d.json"
+#            )
+# 
+# 
+# ll37_extract <- function(name, link) {
+#   
+#   table_name <- name
+#   # var <- sym(if_else(table_name == "dhs", "ll37_report_row_name", "category"))
+#   if (table_name == "dhs") {
+#     str_var <- "ll37_report_row_name"
+#   } else {
+#     str_var <- "category"
+#   }
+#   
+#   var <- sym(str_var)
+#   
+#   
+
+#   if(table_name != "hra") {
+#     raw <- read.socrata(link) %>% 
+#       clean_names() %>% 
+#       mutate(table = paste0("total unique individuals in ", table_name, " facilities"))
+#   } else {
+#     raw <- read.socrata(link) %>% 
+#       clean_names() %>% 
+#       mutate(table = paste0("total unique individuals in ", table_name, " facilities")) %>% 
+#       rename(total_adults_in_families = adults_families)
+#   }
+# 
+#   if(table_name == "hpd") {
+#     raw %>%
+#       filter(facility_type == "HPD Facilities Combined (Census Total)" & facility_indicator == "Census Total") %>% 
+#       mutate(count = as.numeric(total_adults) + as.numeric(total_children),
+#              date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
+#       select(date, count, table)
+#   }
+#   else {
+#     raw %>% 
+#       filter({{var}} == value) %>% 
+#       mutate_at(c("total_single_adults", "total_adults_in_families", "total_children"), as.numeric) %>% 
+#       mutate(count = total_single_adults + total_adults_in_families + total_children,
+#              date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
+#       select(date, count, table)
+#   }
+# }
+################
 
 
-ll37_extract <- function(name, link) {
+#historical data - I think we only need to do this once?
+unique_by_agency_historical <-read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>% 
+  mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
+         count = case_when(agency_abb == "dhs" &
+                             category == "Number of unduplicated persons" &
+                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
+                          agency_abb == "dycd" &
+                            category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
+                          
+                          #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
+                          agency_abb == "hra" &
+                            category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **" ~ total_single_adults + total_adults_on_families + total_children,
+                          agency_abb == "hpd" &
+                            category == "Census Total" ~ total_adults + total_children,
+                          T ~ NA
+                          ),
+         date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
+         table = "number of unduplicated individuals",
+         root = "ll37 historical") %>% 
+  filter(!is.na(count)) %>% 
+  select(agency_abb, date, count, table)
   
-  table_name <- name
-  # var <- sym(if_else(table_name == "dhs", "ll37_report_row_name", "category"))
-  if (table_name == "dhs") {
-    str_var <- "ll37_report_row_name"
-  } else {
-    str_var <- "category"
-  }
-  
-  var <- sym(str_var)
-  
-  
-  value <- case_when(table_name == "dhs" ~ "Number of unduplicated persons: DHS-administered facilities",
-                     table_name == "dycd" ~ "number of unduplicated persons - DYCD-administered facilities",
-                     table_name == "hra" ~ "Number of unduplicated persons: HRA domestic violence shelters **")
-  
-  if(table_name != "hra") {
-    raw <- read.socrata(link) %>% 
-      clean_names() %>% 
-      mutate(table = paste0("total unique individuals in ", table_name, " facilities"))
-  } else {
-    raw <- read.socrata(link) %>% 
-      clean_names() %>% 
-      mutate(table = paste0("total unique individuals in ", table_name, " facilities")) %>% 
-      rename(total_adults_in_families = adults_families)
-  }
+#ongoing question - should we add na.rm to these sums in case they miss data entry?
 
-  if(table_name == "hpd") {
-    raw %>%
-      filter(facility_type == "HPD Facilities Combined (Census Total)" & facility_indicator == "Census Total") %>% 
-      mutate(count = as.numeric(total_adults) + as.numeric(total_children),
-             date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
-      select(date, count, table)
-  }
-  else {
-    raw %>% 
-      filter({{var}} == value) %>% 
-      mutate_at(c("total_single_adults", "total_adults_in_families", "total_children"), as.numeric) %>% 
-      mutate(count = total_single_adults + total_adults_in_families + total_children,
-             date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
-      select(date, count, table)
-  }
-}
+#new version
 
-unique_by_agency_new <- map2_df(names(data_links), data_links, ~ll37_extract(.x, .y)) %>% 
-  arrange(date)
+#MOCJ and DOHMH are not in the historical, they first appear here in May 2023
 
-# reading in main data file
-unique_by_agency <- read_csv("./data/ll37_data_unique_by_agency.csv",
+unique_by_agency_new <- read_csv("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv",
+                                 col_types = cols(.default = col_character())) %>% 
+  mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "10", .x))) %>% 
+  mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
+         count = case_when(agency_abb == "dhs" & 
+                             category == "Total number of individuals utilizing city-administered facilities" & 
+                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                           agency_abb == "dycd" & 
+                             category == "Total number of individuals utilizing city-administered facilities" & 
+                             facility_or_program_type == "DYCD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                          
+                           #do we remember why it's just domestic violence for HSA facilities and not emergency and transitional housing?
+                           #there's also two conflicting categories for domestic violence shelters, one appears to just count families, the other individuals?
+                           
+                           agency_abb == "hra" & 
+                             category == "Total number of individuals utilizing city-administered facilities" & 
+                             facility_or_program_type == "HRA domestic violence emergency shelters" ~ total_single_adults + total_adults_in_families + total_children,
+                           agency_abb == "hpd" & 
+                             category == "Total number of individuals utilizing city-administered facilities" &
+                             facility_or_program_type == "HPD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                           agency_abb == "dohmh" & 
+                             category == "Total number of individuals utilizing city-administered facilities" &
+                             facility_or_program_type == "Justice-informed supportive housing (JISH)" ~ total_single_adults,
+                           
+                           #not sure if we should keep these last two - as they are supportive housing, it seems, not shelter
+                           
+                           agency_abb == "dohmh" & 
+                             category == "Total number of individuals utilizing city-administered facilities" &
+                             facility_or_program_type == "Justice-informed supportive housing (JISH)" ~ total_single_adults,
+                           agency_abb == "mocj" & 
+                             category == "Total number of individuals utilizing city-administered facilities" &
+                             facility_or_program_type == "Short-term reentry housing" ~ total_single_adults,
+                           T ~ NA
+         ),
+         date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
+         table = "number of unduplicated individuals",
+         root = "ll37 new report") %>% 
+  filter(!is.na(count)) %>% 
+  select(agency_abb, date, count, table) %>% 
+  bind_rows(unique_by_agency_historical)
+
+#current version
+unique_by_agency <- read_csv("./data/ll79_data_unique_by_agency.csv",
                              col_names = T,
-                             col_types = "Ddc")
+                             col_types = "cDnc")
 
 latest_new_data_date <- max(unique_by_agency_new$date,
                             na.rm = T)
@@ -87,7 +156,7 @@ latest_old_data_date <- max(unique_by_agency$date,
 
 if (latest_new_data_date > latest_old_data_date) {
   # Write to disk if new data
-  unique_by_agency_new %>% write_csv("./data/ll37_data_unique_by_agency.csv")
+  unique_by_agency_new %>% write_csv("./data/ll79_data_unique_by_agency.csv")
 }
 
 

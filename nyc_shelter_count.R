@@ -48,6 +48,11 @@ daily_report <- pdf_text("./dhs_daily_report_unhoused_report_pdfs/temp_daily_rep
 report_date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>% 
   base::as.Date(format = "%B %d, %Y")
 
+#@adrian - here I conditionally change the report date to avoid typos that would stop the script from running if the report date is in the future
+if (report_date > Sys.Date()) {
+  report_date <- Sys.Date() -1
+}
+
 # Renaming pdf with its report date
 
 file.rename(from = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf",
