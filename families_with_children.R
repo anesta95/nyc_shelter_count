@@ -5,6 +5,7 @@ library(readr)
 library(purrr)
 library(ggplot2)
 library(janitor)
+library(tidyverse)
 
 
 #write something here to update this daily
@@ -154,7 +155,9 @@ latest_old_data_date <- max(unique_by_agency$date,
 
 if (latest_new_data_date > latest_old_data_date) {
   # Write to disk if new data
-  unique_by_agency_new %>% write_csv("./data/ll79_data_unique_by_agency.csv")
+  unique_by_agency_new %>%
+    arrange(desc(date), agency_abb) %>% 
+    write_csv("./data/ll79_data_unique_by_agency.csv")
 }
 
 
