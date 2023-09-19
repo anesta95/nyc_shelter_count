@@ -73,28 +73,27 @@ library(janitor)
 # }
 ################
 
-
 #historical data - I think we only need to do this once?
-unique_by_agency_historical <-read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>% 
-  mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
-         count = case_when(agency_abb == "dhs" &
-                             category == "Number of unduplicated persons" &
-                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
-                          agency_abb == "dycd" &
-                            category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
-                          
-                          #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
-                          agency_abb == "hra" &
-                            category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **" ~ total_single_adults + total_adults_on_families + total_children,
-                          agency_abb == "hpd" &
-                            category == "Census Total" ~ total_adults + total_children,
-                          T ~ NA
-                          ),
-         date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
-         table = "number of unduplicated individuals",
-         root = "ll37 historical") %>% 
-  filter(!is.na(count)) %>% 
-  select(agency_abb, date, count, table)
+# unique_by_agency_historical <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>% 
+#   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
+#          count = case_when(agency_abb == "dhs" &
+#                              category == "Number of unduplicated persons" &
+#                              facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
+#                            agency_abb == "dycd" &
+#                              category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
+#                            
+#                            #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
+#                            agency_abb == "hra" &
+#                              category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **" ~ total_single_adults + total_adults_on_families + total_children,
+#                            agency_abb == "hpd" &
+#                              category == "Census Total" ~ total_adults + total_children,
+#                            T ~ NA
+#          ),
+#          date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
+#          table = "number of unduplicated individuals",
+#          root = "ll37 historical") %>% 
+#   filter(!is.na(count)) %>% 
+#   select(agency_abb, date, count, table)
   
 #ongoing question - should we add na.rm to these sums in case they miss data entry?
 

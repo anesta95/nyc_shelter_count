@@ -41,15 +41,10 @@ jobs:
         # env:
         #   SCT_PW: ${{ secrets.SCT_PW }}
       # push to git repo
-      - name: Commit and push if it change
-        run: |-
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A
-          timestamp=$(date -u)
-          git commit -m "Latest data: ${timestamp}" || exit
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with: 
-          github_token: ${{ secrets.PAT }} 
-          branch: main
+      - name: Add and commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: Automated
+          committer_email: actions@users.noreply.github.com
+          message: "Latest data"

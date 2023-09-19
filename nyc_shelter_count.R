@@ -49,8 +49,12 @@ report_date <- str_extract(daily_report, "\\w+\\s+\\d{1,2},\\s+\\d{4}") %>%
   base::as.Date(format = "%B %d, %Y")
 
 #@adrian - here I conditionally change the report date to avoid typos that would stop the script from running if the report date is in the future
-if (report_date > Sys.Date()) {
-  report_date <- Sys.Date() -1
+### This works! I just added an additional condition to check if the date wasn't able to be parsed. 
+### I think the logic of just using the previous date from the Sys.Date() as the assumed
+### date in these cases instead of just the next date (or weekdate) from the datafile
+### we already have makes sense since it seems like a new report isn't *actually* published every day.
+if (report_date > Sys.Date() | is.na(report_date)) {
+  report_date <- Sys.Date() - 1
 }
 
 # Renaming pdf with its report date
@@ -64,7 +68,7 @@ table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
                  "Total Single Adults", "FAMILIES WITH CHILDREN",
                  "ADULT FAMILIES CENSUS")
 
-clean_tbls_3_6 <- function(table_name, list) {
+clean_tbls_3_6 <- function(table_name, list, report_date) {
   
   idx <- detect_index(list, ~any(str_detect(.x, table_name)))
   
@@ -84,7 +88,7 @@ clean_tbls_3_6 <- function(table_name, list) {
     col_name <- sym(make_clean_names(table_name))
     
     df <- partial_df %>% 
-      select(col_name) %>% 
+      select(all_of(col_name)) %>% 
       separate(col = col_name, into = c("measure", "count"),
                sep = "\\s+(?=\\d)") %>% 
       mutate(table = make_clean_names(table_name),
@@ -96,7 +100,7 @@ clean_tbls_3_6 <- function(table_name, list) {
 }
 
 
-extract_dhs_daily_data <- function(table_name, list) {
+extract_dhs_daily_data <- function(table_name, list, report_date) {
   
   if (table_name == "FAMILY INTAKE") {
     # Now just looking for the 11 row tibble since FAMILY INTAKE can show up in table 1 and two
@@ -143,7 +147,7 @@ extract_dhs_daily_data <- function(table_name, list) {
     
     sa_no_cj <- cleaned_safi %>% 
       slice(1:7) %>% 
-      select(single_adults, single_adults_count)
+      select(c(single_adults, single_adults_count))
     
     sa_cj <- sa_no_cj %>% 
       bind_rows(tibble(single_adults = "Criminal Justice Short-term Housing",
@@ -153,7 +157,7 @@ extract_dhs_daily_data <- function(table_name, list) {
     
     fi_no_sa <- cleaned_safi %>% 
       slice(1:4) %>% 
-      select(family_intake, family_intake_count) %>% 
+      select(c(family_intake, family_intake_count)) %>% 
       rename(measure = family_intake, count = family_intake_count) %>% 
       mutate(table = "family_intake", date = report_date)
     
@@ -161,7 +165,7 @@ extract_dhs_daily_data <- function(table_name, list) {
       
     
   } else {
-    df <- clean_tbls_3_6(table_name = table_name, list = list)
+    df <- clean_tbls_3_6(table_name = table_name, list = list, report_date = report_date)
     
   }
   
@@ -169,7 +173,7 @@ extract_dhs_daily_data <- function(table_name, list) {
   
 }
 
-dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs)) %>% 
+dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs, report_date)) %>% 
   mutate(count = as.numeric(str_remove_all(count, ",")))
 
 dhs_unhoused_report <- read_csv("./data/dhs_daily_report.csv",
