@@ -139,8 +139,7 @@ unique_by_agency_new <- read_csv("https://data.cityofnewyork.us/resource/jiwc-nc
          table = "number of unduplicated individuals",
          root = "ll37 new report") %>% 
   filter(!is.na(count)) %>% 
-  select(agency_abb, date, count, table) %>% 
-  bind_rows(unique_by_agency_historical)
+  select(agency_abb, date, count, table)
 
 #current version
 unique_by_agency <- read_csv("./data/ll79_data_unique_by_agency.csv",
