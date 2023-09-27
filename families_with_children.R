@@ -5,8 +5,7 @@ library(readr)
 library(purrr)
 library(ggplot2)
 library(janitor)
-library(tidyverse)
-
+library(stringr)
 
 #write something here to update this daily
 
@@ -102,8 +101,9 @@ library(tidyverse)
 
 #MOCJ and DOHMH are not in the historical, they first appear here in May 2023
 
-unique_by_agency_new <- read_csv("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv",
-                                 col_types = cols(.default = col_character())) %>% 
+unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv",
+                                     stringsAsFactors = F) %>% 
+  mutate(across(.cols = everything(), .fns = as.character)) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "10", .x))) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
@@ -118,7 +118,7 @@ unique_by_agency_new <- read_csv("https://data.cityofnewyork.us/resource/jiwc-nc
                            
                            agency_abb == "hra" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
-                             facility_or_program_type == "HRA domestic violence emergency shelters" ~ total_single_adults + total_adults_in_families + total_children,
+                             facility_or_program_type == "HRA-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
                            agency_abb == "hpd" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "HPD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
@@ -161,6 +161,12 @@ if (latest_new_data_date > latest_old_data_date) {
 }
 
 
+## TODO: Change `table` column to `series(?)` and have it be
+## "number of unduplicated individuals" for all values except
+## hra which will break out "DV" and "HASA" individuals
+
+## add `root` column in final `select()` function to keep
+## in final dataset.
 
 
 
