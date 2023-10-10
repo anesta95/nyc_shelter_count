@@ -37,8 +37,8 @@ if (latest_socrata_new_data_date > latest_socrata_old_data_date) {
 # DHS daily report extra data from here
 # url: https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf
 
-download.file(url = "https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf",
-              destfile = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf")
+# download.file(url = "https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf",
+#               destfile = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf")
 
 # Getting latest report text
 daily_report <- pdf_text("./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf") %>%

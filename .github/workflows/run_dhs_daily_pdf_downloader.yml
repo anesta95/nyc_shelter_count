@@ -1,0 +1,23 @@
+name: Download latest DHS shelter daily report
+
+on:
+  schedule:
+    - cron: '47 1 * * *' # 1:47 UTC everyday
+  workflow_dispatch:
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v4
+    - name: Fetch latest data
+      run: |-
+        wget -O ./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf https://www1.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf
+    - name: Add and commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v9.1.3
+        with:
+          committer_name: Automated
+          committer_email: actions@users.noreply.github.com
+          message: "Latest data"
