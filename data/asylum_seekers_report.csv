@@ -1,0 +1,43 @@
+category,date,table,population,agency,count
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DHS,"31,316"
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DYCD,44
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,HPD,"6,409"
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,H+H,"20,856"
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,NYCEM,"4,390"
+Population - Individuals,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,total,"63,015"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DHS,"28,880"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DYCD,0
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,HPD,"4,078"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,H+H,"14,900"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,NYCEM,6
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,total,"47,864"
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DHS,748
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DYCD,0
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,HPD,309
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,H+H,"1,239"
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,NYCEM,444
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,total,"2,740"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DHS,"1,688"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,DYCD,44
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,HPD,"2,022"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,H+H,"4,717"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,NYCEM,"3,940"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,individuals,total,"12,411"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DHS,"8,143"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DYCD,0
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,HPD,"1,151"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,H+H,"4,256"
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,NYCEM,3
+Families with Children,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,total,"13,553"
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DHS,354
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DYCD,0
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,HPD,159
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,H+H,611
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,NYCEM,221
+Adult Families,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,total,"1,345"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DHS,"1,688"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,DYCD,44
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,HPD,"2,022"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,H+H,"4,717"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,NYCEM,"3,940"
+Single Adults,30-Sep-23,ASYLUM SEEKER DAILY CENSUS - SUMMARY,families,total,"12,411"

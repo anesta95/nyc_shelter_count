@@ -16,6 +16,12 @@ library(stringr)
 # url: https://council.nyc.gov/budget/wp-content/uploads/sites/54/2023/08/Asylum-Seekers-Report-July-2023.pdf
 
 
+
+
+
+
+##############################################################
+
 report_month <- month(Sys.Date() %m-% months(1), label = T, abbr = F) #gets the previous month
 report_year <- year(Sys.Date() %m-% months(1))
 
@@ -45,19 +51,36 @@ asylum_report_date_string <- unlist(strsplit(asylum_report, "\n"))[3] %>%
   
 asylum_report_date <- lubridate::my(asylum_report_date_string)
 
-latest_asylum <- extract_tables("./asylum_seekers_report_pdfs/temp_monthly_report.pdf")
+latest_asylum <- extract_tables("./asylum_seekers_report_pdfs/temp_monthly_report.pdf",
+                                output = "data.frame",
+                                pages = 3,
+                                method = "decide")
 
+aug_asylum <- extract_tables("./asylum_seekers_report_pdfs/Asylum-Seekers-Report-August-2023-1.pdf")
 
-#@adrian - here I conditionally change the report date to avoid typos that would stop the script from running if the report date is in the future
-### This works! I just added an additional condition to check if the date wasn't able to be parsed. 
-### I think the logic of just using the previous date from the Sys.Date() as the assumed
-### date in these cases instead of just the next date (or weekdate) from the datafile
-### we already have makes sense since it seems like a new report isn't *actually* published every day.
-if (asylum_report_date > Sys.Date() | is.na(report_date)) {
-  asylum_report_date <- Sys.Date() - 1
-}
+asylum_table_names <- c("ASYLUM SEEKER DAILY CENSUS")
 
-# Renaming pdf with its report date
+df <- as.data.frame(latest_asylum[4])
 
-file.rename(from = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf",
-            to = paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf"))
+aslyum_report_date_actual <- df[1, "X5"]
+
+df_clean <- df %>%
+  mutate(date = X5[1],
+         table = X1[1]) %>% 
+  filter(row_number()>2) %>% 
+  separate(X1, sep = " (?=[0-9,])", into = c("category", "XX", "XY")) %>% 
+  mutate(population = if_else(row_number()<6, "individuals", "families")) %>% 
+  filter(!is.na(XX))
+
+df_clean[1,]
+unlist(df_clean[1, ])
+
+names(df_clean) <- c("category", "DHS", "DYCD", "HPD", "H+H", "NYCEM", "total", "date", "table", "population")
+
+df_long <- df_clean %>% 
+  pivot_longer(c("DHS", "DYCD", "HPD", "H+H", "NYCEM", "total"), names_to = "agency", values_to = "count")
+
+write_csv(df_long, "data/asylum_seekers_report.csv")
+
+file.rename(from = "./asylum_seekers_report_pdfs/temp_monthly_report.pdf",
+            to = paste0("./asylum_seekers_report_pdfs/", aslyum_report_date_actual, "_asylum_monthly_report.pdf"))
