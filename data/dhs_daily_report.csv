@@ -1943,6 +1943,15 @@ Children,26913,families_with_children,2023-06-15
 Individuals,51835,families_with_children,2023-06-15
 Families,3022,adult_families_census,2023-06-15
 Individuals (Adults),6409,adult_families_census,2023-06-15
+Children,26970,families_with_children,2023-06-14
+Adults,24978,families_with_children,2023-06-14
+Total Single Adults,22234,total_single_adults,2023-06-14
+Individuals (Adults),6431,adult_families_census,2023-06-14
+Safe Haven Utilization,1543,single_adults,2023-06-14
+Drop-in Center Overnight Census,134,single_adults,2023-06-14
+Faith Bed Census,39,single_adults,2023-06-14
+Veterans In Short-term Housing,186,single_adults,2023-06-14
+Criminal Justice Short-term Housing,NA,single_adults,2023-06-14
 Drop-in Center Clients Served,383,single_adults,2023-06-13
 Drop-in Center Overnight Census,165,single_adults,2023-06-13
 Faith Bed Census,39,single_adults,2023-06-13
@@ -1991,6 +2000,15 @@ Children,26893,families_with_children,2023-06-12
 Individuals,51775,families_with_children,2023-06-12
 Families,3036,adult_families_census,2023-06-12
 Individuals (Adults),6440,adult_families_census,2023-06-12
+Children,26863,families_with_children,2023-06-11
+Adults,24871,families_with_children,2023-06-11
+Total Single Adults,22168,total_single_adults,2023-06-11
+Individuals (Adults),6477,adult_families_census,2023-06-11
+Safe Haven Utilization,NA,single_adults,2023-06-11
+Drop-in Center Overnight Census,149,single_adults,2023-06-11
+Faith Bed Census,13,single_adults,2023-06-11
+Veterans In Short-term Housing,NA,single_adults,2023-06-11
+Criminal Justice Short-term Housing,NA,single_adults,2023-06-11
 Drop-in Center Clients Served,528,single_adults,2023-06-08
 Drop-in Center Overnight Census,174,single_adults,2023-06-08
 Faith Bed Census,36,single_adults,2023-06-08
@@ -2255,6 +2273,33 @@ Children,27010,families_with_children,2023-05-24
 Individuals,52065,families_with_children,2023-05-24
 Families,3096,adult_families_census,2023-05-24
 Individuals (Adults),6558,adult_families_census,2023-05-24
+Children,26971,families_with_children,2023-05-23
+Adults,25013,families_with_children,2023-05-23
+Total Single Adults,22892,total_single_adults,2023-05-23
+Individuals (Adults),6556,adult_families_census,2023-05-23
+Safe Haven Utilization,1553,single_adults,2023-05-23
+Drop-in Center Overnight Census,197,single_adults,2023-05-23
+Faith Bed Census,36,single_adults,2023-05-23
+Veterans In Short-term Housing,137,single_adults,2023-05-23
+Criminal Justice Short-term Housing,197,single_adults,2023-05-23
+Children,26967,families_with_children,2023-05-22
+Adults,25032,families_with_children,2023-05-22
+Total Single Adults,22872,total_single_adults,2023-05-22
+Individuals (Adults),6545,adult_families_census,2023-05-22
+Safe Haven Utilization,1551,single_adults,2023-05-22
+Drop-in Center Overnight Census,157,single_adults,2023-05-22
+Faith Bed Census,17,single_adults,2023-05-22
+Veterans In Short-term Housing,143,single_adults,2023-05-22
+Criminal Justice Short-term Housing,197,single_adults,2023-05-22
+Children,26917,families_with_children,2023-05-21
+Adults,24987,families_with_children,2023-05-21
+Total Single Adults,22978,total_single_adults,2023-05-21
+Individuals (Adults),6495,adult_families_census,2023-05-21
+Safe Haven Utilization,1559,single_adults,2023-05-21
+Drop-in Center Overnight Census,136,single_adults,2023-05-21
+Faith Bed Census,23,single_adults,2023-05-21
+Veterans In Short-term Housing,140,single_adults,2023-05-21
+Criminal Justice Short-term Housing,189,single_adults,2023-05-21
 Drop-in Center Clients Served,529,single_adults,2023-05-17
 Drop-in Center Overnight Census,190,single_adults,2023-05-17
 Faith Bed Census,39,single_adults,2023-05-17
@@ -2423,6 +2468,15 @@ Children,25858,families_with_children,2023-05-09
 Individuals,49659,families_with_children,2023-05-09
 Families,3015,adult_families_census,2023-05-09
 Individuals (Adults),6387,adult_families_census,2023-05-09
+Children,25791,families_with_children,2023-05-08
+Adults,23736,families_with_children,2023-05-08
+Total Single Adults,22743,total_single_adults,2023-05-08
+Individuals (Adults),6360,adult_families_census,2023-05-08
+Safe Haven Utilization,1521,single_adults,2023-05-08
+Drop-in Center Overnight Census,144,single_adults,2023-05-08
+Faith Bed Census,34,single_adults,2023-05-08
+Veterans In Short-term Housing,133,single_adults,2023-05-08
+Criminal Justice Short-term Housing,160,single_adults,2023-05-08
 Drop-in Center Clients Served,400,single_adults,2023-05-07
 Drop-in Center Overnight Census,157,single_adults,2023-05-07
 Faith Bed Census,27,single_adults,2023-05-07
@@ -2519,6 +2573,15 @@ Children,25112,families_with_children,2023-05-01
 Individuals,48110,families_with_children,2023-05-01
 Families,2978,adult_families_census,2023-05-01
 Individuals (Adults),6307,adult_families_census,2023-05-01
+Children,25067,families_with_children,2023-04-30
+Adults,22962,families_with_children,2023-04-30
+Total Single Adults,22577,total_single_adults,2023-04-30
+Individuals (Adults),6237,adult_families_census,2023-04-30
+Safe Haven Utilization,1541,single_adults,2023-04-30
+Drop-in Center Overnight Census,170,single_adults,2023-04-30
+Faith Bed Census,27,single_adults,2023-04-30
+Veterans In Short-term Housing,139,single_adults,2023-04-30
+Criminal Justice Short-term Housing,148,single_adults,2023-04-30
 Drop-in Center Clients Served,415,single_adults,2023-04-27
 Drop-in Center Overnight Census,168,single_adults,2023-04-27
 Faith Bed Census,36,single_adults,2023-04-27
@@ -2567,6 +2630,15 @@ Children,24750,families_with_children,2023-04-26
 Individuals,47326,families_with_children,2023-04-26
 Families,2929,adult_families_census,2023-04-26
 Individuals (Adults),6210,adult_families_census,2023-04-26
+Children,24644,families_with_children,2023-04-25
+Adults,22461,families_with_children,2023-04-25
+Total Single Adults,22463,total_single_adults,2023-04-25
+Individuals (Adults),6167,adult_families_census,2023-04-25
+Safe Haven Utilization,1523,single_adults,2023-04-25
+Drop-in Center Overnight Census,245,single_adults,2023-04-25
+Faith Bed Census,31,single_adults,2023-04-25
+Veterans In Short-term Housing,147,single_adults,2023-04-25
+Criminal Justice Short-term Housing,158,single_adults,2023-04-25
 Drop-in Center Clients Served,556,single_adults,2023-04-24
 Drop-in Center Overnight Census,156,single_adults,2023-04-24
 Faith Bed Census,35,single_adults,2023-04-24
@@ -2639,6 +2711,42 @@ Children,24439,families_with_children,2023-04-20
 Individuals,46721,families_with_children,2023-04-20
 Families,2902,adult_families_census,2023-04-20
 Individuals (Adults),6151,adult_families_census,2023-04-20
+Children,24366,families_with_children,2023-04-19
+Adults,22205,families_with_children,2023-04-19
+Total Single Adults,22196,total_single_adults,2023-04-19
+Individuals (Adults),6119,adult_families_census,2023-04-19
+Safe Haven Utilization,1534,single_adults,2023-04-19
+Drop-in Center Overnight Census,121,single_adults,2023-04-19
+Faith Bed Census,34,single_adults,2023-04-19
+Veterans In Short-term Housing,146,single_adults,2023-04-19
+Criminal Justice Short-term Housing,160,single_adults,2023-04-19
+Children,24258,families_with_children,2023-04-18
+Adults,22115,families_with_children,2023-04-18
+Total Single Adults,22170,total_single_adults,2023-04-18
+Individuals (Adults),6113,adult_families_census,2023-04-18
+Safe Haven Utilization,1535,single_adults,2023-04-18
+Drop-in Center Overnight Census,193,single_adults,2023-04-18
+Faith Bed Census,35,single_adults,2023-04-18
+Veterans In Short-term Housing,144,single_adults,2023-04-18
+Criminal Justice Short-term Housing,162,single_adults,2023-04-18
+Children,24206,families_with_children,2023-04-17
+Adults,22069,families_with_children,2023-04-17
+Total Single Adults,22053,total_single_adults,2023-04-17
+Individuals (Adults),6123,adult_families_census,2023-04-17
+Safe Haven Utilization,1544,single_adults,2023-04-17
+Drop-in Center Overnight Census,131,single_adults,2023-04-17
+Faith Bed Census,19,single_adults,2023-04-17
+Veterans In Short-term Housing,145,single_adults,2023-04-17
+Criminal Justice Short-term Housing,157,single_adults,2023-04-17
+Children,24175,families_with_children,2023-04-16
+Adults,22039,families_with_children,2023-04-16
+Total Single Adults,22011,total_single_adults,2023-04-16
+Individuals (Adults),6132,adult_families_census,2023-04-16
+Safe Haven Utilization,1553,single_adults,2023-04-16
+Drop-in Center Overnight Census,147,single_adults,2023-04-16
+Faith Bed Census,19,single_adults,2023-04-16
+Veterans In Short-term Housing,219,single_adults,2023-04-16
+Criminal Justice Short-term Housing,151,single_adults,2023-04-16
 Drop-in Center Clients Served,241,single_adults,2023-04-13
 Drop-in Center Overnight Census,106,single_adults,2023-04-13
 Faith Bed Census,3,single_adults,2023-04-13
@@ -2687,6 +2795,24 @@ Children,23935,families_with_children,2023-04-12
 Individuals,45706,families_with_children,2023-04-12
 Families,2880,adult_families_census,2023-04-12
 Individuals (Adults),6107,adult_families_census,2023-04-12
+Children,23893,families_with_children,2023-04-11
+Adults,21730,families_with_children,2023-04-11
+Total Single Adults,22067,total_single_adults,2023-04-11
+Individuals (Adults),6080,adult_families_census,2023-04-11
+Safe Haven Utilization,1546,single_adults,2023-04-11
+Drop-in Center Overnight Census,130,single_adults,2023-04-11
+Faith Bed Census,20,single_adults,2023-04-11
+Veterans In Short-term Housing,224,single_adults,2023-04-11
+Criminal Justice Short-term Housing,157,single_adults,2023-04-11
+Children,23942,families_with_children,2023-04-10
+Adults,21808,families_with_children,2023-04-10
+Total Single Adults,22043,total_single_adults,2023-04-10
+Individuals (Adults),6075,adult_families_census,2023-04-10
+Safe Haven Utilization,1554,single_adults,2023-04-10
+Drop-in Center Overnight Census,170,single_adults,2023-04-10
+Faith Bed Census,29,single_adults,2023-04-10
+Veterans In Short-term Housing,220,single_adults,2023-04-10
+Criminal Justice Short-term Housing,154,single_adults,2023-04-10
 Drop-in Center Clients Served,277,single_adults,2023-04-09
 Drop-in Center Overnight Census,137,single_adults,2023-04-09
 Faith Bed Census,4,single_adults,2023-04-09
@@ -3023,3 +3149,2442 @@ Children,23303,families_with_children,2023-03-21
 Individuals,44403,families_with_children,2023-03-21
 Families,2780,adult_families_census,2023-03-21
 Individuals (Adults),5908,adult_families_census,2023-03-21
+Children,23196,families_with_children,2023-03-20
+Adults,21018,families_with_children,2023-03-20
+Total Single Adults,21659,total_single_adults,2023-03-20
+Individuals (Adults),5869,adult_families_census,2023-03-20
+Safe Haven Utilization,1554,single_adults,2023-03-20
+Drop-in Center Overnight Census,188,single_adults,2023-03-20
+Faith Bed Census,30,single_adults,2023-03-20
+Veterans In Short-term Housing,223,single_adults,2023-03-20
+Criminal Justice Short-term Housing,135,single_adults,2023-03-20
+Children,23208,families_with_children,2023-03-19
+Adults,21015,families_with_children,2023-03-19
+Total Single Adults,21603,total_single_adults,2023-03-19
+Individuals (Adults),5870,adult_families_census,2023-03-19
+Safe Haven Utilization,1550,single_adults,2023-03-19
+Drop-in Center Overnight Census,164,single_adults,2023-03-19
+Faith Bed Census,30,single_adults,2023-03-19
+Veterans In Short-term Housing,221,single_adults,2023-03-19
+Criminal Justice Short-term Housing,127,single_adults,2023-03-19
+Children,23016,families_with_children,2023-03-15
+Adults,20842,families_with_children,2023-03-15
+Total Single Adults,21482,total_single_adults,2023-03-15
+Individuals (Adults),5897,adult_families_census,2023-03-15
+Safe Haven Utilization,1552,single_adults,2023-03-15
+Drop-in Center Overnight Census,214,single_adults,2023-03-15
+Faith Bed Census,28,single_adults,2023-03-15
+Veterans In Short-term Housing,229,single_adults,2023-03-15
+Criminal Justice Short-term Housing,139,single_adults,2023-03-15
+Children,23022,families_with_children,2023-03-14
+Adults,20814,families_with_children,2023-03-14
+Total Single Adults,21513,total_single_adults,2023-03-14
+Individuals (Adults),5871,adult_families_census,2023-03-14
+Safe Haven Utilization,1556,single_adults,2023-03-14
+Drop-in Center Overnight Census,147,single_adults,2023-03-14
+Faith Bed Census,33,single_adults,2023-03-14
+Veterans In Short-term Housing,230,single_adults,2023-03-14
+Criminal Justice Short-term Housing,142,single_adults,2023-03-14
+Children,22948,families_with_children,2023-03-13
+Adults,20773,families_with_children,2023-03-13
+Total Single Adults,21432,total_single_adults,2023-03-13
+Individuals (Adults),5872,adult_families_census,2023-03-13
+Safe Haven Utilization,1557,single_adults,2023-03-13
+Drop-in Center Overnight Census,189,single_adults,2023-03-13
+Faith Bed Census,27,single_adults,2023-03-13
+Veterans In Short-term Housing,230,single_adults,2023-03-13
+Criminal Justice Short-term Housing,143,single_adults,2023-03-13
+Children,22943,families_with_children,2023-03-12
+Adults,20761,families_with_children,2023-03-12
+Total Single Adults,21357,total_single_adults,2023-03-12
+Individuals (Adults),5880,adult_families_census,2023-03-12
+Safe Haven Utilization,1564,single_adults,2023-03-12
+Drop-in Center Overnight Census,151,single_adults,2023-03-12
+Faith Bed Census,15,single_adults,2023-03-12
+Veterans In Short-term Housing,217,single_adults,2023-03-12
+Criminal Justice Short-term Housing,208,single_adults,2023-03-12
+Children,23047,families_with_children,2023-03-09
+Adults,20797,families_with_children,2023-03-09
+Total Single Adults,21428,total_single_adults,2023-03-09
+Individuals (Adults),5904,adult_families_census,2023-03-09
+Safe Haven Utilization,1554,single_adults,2023-03-09
+Drop-in Center Overnight Census,191,single_adults,2023-03-09
+Faith Bed Census,31,single_adults,2023-03-09
+Veterans In Short-term Housing,212,single_adults,2023-03-09
+Criminal Justice Short-term Housing,146,single_adults,2023-03-09
+Children,22988,families_with_children,2023-03-08
+Adults,20748,families_with_children,2023-03-08
+Total Single Adults,21407,total_single_adults,2023-03-08
+Individuals (Adults),5881,adult_families_census,2023-03-08
+Safe Haven Utilization,1558,single_adults,2023-03-08
+Drop-in Center Overnight Census,186,single_adults,2023-03-08
+Faith Bed Census,20,single_adults,2023-03-08
+Veterans In Short-term Housing,218,single_adults,2023-03-08
+Criminal Justice Short-term Housing,145,single_adults,2023-03-08
+Children,23011,families_with_children,2023-03-07
+Adults,20772,families_with_children,2023-03-07
+Total Single Adults,21399,total_single_adults,2023-03-07
+Individuals (Adults),5895,adult_families_census,2023-03-07
+Safe Haven Utilization,1535,single_adults,2023-03-07
+Drop-in Center Overnight Census,184,single_adults,2023-03-07
+Faith Bed Census,24,single_adults,2023-03-07
+Veterans In Short-term Housing,216,single_adults,2023-03-07
+Criminal Justice Short-term Housing,146,single_adults,2023-03-07
+Children,22966,families_with_children,2023-03-05
+Adults,20744,families_with_children,2023-03-05
+Total Single Adults,21275,total_single_adults,2023-03-05
+Individuals (Adults),5875,adult_families_census,2023-03-05
+Safe Haven Utilization,1556,single_adults,2023-03-05
+Drop-in Center Overnight Census,183,single_adults,2023-03-05
+Faith Bed Census,24,single_adults,2023-03-05
+Veterans In Short-term Housing,223,single_adults,2023-03-05
+Criminal Justice Short-term Housing,136,single_adults,2023-03-05
+Children,22940,families_with_children,2023-03-02
+Adults,20696,families_with_children,2023-03-02
+Total Single Adults,21168,total_single_adults,2023-03-02
+Individuals (Adults),5930,adult_families_census,2023-03-02
+Safe Haven Utilization,1555,single_adults,2023-03-02
+Drop-in Center Overnight Census,115,single_adults,2023-03-02
+Faith Bed Census,3,single_adults,2023-03-02
+Veterans In Short-term Housing,221,single_adults,2023-03-02
+Criminal Justice Short-term Housing,143,single_adults,2023-03-02
+Children,22974,families_with_children,2023-03-01
+Adults,20737,families_with_children,2023-03-01
+Total Single Adults,21216,total_single_adults,2023-03-01
+Individuals (Adults),5921,adult_families_census,2023-03-01
+Safe Haven Utilization,1551,single_adults,2023-03-01
+Drop-in Center Overnight Census,153,single_adults,2023-03-01
+Faith Bed Census,13,single_adults,2023-03-01
+Veterans In Short-term Housing,221,single_adults,2023-03-01
+Criminal Justice Short-term Housing,144,single_adults,2023-03-01
+Children,22978,families_with_children,2023-02-28
+Adults,20745,families_with_children,2023-02-28
+Total Single Adults,21217,total_single_adults,2023-02-28
+Individuals (Adults),5920,adult_families_census,2023-02-28
+Safe Haven Utilization,1560,single_adults,2023-02-28
+Drop-in Center Overnight Census,137,single_adults,2023-02-28
+Faith Bed Census,13,single_adults,2023-02-28
+Veterans In Short-term Housing,227,single_adults,2023-02-28
+Criminal Justice Short-term Housing,142,single_adults,2023-02-28
+Children,22898,families_with_children,2023-02-27
+Adults,20703,families_with_children,2023-02-27
+Total Single Adults,21272,total_single_adults,2023-02-27
+Individuals (Adults),5915,adult_families_census,2023-02-27
+Safe Haven Utilization,1560,single_adults,2023-02-27
+Drop-in Center Overnight Census,167,single_adults,2023-02-27
+Faith Bed Census,10,single_adults,2023-02-27
+Veterans In Short-term Housing,231,single_adults,2023-02-27
+Criminal Justice Short-term Housing,144,single_adults,2023-02-27
+Children,23011,families_with_children,2023-02-26
+Adults,20792,families_with_children,2023-02-26
+Total Single Adults,21201,total_single_adults,2023-02-26
+Individuals (Adults),5908,adult_families_census,2023-02-26
+Safe Haven Utilization,1551,single_adults,2023-02-26
+Drop-in Center Overnight Census,159,single_adults,2023-02-26
+Faith Bed Census,17,single_adults,2023-02-26
+Veterans In Short-term Housing,216,single_adults,2023-02-26
+Criminal Justice Short-term Housing,133,single_adults,2023-02-26
+Children,22931,families_with_children,2023-02-23
+Adults,20730,families_with_children,2023-02-23
+Total Single Adults,21167,total_single_adults,2023-02-23
+Individuals (Adults),5956,adult_families_census,2023-02-23
+Safe Haven Utilization,1553,single_adults,2023-02-23
+Drop-in Center Overnight Census,197,single_adults,2023-02-23
+Faith Bed Census,34,single_adults,2023-02-23
+Veterans In Short-term Housing,213,single_adults,2023-02-23
+Criminal Justice Short-term Housing,146,single_adults,2023-02-23
+Children,22913,families_with_children,2023-02-22
+Adults,20693,families_with_children,2023-02-22
+Total Single Adults,21217,total_single_adults,2023-02-22
+Individuals (Adults),5987,adult_families_census,2023-02-22
+Safe Haven Utilization,1557,single_adults,2023-02-22
+Drop-in Center Overnight Census,166,single_adults,2023-02-22
+Faith Bed Census,36,single_adults,2023-02-22
+Veterans In Short-term Housing,225,single_adults,2023-02-22
+Criminal Justice Short-term Housing,146,single_adults,2023-02-22
+Children,22895,families_with_children,2023-02-21
+Adults,20699,families_with_children,2023-02-21
+Total Single Adults,21189,total_single_adults,2023-02-21
+Individuals (Adults),5991,adult_families_census,2023-02-21
+Safe Haven Utilization,1562,single_adults,2023-02-21
+Drop-in Center Overnight Census,210,single_adults,2023-02-21
+Faith Bed Census,38,single_adults,2023-02-21
+Veterans In Short-term Housing,222,single_adults,2023-02-21
+Criminal Justice Short-term Housing,146,single_adults,2023-02-21
+Children,22766,families_with_children,2023-02-20
+Adults,20588,families_with_children,2023-02-20
+Total Single Adults,21176,total_single_adults,2023-02-20
+Individuals (Adults),5979,adult_families_census,2023-02-20
+Safe Haven Utilization,1566,single_adults,2023-02-20
+Drop-in Center Overnight Census,200,single_adults,2023-02-20
+Faith Bed Census,20,single_adults,2023-02-20
+Veterans In Short-term Housing,221,single_adults,2023-02-20
+Criminal Justice Short-term Housing,139,single_adults,2023-02-20
+Children,22779,families_with_children,2023-02-16
+Adults,20584,families_with_children,2023-02-16
+Total Single Adults,21134,total_single_adults,2023-02-16
+Individuals (Adults),5984,adult_families_census,2023-02-16
+Safe Haven Utilization,1555,single_adults,2023-02-16
+Drop-in Center Overnight Census,68,single_adults,2023-02-16
+Faith Bed Census,6,single_adults,2023-02-16
+Veterans In Short-term Housing,225,single_adults,2023-02-16
+Criminal Justice Short-term Housing,148,single_adults,2023-02-16
+Children,22756,families_with_children,2023-02-15
+Adults,20566,families_with_children,2023-02-15
+Total Single Adults,21005,total_single_adults,2023-02-15
+Individuals (Adults),5979,adult_families_census,2023-02-15
+Safe Haven Utilization,1551,single_adults,2023-02-15
+Drop-in Center Overnight Census,198,single_adults,2023-02-15
+Faith Bed Census,30,single_adults,2023-02-15
+Veterans In Short-term Housing,224,single_adults,2023-02-15
+Criminal Justice Short-term Housing,148,single_adults,2023-02-15
+Children,22772,families_with_children,2023-02-14
+Adults,20599,families_with_children,2023-02-14
+Total Single Adults,21079,total_single_adults,2023-02-14
+Individuals (Adults),6011,adult_families_census,2023-02-14
+Safe Haven Utilization,1558,single_adults,2023-02-14
+Drop-in Center Overnight Census,181,single_adults,2023-02-14
+Faith Bed Census,31,single_adults,2023-02-14
+Veterans In Short-term Housing,221,single_adults,2023-02-14
+Criminal Justice Short-term Housing,149,single_adults,2023-02-14
+Children,22782,families_with_children,2023-02-13
+Adults,20611,families_with_children,2023-02-13
+Total Single Adults,21085,total_single_adults,2023-02-13
+Individuals (Adults),6016,adult_families_census,2023-02-13
+Safe Haven Utilization,1563,single_adults,2023-02-13
+Drop-in Center Overnight Census,195,single_adults,2023-02-13
+Faith Bed Census,29,single_adults,2023-02-13
+Veterans In Short-term Housing,225,single_adults,2023-02-13
+Criminal Justice Short-term Housing,150,single_adults,2023-02-13
+Children,22838,families_with_children,2023-02-12
+Adults,20652,families_with_children,2023-02-12
+Total Single Adults,21147,total_single_adults,2023-02-12
+Individuals (Adults),6011,adult_families_census,2023-02-12
+Safe Haven Utilization,1543,single_adults,2023-02-12
+Drop-in Center Overnight Census,155,single_adults,2023-02-12
+Faith Bed Census,14,single_adults,2023-02-12
+Veterans In Short-term Housing,232,single_adults,2023-02-12
+Criminal Justice Short-term Housing,147,single_adults,2023-02-12
+Children,22874,families_with_children,2023-02-09
+Adults,20682,families_with_children,2023-02-09
+Total Single Adults,21131,total_single_adults,2023-02-09
+Individuals (Adults),6013,adult_families_census,2023-02-09
+Safe Haven Utilization,1553,single_adults,2023-02-09
+Drop-in Center Overnight Census,186,single_adults,2023-02-09
+Faith Bed Census,27,single_adults,2023-02-09
+Veterans In Short-term Housing,215,single_adults,2023-02-09
+Criminal Justice Short-term Housing,153,single_adults,2023-02-09
+Children,22866,families_with_children,2023-02-08
+Adults,20667,families_with_children,2023-02-08
+Total Single Adults,21156,total_single_adults,2023-02-08
+Individuals (Adults),5994,adult_families_census,2023-02-08
+Safe Haven Utilization,1566,single_adults,2023-02-08
+Drop-in Center Overnight Census,167,single_adults,2023-02-08
+Faith Bed Census,24,single_adults,2023-02-08
+Veterans In Short-term Housing,216,single_adults,2023-02-08
+Criminal Justice Short-term Housing,151,single_adults,2023-02-08
+Children,22871,families_with_children,2023-02-07
+Adults,20657,families_with_children,2023-02-07
+Total Single Adults,21145,total_single_adults,2023-02-07
+Individuals (Adults),5992,adult_families_census,2023-02-07
+Safe Haven Utilization,1560,single_adults,2023-02-07
+Drop-in Center Overnight Census,167,single_adults,2023-02-07
+Faith Bed Census,25,single_adults,2023-02-07
+Veterans In Short-term Housing,223,single_adults,2023-02-07
+Criminal Justice Short-term Housing,151,single_adults,2023-02-07
+Children,22881,families_with_children,2023-02-06
+Adults,20651,families_with_children,2023-02-06
+Total Single Adults,21178,total_single_adults,2023-02-06
+Individuals (Adults),5981,adult_families_census,2023-02-06
+Safe Haven Utilization,1560,single_adults,2023-02-06
+Drop-in Center Overnight Census,185,single_adults,2023-02-06
+Faith Bed Census,13,single_adults,2023-02-06
+Veterans In Short-term Housing,229,single_adults,2023-02-06
+Criminal Justice Short-term Housing,150,single_adults,2023-02-06
+Children,23033,families_with_children,2023-02-05
+Adults,20792,families_with_children,2023-02-05
+Total Single Adults,21125,total_single_adults,2023-02-05
+Individuals (Adults),6018,adult_families_census,2023-02-05
+Safe Haven Utilization,1560,single_adults,2023-02-05
+Drop-in Center Overnight Census,117,single_adults,2023-02-05
+Faith Bed Census,21,single_adults,2023-02-05
+Veterans In Short-term Housing,232,single_adults,2023-02-05
+Criminal Justice Short-term Housing,145,single_adults,2023-02-05
+Children,23037,families_with_children,2023-02-02
+Adults,20759,families_with_children,2023-02-02
+Total Single Adults,21086,total_single_adults,2023-02-02
+Individuals (Adults),5974,adult_families_census,2023-02-02
+Safe Haven Utilization,1565,single_adults,2023-02-02
+Drop-in Center Overnight Census,145,single_adults,2023-02-02
+Faith Bed Census,10,single_adults,2023-02-02
+Veterans In Short-term Housing,227,single_adults,2023-02-02
+Criminal Justice Short-term Housing,150,single_adults,2023-02-02
+Children,22953,families_with_children,2023-02-01
+Adults,20665,families_with_children,2023-02-01
+Total Single Adults,21063,total_single_adults,2023-02-01
+Individuals (Adults),5944,adult_families_census,2023-02-01
+Safe Haven Utilization,1569,single_adults,2023-02-01
+Drop-in Center Overnight Census,129,single_adults,2023-02-01
+Faith Bed Census,17,single_adults,2023-02-01
+Veterans In Short-term Housing,222,single_adults,2023-02-01
+Criminal Justice Short-term Housing,147,single_adults,2023-02-01
+Children,22886,families_with_children,2023-01-31
+Adults,20585,families_with_children,2023-01-31
+Total Single Adults,21067,total_single_adults,2023-01-31
+Individuals (Adults),5920,adult_families_census,2023-01-31
+Safe Haven Utilization,1563,single_adults,2023-01-31
+Drop-in Center Overnight Census,181,single_adults,2023-01-31
+Faith Bed Census,29,single_adults,2023-01-31
+Veterans In Short-term Housing,230,single_adults,2023-01-31
+Criminal Justice Short-term Housing,148,single_adults,2023-01-31
+Children,22850,families_with_children,2023-01-30
+Adults,20553,families_with_children,2023-01-30
+Total Single Adults,21038,total_single_adults,2023-01-30
+Individuals (Adults),5901,adult_families_census,2023-01-30
+Safe Haven Utilization,1556,single_adults,2023-01-30
+Drop-in Center Overnight Census,192,single_adults,2023-01-30
+Faith Bed Census,24,single_adults,2023-01-30
+Veterans In Short-term Housing,225,single_adults,2023-01-30
+Criminal Justice Short-term Housing,150,single_adults,2023-01-30
+Children,22805,families_with_children,2023-01-29
+Adults,20517,families_with_children,2023-01-29
+Total Single Adults,20951,total_single_adults,2023-01-29
+Individuals (Adults),5834,adult_families_census,2023-01-29
+Safe Haven Utilization,1551,single_adults,2023-01-29
+Drop-in Center Overnight Census,151,single_adults,2023-01-29
+Faith Bed Census,10,single_adults,2023-01-29
+Veterans In Short-term Housing,233,single_adults,2023-01-29
+Criminal Justice Short-term Housing,147,single_adults,2023-01-29
+Children,22751,families_with_children,2023-01-26
+Adults,20394,families_with_children,2023-01-26
+Total Single Adults,20910,total_single_adults,2023-01-26
+Individuals (Adults),5799,adult_families_census,2023-01-26
+Safe Haven Utilization,1546,single_adults,2023-01-26
+Drop-in Center Overnight Census,101,single_adults,2023-01-26
+Faith Bed Census,8,single_adults,2023-01-26
+Veterans In Short-term Housing,228,single_adults,2023-01-26
+Criminal Justice Short-term Housing,153,single_adults,2023-01-26
+Children,22639,families_with_children,2023-01-25
+Adults,20262,families_with_children,2023-01-25
+Total Single Adults,20829,total_single_adults,2023-01-25
+Individuals (Adults),5800,adult_families_census,2023-01-25
+Safe Haven Utilization,1524,single_adults,2023-01-25
+Drop-in Center Overnight Census,166,single_adults,2023-01-25
+Faith Bed Census,14,single_adults,2023-01-25
+Veterans In Short-term Housing,228,single_adults,2023-01-25
+Criminal Justice Short-term Housing,154,single_adults,2023-01-25
+Children,22664,families_with_children,2023-01-24
+Adults,20291,families_with_children,2023-01-24
+Total Single Adults,20904,total_single_adults,2023-01-24
+Individuals (Adults),5781,adult_families_census,2023-01-24
+Safe Haven Utilization,1542,single_adults,2023-01-24
+Drop-in Center Overnight Census,161,single_adults,2023-01-24
+Faith Bed Census,8,single_adults,2023-01-24
+Veterans In Short-term Housing,233,single_adults,2023-01-24
+Criminal Justice Short-term Housing,150,single_adults,2023-01-24
+Children,22582,families_with_children,2023-01-23
+Adults,20190,families_with_children,2023-01-23
+Total Single Adults,20777,total_single_adults,2023-01-23
+Individuals (Adults),5835,adult_families_census,2023-01-23
+Safe Haven Utilization,1543,single_adults,2023-01-23
+Drop-in Center Overnight Census,150,single_adults,2023-01-23
+Faith Bed Census,14,single_adults,2023-01-23
+Veterans In Short-term Housing,224,single_adults,2023-01-23
+Criminal Justice Short-term Housing,144,single_adults,2023-01-23
+Children,22573,families_with_children,2023-01-19
+Adults,20130,families_with_children,2023-01-19
+Total Single Adults,20827,total_single_adults,2023-01-19
+Individuals (Adults),5739,adult_families_census,2023-01-19
+Safe Haven Utilization,1529,single_adults,2023-01-19
+Drop-in Center Overnight Census,162,single_adults,2023-01-19
+Faith Bed Census,6,single_adults,2023-01-19
+Veterans In Short-term Housing,221,single_adults,2023-01-19
+Criminal Justice Short-term Housing,145,single_adults,2023-01-19
+Children,22625,families_with_children,2023-01-17
+Adults,20129,families_with_children,2023-01-17
+Total Single Adults,20804,total_single_adults,2023-01-17
+Individuals (Adults),5696,adult_families_census,2023-01-17
+Safe Haven Utilization,1535,single_adults,2023-01-17
+Drop-in Center Overnight Census,173,single_adults,2023-01-17
+Faith Bed Census,27,single_adults,2023-01-17
+Veterans In Short-term Housing,220,single_adults,2023-01-17
+Criminal Justice Short-term Housing,144,single_adults,2023-01-17
+Children,22564,families_with_children,2023-01-16
+Adults,20069,families_with_children,2023-01-16
+Total Single Adults,20767,total_single_adults,2023-01-16
+Individuals (Adults),5675,adult_families_census,2023-01-16
+Safe Haven Utilization,1538,single_adults,2023-01-16
+Drop-in Center Overnight Census,173,single_adults,2023-01-16
+Faith Bed Census,25,single_adults,2023-01-16
+Veterans In Short-term Housing,212,single_adults,2023-01-16
+Criminal Justice Short-term Housing,144,single_adults,2023-01-16
+Children,22419,families_with_children,2023-01-12
+Adults,19934,families_with_children,2023-01-12
+Total Single Adults,20605,total_single_adults,2023-01-12
+Individuals (Adults),5662,adult_families_census,2023-01-12
+Safe Haven Utilization,1530,single_adults,2023-01-12
+Drop-in Center Overnight Census,135,single_adults,2023-01-12
+Faith Bed Census,17,single_adults,2023-01-12
+Veterans In Short-term Housing,223,single_adults,2023-01-12
+Criminal Justice Short-term Housing,148,single_adults,2023-01-12
+Children,22380,families_with_children,2023-01-11
+Adults,19897,families_with_children,2023-01-11
+Total Single Adults,20584,total_single_adults,2023-01-11
+Individuals (Adults),5658,adult_families_census,2023-01-11
+Safe Haven Utilization,1532,single_adults,2023-01-11
+Drop-in Center Overnight Census,199,single_adults,2023-01-11
+Faith Bed Census,22,single_adults,2023-01-11
+Veterans In Short-term Housing,227,single_adults,2023-01-11
+Criminal Justice Short-term Housing,148,single_adults,2023-01-11
+Children,22371,families_with_children,2023-01-10
+Adults,19893,families_with_children,2023-01-10
+Total Single Adults,20543,total_single_adults,2023-01-10
+Individuals (Adults),5630,adult_families_census,2023-01-10
+Safe Haven Utilization,1531,single_adults,2023-01-10
+Drop-in Center Overnight Census,206,single_adults,2023-01-10
+Faith Bed Census,19,single_adults,2023-01-10
+Veterans In Short-term Housing,225,single_adults,2023-01-10
+Criminal Justice Short-term Housing,150,single_adults,2023-01-10
+Children,22294,families_with_children,2023-01-09
+Adults,19819,families_with_children,2023-01-09
+Total Single Adults,20477,total_single_adults,2023-01-09
+Individuals (Adults),5620,adult_families_census,2023-01-09
+Safe Haven Utilization,1526,single_adults,2023-01-09
+Drop-in Center Overnight Census,157,single_adults,2023-01-09
+Faith Bed Census,13,single_adults,2023-01-09
+Veterans In Short-term Housing,225,single_adults,2023-01-09
+Criminal Justice Short-term Housing,149,single_adults,2023-01-09
+Children,22197,families_with_children,2023-01-08
+Adults,19704,families_with_children,2023-01-08
+Total Single Adults,20418,total_single_adults,2023-01-08
+Individuals (Adults),5561,adult_families_census,2023-01-08
+Safe Haven Utilization,1519,single_adults,2023-01-08
+Drop-in Center Overnight Census,207,single_adults,2023-01-08
+Faith Bed Census,14,single_adults,2023-01-08
+Veterans In Short-term Housing,224,single_adults,2023-01-08
+Criminal Justice Short-term Housing,149,single_adults,2023-01-08
+Children,22025,families_with_children,2023-01-05
+Adults,19514,families_with_children,2023-01-05
+Total Single Adults,20228,total_single_adults,2023-01-05
+Individuals (Adults),5554,adult_families_census,2023-01-05
+Safe Haven Utilization,1505,single_adults,2023-01-05
+Drop-in Center Overnight Census,213,single_adults,2023-01-05
+Faith Bed Census,10,single_adults,2023-01-05
+Veterans In Short-term Housing,221,single_adults,2023-01-05
+Criminal Justice Short-term Housing,154,single_adults,2023-01-05
+Children,22001,families_with_children,2023-01-04
+Adults,19466,families_with_children,2023-01-04
+Total Single Adults,20310,total_single_adults,2023-01-04
+Individuals (Adults),5552,adult_families_census,2023-01-04
+Safe Haven Utilization,1507,single_adults,2023-01-04
+Drop-in Center Overnight Census,185,single_adults,2023-01-04
+Faith Bed Census,16,single_adults,2023-01-04
+Veterans In Short-term Housing,216,single_adults,2023-01-04
+Criminal Justice Short-term Housing,153,single_adults,2023-01-04
+Children,21954,families_with_children,2023-01-03
+Adults,19417,families_with_children,2023-01-03
+Total Single Adults,20240,total_single_adults,2023-01-03
+Individuals (Adults),5518,adult_families_census,2023-01-03
+Safe Haven Utilization,1508,single_adults,2023-01-03
+Drop-in Center Overnight Census,192,single_adults,2023-01-03
+Faith Bed Census,18,single_adults,2023-01-03
+Veterans In Short-term Housing,214,single_adults,2023-01-03
+Criminal Justice Short-term Housing,154,single_adults,2023-01-03
+Children,21875,families_with_children,2023-01-02
+Adults,19331,families_with_children,2023-01-02
+Total Single Adults,20133,total_single_adults,2023-01-02
+Individuals (Adults),5492,adult_families_census,2023-01-02
+Safe Haven Utilization,1512,single_adults,2023-01-02
+Drop-in Center Overnight Census,196,single_adults,2023-01-02
+Faith Bed Census,15,single_adults,2023-01-02
+Veterans In Short-term Housing,227,single_adults,2023-01-02
+Criminal Justice Short-term Housing,146,single_adults,2023-01-02
+Children,21640,families_with_children,2022-12-29
+Adults,19045,families_with_children,2022-12-29
+Total Single Adults,20116,total_single_adults,2022-12-29
+Individuals (Adults),5403,adult_families_census,2022-12-29
+Safe Haven Utilization,1510,single_adults,2022-12-29
+Drop-in Center Overnight Census,202,single_adults,2022-12-29
+Faith Bed Census,11,single_adults,2022-12-29
+Veterans In Short-term Housing,218,single_adults,2022-12-29
+Criminal Justice Short-term Housing,150,single_adults,2022-12-29
+Children,21592,families_with_children,2022-12-28
+Adults,19015,families_with_children,2022-12-28
+Total Single Adults,20139,total_single_adults,2022-12-28
+Individuals (Adults),5409,adult_families_census,2022-12-28
+Safe Haven Utilization,1514,single_adults,2022-12-28
+Drop-in Center Overnight Census,196,single_adults,2022-12-28
+Faith Bed Census,18,single_adults,2022-12-28
+Veterans In Short-term Housing,218,single_adults,2022-12-28
+Criminal Justice Short-term Housing,151,single_adults,2022-12-28
+Children,21550,families_with_children,2022-12-27
+Adults,18954,families_with_children,2022-12-27
+Total Single Adults,20178,total_single_adults,2022-12-27
+Individuals (Adults),5418,adult_families_census,2022-12-27
+Safe Haven Utilization,1515,single_adults,2022-12-27
+Drop-in Center Overnight Census,234,single_adults,2022-12-27
+Faith Bed Census,18,single_adults,2022-12-27
+Veterans In Short-term Housing,221,single_adults,2022-12-27
+Criminal Justice Short-term Housing,152,single_adults,2022-12-27
+Children,21565,families_with_children,2022-12-26
+Adults,18956,families_with_children,2022-12-26
+Total Single Adults,20091,total_single_adults,2022-12-26
+Individuals (Adults),5427,adult_families_census,2022-12-26
+Safe Haven Utilization,1501,single_adults,2022-12-26
+Drop-in Center Overnight Census,237,single_adults,2022-12-26
+Faith Bed Census,20,single_adults,2022-12-26
+Veterans In Short-term Housing,221,single_adults,2022-12-26
+Criminal Justice Short-term Housing,147,single_adults,2022-12-26
+Children,21295,families_with_children,2022-12-22
+Adults,18652,families_with_children,2022-12-22
+Total Single Adults,20037,total_single_adults,2022-12-22
+Individuals (Adults),5253,adult_families_census,2022-12-22
+Safe Haven Utilization,1484,single_adults,2022-12-22
+Drop-in Center Overnight Census,204,single_adults,2022-12-22
+Faith Bed Census,10,single_adults,2022-12-22
+Veterans In Short-term Housing,224,single_adults,2022-12-22
+Criminal Justice Short-term Housing,158,single_adults,2022-12-22
+Children,21262,families_with_children,2022-12-21
+Adults,18582,families_with_children,2022-12-21
+Total Single Adults,20022,total_single_adults,2022-12-21
+Individuals (Adults),5227,adult_families_census,2022-12-21
+Safe Haven Utilization,1491,single_adults,2022-12-21
+Drop-in Center Overnight Census,130,single_adults,2022-12-21
+Faith Bed Census,12,single_adults,2022-12-21
+Veterans In Short-term Housing,213,single_adults,2022-12-21
+Criminal Justice Short-term Housing,156,single_adults,2022-12-21
+Children,21141,families_with_children,2022-12-20
+Adults,18451,families_with_children,2022-12-20
+Total Single Adults,19982,total_single_adults,2022-12-20
+Individuals (Adults),5202,adult_families_census,2022-12-20
+Safe Haven Utilization,1476,single_adults,2022-12-20
+Drop-in Center Overnight Census,187,single_adults,2022-12-20
+Faith Bed Census,20,single_adults,2022-12-20
+Veterans In Short-term Housing,207,single_adults,2022-12-20
+Criminal Justice Short-term Housing,157,single_adults,2022-12-20
+Children,21165,families_with_children,2022-12-18
+Adults,18459,families_with_children,2022-12-18
+Total Single Adults,19923,total_single_adults,2022-12-18
+Individuals (Adults),5196,adult_families_census,2022-12-18
+Safe Haven Utilization,1483,single_adults,2022-12-18
+Drop-in Center Overnight Census,200,single_adults,2022-12-18
+Faith Bed Census,27,single_adults,2022-12-18
+Veterans In Short-term Housing,224,single_adults,2022-12-18
+Criminal Justice Short-term Housing,153,single_adults,2022-12-18
+Children,21188,families_with_children,2022-12-15
+Adults,18469,families_with_children,2022-12-15
+Total Single Adults,19959,total_single_adults,2022-12-15
+Individuals (Adults),5160,adult_families_census,2022-12-15
+Safe Haven Utilization,1498,single_adults,2022-12-15
+Drop-in Center Overnight Census,207,single_adults,2022-12-15
+Faith Bed Census,12,single_adults,2022-12-15
+Veterans In Short-term Housing,242,single_adults,2022-12-15
+Criminal Justice Short-term Housing,154,single_adults,2022-12-15
+Children,21189,families_with_children,2022-12-14
+Adults,18461,families_with_children,2022-12-14
+Total Single Adults,19972,total_single_adults,2022-12-14
+Individuals (Adults),5166,adult_families_census,2022-12-14
+Safe Haven Utilization,1494,single_adults,2022-12-14
+Drop-in Center Overnight Census,171,single_adults,2022-12-14
+Faith Bed Census,21,single_adults,2022-12-14
+Veterans In Short-term Housing,237,single_adults,2022-12-14
+Criminal Justice Short-term Housing,154,single_adults,2022-12-14
+Children,21150,families_with_children,2022-12-13
+Adults,18417,families_with_children,2022-12-13
+Total Single Adults,19935,total_single_adults,2022-12-13
+Individuals (Adults),5140,adult_families_census,2022-12-13
+Safe Haven Utilization,1496,single_adults,2022-12-13
+Drop-in Center Overnight Census,143,single_adults,2022-12-13
+Faith Bed Census,12,single_adults,2022-12-13
+Veterans In Short-term Housing,226,single_adults,2022-12-13
+Criminal Justice Short-term Housing,154,single_adults,2022-12-13
+Children,21173,families_with_children,2022-12-12
+Adults,18430,families_with_children,2022-12-12
+Total Single Adults,19963,total_single_adults,2022-12-12
+Individuals (Adults),5151,adult_families_census,2022-12-12
+Safe Haven Utilization,1496,single_adults,2022-12-12
+Drop-in Center Overnight Census,152,single_adults,2022-12-12
+Faith Bed Census,12,single_adults,2022-12-12
+Veterans In Short-term Housing,207,single_adults,2022-12-12
+Criminal Justice Short-term Housing,154,single_adults,2022-12-12
+Children,21071,families_with_children,2022-12-08
+Adults,18325,families_with_children,2022-12-08
+Total Single Adults,19889,total_single_adults,2022-12-08
+Individuals (Adults),5073,adult_families_census,2022-12-08
+Safe Haven Utilization,1493,single_adults,2022-12-08
+Drop-in Center Overnight Census,129,single_adults,2022-12-08
+Faith Bed Census,16,single_adults,2022-12-08
+Veterans In Short-term Housing,214,single_adults,2022-12-08
+Criminal Justice Short-term Housing,157,single_adults,2022-12-08
+Children,21196,families_with_children,2022-12-07
+Adults,18440,families_with_children,2022-12-07
+Total Single Adults,19805,total_single_adults,2022-12-07
+Individuals (Adults),5046,adult_families_census,2022-12-07
+Safe Haven Utilization,1475,single_adults,2022-12-07
+Drop-in Center Overnight Census,514,single_adults,2022-12-07
+Faith Bed Census,23,single_adults,2022-12-07
+Veterans In Short-term Housing,214,single_adults,2022-12-07
+Criminal Justice Short-term Housing,155,single_adults,2022-12-07
+Children,21099,families_with_children,2022-12-06
+Adults,18365,families_with_children,2022-12-06
+Total Single Adults,19917,total_single_adults,2022-12-06
+Individuals (Adults),4989,adult_families_census,2022-12-06
+Safe Haven Utilization,1484,single_adults,2022-12-06
+Drop-in Center Overnight Census,133,single_adults,2022-12-06
+Faith Bed Census,12,single_adults,2022-12-06
+Veterans In Short-term Housing,220,single_adults,2022-12-06
+Criminal Justice Short-term Housing,152,single_adults,2022-12-06
+Children,21021,families_with_children,2022-12-04
+Adults,18302,families_with_children,2022-12-04
+Total Single Adults,19951,total_single_adults,2022-12-04
+Individuals (Adults),4948,adult_families_census,2022-12-04
+Safe Haven Utilization,1485,single_adults,2022-12-04
+Drop-in Center Overnight Census,148,single_adults,2022-12-04
+Faith Bed Census,15,single_adults,2022-12-04
+Veterans In Short-term Housing,227,single_adults,2022-12-04
+Criminal Justice Short-term Housing,151,single_adults,2022-12-04
+Children,20920,families_with_children,2022-12-01
+Adults,18188,families_with_children,2022-12-01
+Total Single Adults,19957,total_single_adults,2022-12-01
+Individuals (Adults),4946,adult_families_census,2022-12-01
+Safe Haven Utilization,1484,single_adults,2022-12-01
+Drop-in Center Overnight Census,192,single_adults,2022-12-01
+Faith Bed Census,0,single_adults,2022-12-01
+Veterans In Short-term Housing,219,single_adults,2022-12-01
+Criminal Justice Short-term Housing,163,single_adults,2022-12-01
+Children,20918,families_with_children,2022-11-30
+Adults,18201,families_with_children,2022-11-30
+Total Single Adults,20014,total_single_adults,2022-11-30
+Individuals (Adults),4942,adult_families_census,2022-11-30
+Safe Haven Utilization,1488,single_adults,2022-11-30
+Drop-in Center Overnight Census,127,single_adults,2022-11-30
+Faith Bed Census,14,single_adults,2022-11-30
+Veterans In Short-term Housing,228,single_adults,2022-11-30
+Criminal Justice Short-term Housing,162,single_adults,2022-11-30
+Children,20891,families_with_children,2022-11-29
+Adults,18177,families_with_children,2022-11-29
+Total Single Adults,20891,total_single_adults,2022-11-29
+Individuals (Adults),4932,adult_families_census,2022-11-29
+Safe Haven Utilization,1494,single_adults,2022-11-29
+Drop-in Center Overnight Census,182,single_adults,2022-11-29
+Faith Bed Census,24,single_adults,2022-11-29
+Veterans In Short-term Housing,216,single_adults,2022-11-29
+Criminal Justice Short-term Housing,156,single_adults,2022-11-29
+Children,20860,families_with_children,2022-11-27
+Adults,18132,families_with_children,2022-11-27
+Total Single Adults,19989,total_single_adults,2022-11-27
+Individuals (Adults),4925,adult_families_census,2022-11-27
+Safe Haven Utilization,1509,single_adults,2022-11-27
+Drop-in Center Overnight Census,209,single_adults,2022-11-27
+Faith Bed Census,21,single_adults,2022-11-27
+Veterans In Short-term Housing,211,single_adults,2022-11-27
+Criminal Justice Short-term Housing,149,single_adults,2022-11-27
+Children,20881,families_with_children,2022-11-24
+Adults,18141,families_with_children,2022-11-24
+Total Single Adults,19965,total_single_adults,2022-11-24
+Individuals (Adults),4959,adult_families_census,2022-11-24
+Safe Haven Utilization,1506,single_adults,2022-11-24
+Drop-in Center Overnight Census,144,single_adults,2022-11-24
+Faith Bed Census,13,single_adults,2022-11-24
+Veterans In Short-term Housing,222,single_adults,2022-11-24
+Criminal Justice Short-term Housing,161,single_adults,2022-11-24
+Children,20794,families_with_children,2022-11-21
+Adults,18081,families_with_children,2022-11-21
+Total Single Adults,20220,total_single_adults,2022-11-21
+Individuals (Adults),4976,adult_families_census,2022-11-21
+Safe Haven Utilization,1501,single_adults,2022-11-21
+Drop-in Center Overnight Census,209,single_adults,2022-11-21
+Faith Bed Census,23,single_adults,2022-11-21
+Veterans In Short-term Housing,216,single_adults,2022-11-21
+Criminal Justice Short-term Housing,166,single_adults,2022-11-21
+Children,20855,families_with_children,2022-11-20
+Adults,18104,families_with_children,2022-11-20
+Total Single Adults,20153,total_single_adults,2022-11-20
+Individuals (Adults),4998,adult_families_census,2022-11-20
+Safe Haven Utilization,1504,single_adults,2022-11-20
+Drop-in Center Overnight Census,216,single_adults,2022-11-20
+Faith Bed Census,19,single_adults,2022-11-20
+Veterans In Short-term Housing,215,single_adults,2022-11-20
+Criminal Justice Short-term Housing,162,single_adults,2022-11-20
+Children,20647,families_with_children,2022-11-15
+Adults,17980,families_with_children,2022-11-15
+Total Single Adults,20064,total_single_adults,2022-11-15
+Individuals (Adults),4969,adult_families_census,2022-11-15
+Safe Haven Utilization,1497,single_adults,2022-11-15
+Drop-in Center Overnight Census,198,single_adults,2022-11-15
+Faith Bed Census,29,single_adults,2022-11-15
+Veterans In Short-term Housing,207,single_adults,2022-11-15
+Criminal Justice Short-term Housing,184,single_adults,2022-11-15
+Children,20609,families_with_children,2022-11-14
+Adults,17974,families_with_children,2022-11-14
+Total Single Adults,20035,total_single_adults,2022-11-14
+Individuals (Adults),4963,adult_families_census,2022-11-14
+Safe Haven Utilization,1535,single_adults,2022-11-14
+Drop-in Center Overnight Census,193,single_adults,2022-11-14
+Faith Bed Census,26,single_adults,2022-11-14
+Veterans In Short-term Housing,207,single_adults,2022-11-14
+Criminal Justice Short-term Housing,179,single_adults,2022-11-14
+Children,20660,families_with_children,2022-11-13
+Adults,18012,families_with_children,2022-11-13
+Total Single Adults,20011,total_single_adults,2022-11-13
+Individuals (Adults),4976,adult_families_census,2022-11-13
+Safe Haven Utilization,1502,single_adults,2022-11-13
+Drop-in Center Overnight Census,181,single_adults,2022-11-13
+Faith Bed Census,16,single_adults,2022-11-13
+Veterans In Short-term Housing,200,single_adults,2022-11-13
+Criminal Justice Short-term Housing,170,single_adults,2022-11-13
+Children,20502,families_with_children,2022-11-09
+Adults,17881,families_with_children,2022-11-09
+Total Single Adults,20007,total_single_adults,2022-11-09
+Individuals (Adults),4928,adult_families_census,2022-11-09
+Safe Haven Utilization,1520,single_adults,2022-11-09
+Drop-in Center Overnight Census,195,single_adults,2022-11-09
+Faith Bed Census,24,single_adults,2022-11-09
+Veterans In Short-term Housing,203,single_adults,2022-11-09
+Criminal Justice Short-term Housing,176,single_adults,2022-11-09
+Children,20500,families_with_children,2022-11-08
+Adults,17884,families_with_children,2022-11-08
+Total Single Adults,20035,total_single_adults,2022-11-08
+Individuals (Adults),4941,adult_families_census,2022-11-08
+Safe Haven Utilization,1523,single_adults,2022-11-08
+Drop-in Center Overnight Census,192,single_adults,2022-11-08
+Faith Bed Census,26,single_adults,2022-11-08
+Veterans In Short-term Housing,194,single_adults,2022-11-08
+Criminal Justice Short-term Housing,177,single_adults,2022-11-08
+Children,20585,families_with_children,2022-11-06
+Adults,17919,families_with_children,2022-11-06
+Total Single Adults,20002,total_single_adults,2022-11-06
+Individuals (Adults),4945,adult_families_census,2022-11-06
+Safe Haven Utilization,1501,single_adults,2022-11-06
+Drop-in Center Overnight Census,123,single_adults,2022-11-06
+Faith Bed Census,16,single_adults,2022-11-06
+Veterans In Short-term Housing,192,single_adults,2022-11-06
+Criminal Justice Short-term Housing,166,single_adults,2022-11-06
+Children,20540,families_with_children,2022-11-03
+Adults,17869,families_with_children,2022-11-03
+Total Single Adults,20096,total_single_adults,2022-11-03
+Individuals (Adults),4940,adult_families_census,2022-11-03
+Safe Haven Utilization,1490,single_adults,2022-11-03
+Drop-in Center Overnight Census,174,single_adults,2022-11-03
+Faith Bed Census,15,single_adults,2022-11-03
+Veterans In Short-term Housing,207,single_adults,2022-11-03
+Criminal Justice Short-term Housing,180,single_adults,2022-11-03
+Children,20530,families_with_children,2022-11-02
+Adults,17865,families_with_children,2022-11-02
+Total Single Adults,20067,total_single_adults,2022-11-02
+Individuals (Adults),4964,adult_families_census,2022-11-02
+Safe Haven Utilization,1500,single_adults,2022-11-02
+Drop-in Center Overnight Census,141,single_adults,2022-11-02
+Faith Bed Census,7,single_adults,2022-11-02
+Veterans In Short-term Housing,201,single_adults,2022-11-02
+Criminal Justice Short-term Housing,180,single_adults,2022-11-02
+Children,20505,families_with_children,2022-11-01
+Adults,17840,families_with_children,2022-11-01
+Total Single Adults,20099,total_single_adults,2022-11-01
+Individuals (Adults),4993,adult_families_census,2022-11-01
+Safe Haven Utilization,1504,single_adults,2022-11-01
+Drop-in Center Overnight Census,175,single_adults,2022-11-01
+Faith Bed Census,21,single_adults,2022-11-01
+Veterans In Short-term Housing,202,single_adults,2022-11-01
+Criminal Justice Short-term Housing,184,single_adults,2022-11-01
+Children,20576,families_with_children,2022-10-30
+Adults,17893,families_with_children,2022-10-30
+Total Single Adults,20110,total_single_adults,2022-10-30
+Individuals (Adults),5005,adult_families_census,2022-10-30
+Safe Haven Utilization,1504,single_adults,2022-10-30
+Drop-in Center Overnight Census,142,single_adults,2022-10-30
+Faith Bed Census,18,single_adults,2022-10-30
+Veterans In Short-term Housing,205,single_adults,2022-10-30
+Criminal Justice Short-term Housing,176,single_adults,2022-10-30
+Children,20602,families_with_children,2022-10-27
+Adults,17902,families_with_children,2022-10-27
+Total Single Adults,20204,total_single_adults,2022-10-27
+Individuals (Adults),4939,adult_families_census,2022-10-27
+Safe Haven Utilization,1514,single_adults,2022-10-27
+Drop-in Center Overnight Census,158,single_adults,2022-10-27
+Faith Bed Census,13,single_adults,2022-10-27
+Veterans In Short-term Housing,198,single_adults,2022-10-27
+Criminal Justice Short-term Housing,186,single_adults,2022-10-27
+Children,20584,families_with_children,2022-10-26
+Adults,17888,families_with_children,2022-10-26
+Total Single Adults,20218,total_single_adults,2022-10-26
+Individuals (Adults),4946,adult_families_census,2022-10-26
+Safe Haven Utilization,1513,single_adults,2022-10-26
+Drop-in Center Overnight Census,184,single_adults,2022-10-26
+Faith Bed Census,20,single_adults,2022-10-26
+Veterans In Short-term Housing,204,single_adults,2022-10-26
+Criminal Justice Short-term Housing,186,single_adults,2022-10-26
+Children,20574,families_with_children,2022-10-25
+Adults,17903,families_with_children,2022-10-25
+Total Single Adults,20240,total_single_adults,2022-10-25
+Individuals (Adults),4949,adult_families_census,2022-10-25
+Safe Haven Utilization,1509,single_adults,2022-10-25
+Drop-in Center Overnight Census,194,single_adults,2022-10-25
+Faith Bed Census,29,single_adults,2022-10-25
+Veterans In Short-term Housing,204,single_adults,2022-10-25
+Criminal Justice Short-term Housing,189,single_adults,2022-10-25
+Children,20579,families_with_children,2022-10-24
+Adults,17897,families_with_children,2022-10-24
+Total Single Adults,20316,total_single_adults,2022-10-24
+Individuals (Adults),4963,adult_families_census,2022-10-24
+Safe Haven Utilization,1511,single_adults,2022-10-24
+Drop-in Center Overnight Census,199,single_adults,2022-10-24
+Faith Bed Census,30,single_adults,2022-10-24
+Veterans In Short-term Housing,197,single_adults,2022-10-24
+Criminal Justice Short-term Housing,190,single_adults,2022-10-24
+Children,20627,families_with_children,2022-10-23
+Adults,17941,families_with_children,2022-10-23
+Total Single Adults,20179,total_single_adults,2022-10-23
+Individuals (Adults),4939,adult_families_census,2022-10-23
+Safe Haven Utilization,1520,single_adults,2022-10-23
+Drop-in Center Overnight Census,137,single_adults,2022-10-23
+Faith Bed Census,18,single_adults,2022-10-23
+Veterans In Short-term Housing,199,single_adults,2022-10-23
+Criminal Justice Short-term Housing,194,single_adults,2022-10-23
+Children,20635,families_with_children,2022-10-20
+Adults,17939,families_with_children,2022-10-20
+Total Single Adults,20282,total_single_adults,2022-10-20
+Individuals (Adults),4893,adult_families_census,2022-10-20
+Safe Haven Utilization,1507,single_adults,2022-10-20
+Drop-in Center Overnight Census,193,single_adults,2022-10-20
+Faith Bed Census,14,single_adults,2022-10-20
+Veterans In Short-term Housing,197,single_adults,2022-10-20
+Criminal Justice Short-term Housing,196,single_adults,2022-10-20
+Children,20585,families_with_children,2022-10-19
+Adults,17904,families_with_children,2022-10-19
+Total Single Adults,20207,total_single_adults,2022-10-19
+Individuals (Adults),4882,adult_families_census,2022-10-19
+Safe Haven Utilization,1508,single_adults,2022-10-19
+Drop-in Center Overnight Census,198,single_adults,2022-10-19
+Faith Bed Census,29,single_adults,2022-10-19
+Veterans In Short-term Housing,195,single_adults,2022-10-19
+Criminal Justice Short-term Housing,192,single_adults,2022-10-19
+Children,20591,families_with_children,2022-10-18
+Adults,17870,families_with_children,2022-10-18
+Total Single Adults,20180,total_single_adults,2022-10-18
+Individuals (Adults),4868,adult_families_census,2022-10-18
+Safe Haven Utilization,1508,single_adults,2022-10-18
+Drop-in Center Overnight Census,177,single_adults,2022-10-18
+Faith Bed Census,35,single_adults,2022-10-18
+Veterans In Short-term Housing,202,single_adults,2022-10-18
+Criminal Justice Short-term Housing,191,single_adults,2022-10-18
+Children,20544,families_with_children,2022-10-17
+Adults,17815,families_with_children,2022-10-17
+Total Single Adults,20145,total_single_adults,2022-10-17
+Individuals (Adults),4837,adult_families_census,2022-10-17
+Safe Haven Utilization,1514,single_adults,2022-10-17
+Drop-in Center Overnight Census,197,single_adults,2022-10-17
+Faith Bed Census,26,single_adults,2022-10-17
+Veterans In Short-term Housing,201,single_adults,2022-10-17
+Criminal Justice Short-term Housing,192,single_adults,2022-10-17
+Children,20442,families_with_children,2022-10-13
+Adults,17724,families_with_children,2022-10-13
+Total Single Adults,20100,total_single_adults,2022-10-13
+Individuals (Adults),4706,adult_families_census,2022-10-13
+Safe Haven Utilization,1499,single_adults,2022-10-13
+Drop-in Center Overnight Census,203,single_adults,2022-10-13
+Faith Bed Census,18,single_adults,2022-10-13
+Veterans In Short-term Housing,198,single_adults,2022-10-13
+Criminal Justice Short-term Housing,190,single_adults,2022-10-13
+Children,20346,families_with_children,2022-10-12
+Adults,17629,families_with_children,2022-10-12
+Total Single Adults,20002,total_single_adults,2022-10-12
+Individuals (Adults),4670,adult_families_census,2022-10-12
+Safe Haven Utilization,1507,single_adults,2022-10-12
+Drop-in Center Overnight Census,153,single_adults,2022-10-12
+Faith Bed Census,27,single_adults,2022-10-12
+Veterans In Short-term Housing,190,single_adults,2022-10-12
+Criminal Justice Short-term Housing,183,single_adults,2022-10-12
+Children,20297,families_with_children,2022-10-11
+Adults,17576,families_with_children,2022-10-11
+Total Single Adults,19998,total_single_adults,2022-10-11
+Individuals (Adults),4685,adult_families_census,2022-10-11
+Safe Haven Utilization,1515,single_adults,2022-10-11
+Drop-in Center Overnight Census,186,single_adults,2022-10-11
+Faith Bed Census,24,single_adults,2022-10-11
+Veterans In Short-term Housing,183,single_adults,2022-10-11
+Criminal Justice Short-term Housing,182,single_adults,2022-10-11
+Children,20118,families_with_children,2022-10-10
+Adults,17424,families_with_children,2022-10-10
+Total Single Adults,19997,total_single_adults,2022-10-10
+Individuals (Adults),4635,adult_families_census,2022-10-10
+Safe Haven Utilization,1516,single_adults,2022-10-10
+Drop-in Center Overnight Census,184,single_adults,2022-10-10
+Faith Bed Census,17,single_adults,2022-10-10
+Veterans In Short-term Housing,186,single_adults,2022-10-10
+Criminal Justice Short-term Housing,177,single_adults,2022-10-10
+Children,20044,families_with_children,2022-10-06
+Adults,17306,families_with_children,2022-10-06
+Total Single Adults,19525,total_single_adults,2022-10-06
+Individuals (Adults),4504,adult_families_census,2022-10-06
+Safe Haven Utilization,1511,single_adults,2022-10-06
+Drop-in Center Overnight Census,184,single_adults,2022-10-06
+Faith Bed Census,16,single_adults,2022-10-06
+Veterans In Short-term Housing,174,single_adults,2022-10-06
+Criminal Justice Short-term Housing,152,single_adults,2022-10-06
+Children,19934,families_with_children,2022-10-05
+Adults,17215,families_with_children,2022-10-05
+Total Single Adults,19451,total_single_adults,2022-10-05
+Individuals (Adults),4470,adult_families_census,2022-10-05
+Safe Haven Utilization,1516,single_adults,2022-10-05
+Drop-in Center Overnight Census,188,single_adults,2022-10-05
+Faith Bed Census,29,single_adults,2022-10-05
+Veterans In Short-term Housing,178,single_adults,2022-10-05
+Criminal Justice Short-term Housing,164,single_adults,2022-10-05
+Children,19898,families_with_children,2022-10-04
+Adults,17172,families_with_children,2022-10-04
+Total Single Adults,19492,total_single_adults,2022-10-04
+Individuals (Adults),4443,adult_families_census,2022-10-04
+Safe Haven Utilization,1514,single_adults,2022-10-04
+Drop-in Center Overnight Census,181,single_adults,2022-10-04
+Faith Bed Census,25,single_adults,2022-10-04
+Veterans In Short-term Housing,176,single_adults,2022-10-04
+Criminal Justice Short-term Housing,155,single_adults,2022-10-04
+Children,19778,families_with_children,2022-10-03
+Adults,17047,families_with_children,2022-10-03
+Total Single Adults,19468,total_single_adults,2022-10-03
+Individuals (Adults),4375,adult_families_census,2022-10-03
+Safe Haven Utilization,1529,single_adults,2022-10-03
+Drop-in Center Overnight Census,186,single_adults,2022-10-03
+Faith Bed Census,29,single_adults,2022-10-03
+Veterans In Short-term Housing,180,single_adults,2022-10-03
+Criminal Justice Short-term Housing,154,single_adults,2022-10-03
+Children,19724,families_with_children,2022-10-01
+Adults,16926,families_with_children,2022-10-01
+Total Single Adults,19420,total_single_adults,2022-10-01
+Individuals (Adults),4375,adult_families_census,2022-10-01
+Safe Haven Utilization,1534,single_adults,2022-10-01
+Drop-in Center Overnight Census,162,single_adults,2022-10-01
+Faith Bed Census,18,single_adults,2022-10-01
+Veterans In Short-term Housing,156,single_adults,2022-10-01
+Criminal Justice Short-term Housing,150,single_adults,2022-10-01
+Children,19534,families_with_children,2022-09-28
+Adults,16719,families_with_children,2022-09-28
+Total Single Adults,18968,total_single_adults,2022-09-28
+Individuals (Adults),4198,adult_families_census,2022-09-28
+Safe Haven Utilization,1523,single_adults,2022-09-28
+Drop-in Center Overnight Census,174,single_adults,2022-09-28
+Faith Bed Census,26,single_adults,2022-09-28
+Veterans In Short-term Housing,179,single_adults,2022-09-28
+Criminal Justice Short-term Housing,151,single_adults,2022-09-28
+Children,19394,families_with_children,2022-09-27
+Adults,16559,families_with_children,2022-09-27
+Total Single Adults,19008,total_single_adults,2022-09-27
+Individuals (Adults),4165,adult_families_census,2022-09-27
+Safe Haven Utilization,1515,single_adults,2022-09-27
+Drop-in Center Overnight Census,166,single_adults,2022-09-27
+Faith Bed Census,27,single_adults,2022-09-27
+Veterans In Short-term Housing,178,single_adults,2022-09-27
+Criminal Justice Short-term Housing,160,single_adults,2022-09-27
+Children,19412,families_with_children,2022-09-26
+Adults,16523,families_with_children,2022-09-26
+Total Single Adults,18899,total_single_adults,2022-09-26
+Individuals (Adults),4122,adult_families_census,2022-09-26
+Safe Haven Utilization,1518,single_adults,2022-09-26
+Drop-in Center Overnight Census,131,single_adults,2022-09-26
+Faith Bed Census,25,single_adults,2022-09-26
+Veterans In Short-term Housing,165,single_adults,2022-09-26
+Criminal Justice Short-term Housing,159,single_adults,2022-09-26
+Children,19414,families_with_children,2022-09-25
+Adults,16512,families_with_children,2022-09-25
+Total Single Adults,18875,total_single_adults,2022-09-25
+Individuals (Adults),4097,adult_families_census,2022-09-25
+Safe Haven Utilization,1521,single_adults,2022-09-25
+Drop-in Center Overnight Census,173,single_adults,2022-09-25
+Faith Bed Census,13,single_adults,2022-09-25
+Veterans In Short-term Housing,158,single_adults,2022-09-25
+Criminal Justice Short-term Housing,160,single_adults,2022-09-25
+Children,19260,families_with_children,2022-09-22
+Adults,16342,families_with_children,2022-09-22
+Total Single Adults,18590,total_single_adults,2022-09-22
+Individuals (Adults),3960,adult_families_census,2022-09-22
+Safe Haven Utilization,1527,single_adults,2022-09-22
+Drop-in Center Overnight Census,167,single_adults,2022-09-22
+Faith Bed Census,19,single_adults,2022-09-22
+Veterans In Short-term Housing,179,single_adults,2022-09-22
+Criminal Justice Short-term Housing,158,single_adults,2022-09-22
+Children,19242,families_with_children,2022-09-21
+Adults,16315,families_with_children,2022-09-21
+Total Single Adults,18565,total_single_adults,2022-09-21
+Individuals (Adults),3916,adult_families_census,2022-09-21
+Safe Haven Utilization,1514,single_adults,2022-09-21
+Drop-in Center Overnight Census,167,single_adults,2022-09-21
+Faith Bed Census,17,single_adults,2022-09-21
+Veterans In Short-term Housing,179,single_adults,2022-09-21
+Criminal Justice Short-term Housing,157,single_adults,2022-09-21
+Children,19121,families_with_children,2022-09-20
+Adults,16204,families_with_children,2022-09-20
+Total Single Adults,18545,total_single_adults,2022-09-20
+Individuals (Adults),3873,adult_families_census,2022-09-20
+Safe Haven Utilization,NA,single_adults,2022-09-20
+Drop-in Center Overnight Census,122,single_adults,2022-09-20
+Faith Bed Census,29,single_adults,2022-09-20
+Veterans In Short-term Housing,180,single_adults,2022-09-20
+Criminal Justice Short-term Housing,160,single_adults,2022-09-20
+Children,19045,families_with_children,2022-09-19
+Adults,16100,families_with_children,2022-09-19
+Total Single Adults,18449,total_single_adults,2022-09-19
+Individuals (Adults),3847,adult_families_census,2022-09-19
+Safe Haven Utilization,1519,single_adults,2022-09-19
+Drop-in Center Overnight Census,166,single_adults,2022-09-19
+Faith Bed Census,31,single_adults,2022-09-19
+Veterans In Short-term Housing,159,single_adults,2022-09-19
+Criminal Justice Short-term Housing,143,single_adults,2022-09-19
+Children,19027,families_with_children,2022-09-18
+Adults,16051,families_with_children,2022-09-18
+Total Single Adults,18356,total_single_adults,2022-09-18
+Individuals (Adults),3765,adult_families_census,2022-09-18
+Safe Haven Utilization,821,single_adults,2022-09-18
+Drop-in Center Overnight Census,146,single_adults,2022-09-18
+Faith Bed Census,18,single_adults,2022-09-18
+Veterans In Short-term Housing,159,single_adults,2022-09-18
+Criminal Justice Short-term Housing,140,single_adults,2022-09-18
+Children,18733,families_with_children,2022-09-15
+Adults,15723,families_with_children,2022-09-15
+Total Single Adults,18149,total_single_adults,2022-09-15
+Individuals (Adults),3729,adult_families_census,2022-09-15
+Safe Haven Utilization,1523,single_adults,2022-09-15
+Drop-in Center Overnight Census,110,single_adults,2022-09-15
+Faith Bed Census,23,single_adults,2022-09-15
+Veterans In Short-term Housing,196,single_adults,2022-09-15
+Criminal Justice Short-term Housing,127,single_adults,2022-09-15
+Children,18654,families_with_children,2022-09-14
+Adults,15618,families_with_children,2022-09-14
+Total Single Adults,18146,total_single_adults,2022-09-14
+Individuals (Adults),3649,adult_families_census,2022-09-14
+Safe Haven Utilization,1550,single_adults,2022-09-14
+Drop-in Center Overnight Census,161,single_adults,2022-09-14
+Faith Bed Census,34,single_adults,2022-09-14
+Veterans In Short-term Housing,197,single_adults,2022-09-14
+Criminal Justice Short-term Housing,122,single_adults,2022-09-14
+Children,18559,families_with_children,2022-09-13
+Adults,15489,families_with_children,2022-09-13
+Total Single Adults,18027,total_single_adults,2022-09-13
+Individuals (Adults),3652,adult_families_census,2022-09-13
+Safe Haven Utilization,1517,single_adults,2022-09-13
+Drop-in Center Overnight Census,171,single_adults,2022-09-13
+Faith Bed Census,35,single_adults,2022-09-13
+Veterans In Short-term Housing,169,single_adults,2022-09-13
+Criminal Justice Short-term Housing,94,single_adults,2022-09-13
+Children,18493,families_with_children,2022-09-12
+Adults,15425,families_with_children,2022-09-12
+Total Single Adults,17909,total_single_adults,2022-09-12
+Individuals (Adults),3658,adult_families_census,2022-09-12
+Safe Haven Utilization,1515,single_adults,2022-09-12
+Drop-in Center Overnight Census,176,single_adults,2022-09-12
+Faith Bed Census,36,single_adults,2022-09-12
+Veterans In Short-term Housing,169,single_adults,2022-09-12
+Criminal Justice Short-term Housing,92,single_adults,2022-09-12
+Children,18491,families_with_children,2022-09-11
+Adults,15433,families_with_children,2022-09-11
+Total Single Adults,17849,total_single_adults,2022-09-11
+Individuals (Adults),3565,adult_families_census,2022-09-11
+Safe Haven Utilization,1286,single_adults,2022-09-11
+Drop-in Center Overnight Census,79,single_adults,2022-09-11
+Faith Bed Census,15,single_adults,2022-09-11
+Veterans In Short-term Housing,158,single_adults,2022-09-11
+Criminal Justice Short-term Housing,92,single_adults,2022-09-11
+Children,18237,families_with_children,2022-09-07
+Adults,15217,families_with_children,2022-09-07
+Total Single Adults,17699,total_single_adults,2022-09-07
+Individuals (Adults),3494,adult_families_census,2022-09-07
+Safe Haven Utilization,1503,single_adults,2022-09-07
+Drop-in Center Overnight Census,103,single_adults,2022-09-07
+Faith Bed Census,11,single_adults,2022-09-07
+Veterans In Short-term Housing,186,single_adults,2022-09-07
+Criminal Justice Short-term Housing,95,single_adults,2022-09-07
+Children,18024,families_with_children,2022-09-06
+Adults,15014,families_with_children,2022-09-06
+Total Single Adults,17666,total_single_adults,2022-09-06
+Individuals (Adults),3478,adult_families_census,2022-09-06
+Safe Haven Utilization,1508,single_adults,2022-09-06
+Drop-in Center Overnight Census,95,single_adults,2022-09-06
+Faith Bed Census,21,single_adults,2022-09-06
+Veterans In Short-term Housing,185,single_adults,2022-09-06
+Criminal Justice Short-term Housing,96,single_adults,2022-09-06
+Children,18064,families_with_children,2022-09-05
+Adults,15043,families_with_children,2022-09-05
+Total Single Adults,17543,total_single_adults,2022-09-05
+Individuals (Adults),3455,adult_families_census,2022-09-05
+Safe Haven Utilization,1517,single_adults,2022-09-05
+Drop-in Center Overnight Census,121,single_adults,2022-09-05
+Faith Bed Census,11,single_adults,2022-09-05
+Veterans In Short-term Housing,180,single_adults,2022-09-05
+Criminal Justice Short-term Housing,95,single_adults,2022-09-05
+Children,17889,families_with_children,2022-09-01
+Adults,14871,families_with_children,2022-09-01
+Total Single Adults,17526,total_single_adults,2022-09-01
+Individuals (Adults),3396,adult_families_census,2022-09-01
+Safe Haven Utilization,1528,single_adults,2022-09-01
+Drop-in Center Overnight Census,132,single_adults,2022-09-01
+Faith Bed Census,22,single_adults,2022-09-01
+Veterans In Short-term Housing,176,single_adults,2022-09-01
+Criminal Justice Short-term Housing,90,single_adults,2022-09-01
+Children,17826,families_with_children,2022-08-31
+Adults,14793,families_with_children,2022-08-31
+Total Single Adults,17555,total_single_adults,2022-08-31
+Individuals (Adults),3364,adult_families_census,2022-08-31
+Safe Haven Utilization,1524,single_adults,2022-08-31
+Drop-in Center Overnight Census,131,single_adults,2022-08-31
+Faith Bed Census,34,single_adults,2022-08-31
+Veterans In Short-term Housing,179,single_adults,2022-08-31
+Criminal Justice Short-term Housing,75,single_adults,2022-08-31
+Children,17757,families_with_children,2022-08-30
+Adults,14735,families_with_children,2022-08-30
+Total Single Adults,17582,total_single_adults,2022-08-30
+Individuals (Adults),3355,adult_families_census,2022-08-30
+Safe Haven Utilization,1543,single_adults,2022-08-30
+Drop-in Center Overnight Census,131,single_adults,2022-08-30
+Faith Bed Census,20,single_adults,2022-08-30
+Veterans In Short-term Housing,177,single_adults,2022-08-30
+Criminal Justice Short-term Housing,0,single_adults,2022-08-30
+Children,17673,families_with_children,2022-08-29
+Adults,14638,families_with_children,2022-08-29
+Total Single Adults,17572,total_single_adults,2022-08-29
+Individuals (Adults),3345,adult_families_census,2022-08-29
+Safe Haven Utilization,1524,single_adults,2022-08-29
+Drop-in Center Overnight Census,139,single_adults,2022-08-29
+Faith Bed Census,33,single_adults,2022-08-29
+Veterans In Short-term Housing,178,single_adults,2022-08-29
+Criminal Justice Short-term Housing,0,single_adults,2022-08-29
+Children,17652,families_with_children,2022-08-28
+Adults,14594,families_with_children,2022-08-28
+Total Single Adults,17507,total_single_adults,2022-08-28
+Individuals (Adults),3325,adult_families_census,2022-08-28
+Safe Haven Utilization,1497,single_adults,2022-08-28
+Drop-in Center Overnight Census,137,single_adults,2022-08-28
+Faith Bed Census,13,single_adults,2022-08-28
+Veterans In Short-term Housing,177,single_adults,2022-08-28
+Criminal Justice Short-term Housing,0,single_adults,2022-08-28
+Children,17382,families_with_children,2022-08-24
+Adults,14374,families_with_children,2022-08-24
+Total Single Adults,17355,total_single_adults,2022-08-24
+Individuals (Adults),3210,adult_families_census,2022-08-24
+Safe Haven Utilization,1496,single_adults,2022-08-24
+Drop-in Center Overnight Census,156,single_adults,2022-08-24
+Faith Bed Census,29,single_adults,2022-08-24
+Veterans In Short-term Housing,193,single_adults,2022-08-24
+Criminal Justice Short-term Housing,0,single_adults,2022-08-24
+Children,17269,families_with_children,2022-08-23
+Adults,14288,families_with_children,2022-08-23
+Total Single Adults,17265,total_single_adults,2022-08-23
+Individuals (Adults),3218,adult_families_census,2022-08-23
+Safe Haven Utilization,1500,single_adults,2022-08-23
+Drop-in Center Overnight Census,142,single_adults,2022-08-23
+Faith Bed Census,0,single_adults,2022-08-23
+Veterans In Short-term Housing,190,single_adults,2022-08-23
+Criminal Justice Short-term Housing,0,single_adults,2022-08-23
+Children,17220,families_with_children,2022-08-22
+Adults,14213,families_with_children,2022-08-22
+Total Single Adults,17251,total_single_adults,2022-08-22
+Individuals (Adults),3256,adult_families_census,2022-08-22
+Safe Haven Utilization,1500,single_adults,2022-08-22
+Drop-in Center Overnight Census,147,single_adults,2022-08-22
+Faith Bed Census,28,single_adults,2022-08-22
+Veterans In Short-term Housing,189,single_adults,2022-08-22
+Criminal Justice Short-term Housing,0,single_adults,2022-08-22
+Children,17233,families_with_children,2022-08-21
+Adults,14200,families_with_children,2022-08-21
+Total Single Adults,17103,total_single_adults,2022-08-21
+Individuals (Adults),3206,adult_families_census,2022-08-21
+Safe Haven Utilization,1501,single_adults,2022-08-21
+Drop-in Center Overnight Census,139,single_adults,2022-08-21
+Faith Bed Census,19,single_adults,2022-08-21
+Veterans In Short-term Housing,170,single_adults,2022-08-21
+Criminal Justice Short-term Housing,0,single_adults,2022-08-21
+Children,17169,families_with_children,2022-08-18
+Adults,14127,families_with_children,2022-08-18
+Total Single Adults,16984,total_single_adults,2022-08-18
+Individuals (Adults),3150,adult_families_census,2022-08-18
+Safe Haven Utilization,1493,single_adults,2022-08-18
+Drop-in Center Overnight Census,106,single_adults,2022-08-18
+Faith Bed Census,18,single_adults,2022-08-18
+Veterans In Short-term Housing,201,single_adults,2022-08-18
+Criminal Justice Short-term Housing,0,single_adults,2022-08-18
+Children,17148,families_with_children,2022-08-17
+Adults,14073,families_with_children,2022-08-17
+Total Single Adults,16991,total_single_adults,2022-08-17
+Individuals (Adults),3140,adult_families_census,2022-08-17
+Safe Haven Utilization,1500,single_adults,2022-08-17
+Drop-in Center Overnight Census,134,single_adults,2022-08-17
+Faith Bed Census,31,single_adults,2022-08-17
+Veterans In Short-term Housing,0,single_adults,2022-08-17
+Criminal Justice Short-term Housing,0,single_adults,2022-08-17
+Children,17120,families_with_children,2022-08-16
+Adults,14031,families_with_children,2022-08-16
+Total Single Adults,16946,total_single_adults,2022-08-16
+Individuals (Adults),3151,adult_families_census,2022-08-16
+Safe Haven Utilization,1506,single_adults,2022-08-16
+Drop-in Center Overnight Census,123,single_adults,2022-08-16
+Faith Bed Census,18,single_adults,2022-08-16
+Veterans In Short-term Housing,193,single_adults,2022-08-16
+Criminal Justice Short-term Housing,0,single_adults,2022-08-16
+Children,17221,families_with_children,2022-08-15
+Adults,14114,families_with_children,2022-08-15
+Total Single Adults,16933,total_single_adults,2022-08-15
+Individuals (Adults),3176,adult_families_census,2022-08-15
+Safe Haven Utilization,1508,single_adults,2022-08-15
+Drop-in Center Overnight Census,134,single_adults,2022-08-15
+Faith Bed Census,32,single_adults,2022-08-15
+Veterans In Short-term Housing,180,single_adults,2022-08-15
+Criminal Justice Short-term Housing,0,single_adults,2022-08-15
+Children,17147,families_with_children,2022-08-14
+Adults,14052,families_with_children,2022-08-14
+Total Single Adults,16787,total_single_adults,2022-08-14
+Individuals (Adults),3125,adult_families_census,2022-08-14
+Safe Haven Utilization,1462,single_adults,2022-08-14
+Drop-in Center Overnight Census,151,single_adults,2022-08-14
+Faith Bed Census,17,single_adults,2022-08-14
+Veterans In Short-term Housing,160,single_adults,2022-08-14
+Criminal Justice Short-term Housing,0,single_adults,2022-08-14
+Children,17084,families_with_children,2022-08-11
+Adults,13972,families_with_children,2022-08-11
+Total Single Adults,16812,total_single_adults,2022-08-11
+Individuals (Adults),3147,adult_families_census,2022-08-11
+Safe Haven Utilization,1494,single_adults,2022-08-11
+Drop-in Center Overnight Census,125,single_adults,2022-08-11
+Faith Bed Census,20,single_adults,2022-08-11
+Veterans In Short-term Housing,186,single_adults,2022-08-11
+Criminal Justice Short-term Housing,0,single_adults,2022-08-11
+Children,17031,families_with_children,2022-08-10
+Adults,13923,families_with_children,2022-08-10
+Total Single Adults,16819,total_single_adults,2022-08-10
+Individuals (Adults),3142,adult_families_census,2022-08-10
+Safe Haven Utilization,1497,single_adults,2022-08-10
+Drop-in Center Overnight Census,64,single_adults,2022-08-10
+Faith Bed Census,30,single_adults,2022-08-10
+Veterans In Short-term Housing,183,single_adults,2022-08-10
+Criminal Justice Short-term Housing,0,single_adults,2022-08-10
+Children,16933,families_with_children,2022-08-08
+Adults,13818,families_with_children,2022-08-08
+Total Single Adults,16759,total_single_adults,2022-08-08
+Individuals (Adults),3148,adult_families_census,2022-08-08
+Safe Haven Utilization,1500,single_adults,2022-08-08
+Drop-in Center Overnight Census,83,single_adults,2022-08-08
+Faith Bed Census,21,single_adults,2022-08-08
+Veterans In Short-term Housing,201,single_adults,2022-08-08
+Criminal Justice Short-term Housing,0,single_adults,2022-08-08
+Children,16909,families_with_children,2022-08-07
+Adults,13798,families_with_children,2022-08-07
+Total Single Adults,16717,total_single_adults,2022-08-07
+Individuals (Adults),3133,adult_families_census,2022-08-07
+Safe Haven Utilization,1494,single_adults,2022-08-07
+Drop-in Center Overnight Census,128,single_adults,2022-08-07
+Faith Bed Census,18,single_adults,2022-08-07
+Veterans In Short-term Housing,173,single_adults,2022-08-07
+Criminal Justice Short-term Housing,0,single_adults,2022-08-07
+Children,16827,families_with_children,2022-08-04
+Adults,13705,families_with_children,2022-08-04
+Total Single Adults,16738,total_single_adults,2022-08-04
+Individuals (Adults),3138,adult_families_census,2022-08-04
+Safe Haven Utilization,1505,single_adults,2022-08-04
+Drop-in Center Overnight Census,121,single_adults,2022-08-04
+Faith Bed Census,19,single_adults,2022-08-04
+Veterans In Short-term Housing,190,single_adults,2022-08-04
+Criminal Justice Short-term Housing,0,single_adults,2022-08-04
+Children,16827,families_with_children,2022-08-03
+Adults,13705,families_with_children,2022-08-03
+Total Single Adults,16738,total_single_adults,2022-08-03
+Individuals (Adults),3138,adult_families_census,2022-08-03
+Safe Haven Utilization,1505,single_adults,2022-08-03
+Drop-in Center Overnight Census,121,single_adults,2022-08-03
+Faith Bed Census,19,single_adults,2022-08-03
+Veterans In Short-term Housing,190,single_adults,2022-08-03
+Criminal Justice Short-term Housing,0,single_adults,2022-08-03
+Children,16753,families_with_children,2022-08-02
+Adults,13611,families_with_children,2022-08-02
+Total Single Adults,16715,total_single_adults,2022-08-02
+Individuals (Adults),3129,adult_families_census,2022-08-02
+Safe Haven Utilization,1514,single_adults,2022-08-02
+Drop-in Center Overnight Census,161,single_adults,2022-08-02
+Faith Bed Census,25,single_adults,2022-08-02
+Veterans In Short-term Housing,190,single_adults,2022-08-02
+Criminal Justice Short-term Housing,0,single_adults,2022-08-02
+Children,16729,families_with_children,2022-08-01
+Adults,13569,families_with_children,2022-08-01
+Total Single Adults,16686,total_single_adults,2022-08-01
+Individuals (Adults),3113,adult_families_census,2022-08-01
+Safe Haven Utilization,1516,single_adults,2022-08-01
+Drop-in Center Overnight Census,79,single_adults,2022-08-01
+Faith Bed Census,15,single_adults,2022-08-01
+Veterans In Short-term Housing,198,single_adults,2022-08-01
+Criminal Justice Short-term Housing,0,single_adults,2022-08-01
+Children,16765,families_with_children,2022-07-31
+Adults,13601,families_with_children,2022-07-31
+Total Single Adults,16581,total_single_adults,2022-07-31
+Individuals (Adults),3088,adult_families_census,2022-07-31
+Safe Haven Utilization,1506,single_adults,2022-07-31
+Drop-in Center Overnight Census,111,single_adults,2022-07-31
+Faith Bed Census,12,single_adults,2022-07-31
+Veterans In Short-term Housing,187,single_adults,2022-07-31
+Criminal Justice Short-term Housing,0,single_adults,2022-07-31
+Children,16612,families_with_children,2022-07-28
+Adults,13454,families_with_children,2022-07-28
+Total Single Adults,16637,total_single_adults,2022-07-28
+Individuals (Adults),3100,adult_families_census,2022-07-28
+Safe Haven Utilization,1509,single_adults,2022-07-28
+Drop-in Center Overnight Census,122,single_adults,2022-07-28
+Faith Bed Census,17,single_adults,2022-07-28
+Veterans In Short-term Housing,195,single_adults,2022-07-28
+Criminal Justice Short-term Housing,82,single_adults,2022-07-28
+Children,16514,families_with_children,2022-07-26
+Adults,13348,families_with_children,2022-07-26
+Total Single Adults,16677,total_single_adults,2022-07-26
+Individuals (Adults),3077,adult_families_census,2022-07-26
+Safe Haven Utilization,1499,single_adults,2022-07-26
+Drop-in Center Overnight Census,131,single_adults,2022-07-26
+Faith Bed Census,17,single_adults,2022-07-26
+Veterans In Short-term Housing,192,single_adults,2022-07-26
+Criminal Justice Short-term Housing,81,single_adults,2022-07-26
+Children,16421,families_with_children,2022-07-25
+Adults,13278,families_with_children,2022-07-25
+Total Single Adults,16571,total_single_adults,2022-07-25
+Individuals (Adults),3070,adult_families_census,2022-07-25
+Safe Haven Utilization,1510,single_adults,2022-07-25
+Drop-in Center Overnight Census,138,single_adults,2022-07-25
+Faith Bed Census,17,single_adults,2022-07-25
+Veterans In Short-term Housing,187,single_adults,2022-07-25
+Criminal Justice Short-term Housing,77,single_adults,2022-07-25
+Children,16411,families_with_children,2022-07-24
+Adults,13252,families_with_children,2022-07-24
+Total Single Adults,16488,total_single_adults,2022-07-24
+Individuals (Adults),3042,adult_families_census,2022-07-24
+Safe Haven Utilization,1511,single_adults,2022-07-24
+Drop-in Center Overnight Census,NA,single_adults,2022-07-24
+Faith Bed Census,NA,single_adults,2022-07-24
+Veterans In Short-term Housing,188,single_adults,2022-07-24
+Criminal Justice Short-term Housing,74,single_adults,2022-07-24
+Children,16265,families_with_children,2022-07-21
+Adults,13103,families_with_children,2022-07-21
+Total Single Adults,16473,total_single_adults,2022-07-21
+Individuals (Adults),3059,adult_families_census,2022-07-21
+Safe Haven Utilization,1516,single_adults,2022-07-21
+Drop-in Center Overnight Census,NA,single_adults,2022-07-21
+Faith Bed Census,NA,single_adults,2022-07-21
+Veterans In Short-term Housing,200,single_adults,2022-07-21
+Criminal Justice Short-term Housing,82,single_adults,2022-07-21
+Children,16162,families_with_children,2022-07-20
+Adults,12992,families_with_children,2022-07-20
+Total Single Adults,16460,total_single_adults,2022-07-20
+Individuals (Adults),3022,adult_families_census,2022-07-20
+Safe Haven Utilization,1514,single_adults,2022-07-20
+Drop-in Center Overnight Census,NA,single_adults,2022-07-20
+Faith Bed Census,NA,single_adults,2022-07-20
+Veterans In Short-term Housing,189,single_adults,2022-07-20
+Criminal Justice Short-term Housing,83,single_adults,2022-07-20
+Children,16160,families_with_children,2022-07-19
+Adults,12986,families_with_children,2022-07-19
+Total Single Adults,16434,total_single_adults,2022-07-19
+Individuals (Adults),3057,adult_families_census,2022-07-19
+Safe Haven Utilization,1508,single_adults,2022-07-19
+Drop-in Center Overnight Census,NA,single_adults,2022-07-19
+Faith Bed Census,NA,single_adults,2022-07-19
+Veterans In Short-term Housing,187,single_adults,2022-07-19
+Criminal Justice Short-term Housing,80,single_adults,2022-07-19
+Children,16160,families_with_children,2022-07-18
+Adults,12986,families_with_children,2022-07-18
+Total Single Adults,16434,total_single_adults,2022-07-18
+Individuals (Adults),3057,adult_families_census,2022-07-18
+Safe Haven Utilization,1508,single_adults,2022-07-18
+Drop-in Center Overnight Census,NA,single_adults,2022-07-18
+Faith Bed Census,NA,single_adults,2022-07-18
+Veterans In Short-term Housing,187,single_adults,2022-07-18
+Criminal Justice Short-term Housing,80,single_adults,2022-07-18
+Children,16023,families_with_children,2022-07-17
+Adults,12862,families_with_children,2022-07-17
+Total Single Adults,16288,total_single_adults,2022-07-17
+Individuals (Adults),3015,adult_families_census,2022-07-17
+Safe Haven Utilization,1513,single_adults,2022-07-17
+Drop-in Center Overnight Census,76,single_adults,2022-07-17
+Faith Bed Census,16,single_adults,2022-07-17
+Veterans In Short-term Housing,184,single_adults,2022-07-17
+Criminal Justice Short-term Housing,81,single_adults,2022-07-17
+Children,16047,families_with_children,2022-07-14
+Adults,12896,families_with_children,2022-07-14
+Total Single Adults,16164,total_single_adults,2022-07-14
+Individuals (Adults),3020,adult_families_census,2022-07-14
+Safe Haven Utilization,1507,single_adults,2022-07-14
+Drop-in Center Overnight Census,142,single_adults,2022-07-14
+Faith Bed Census,14,single_adults,2022-07-14
+Veterans In Short-term Housing,183,single_adults,2022-07-14
+Criminal Justice Short-term Housing,84,single_adults,2022-07-14
+Children,15997,families_with_children,2022-07-13
+Adults,12845,families_with_children,2022-07-13
+Total Single Adults,16010,total_single_adults,2022-07-13
+Individuals (Adults),3006,adult_families_census,2022-07-13
+Safe Haven Utilization,1503,single_adults,2022-07-13
+Drop-in Center Overnight Census,144,single_adults,2022-07-13
+Faith Bed Census,25,single_adults,2022-07-13
+Veterans In Short-term Housing,184,single_adults,2022-07-13
+Criminal Justice Short-term Housing,82,single_adults,2022-07-13
+Children,15992,families_with_children,2022-07-11
+Adults,12804,families_with_children,2022-07-11
+Total Single Adults,16133,total_single_adults,2022-07-11
+Individuals (Adults),3027,adult_families_census,2022-07-11
+Safe Haven Utilization,1497,single_adults,2022-07-11
+Drop-in Center Overnight Census,139,single_adults,2022-07-11
+Faith Bed Census,23,single_adults,2022-07-11
+Veterans In Short-term Housing,192,single_adults,2022-07-11
+Criminal Justice Short-term Housing,86,single_adults,2022-07-11
+Children,16003,families_with_children,2022-07-10
+Adults,12801,families_with_children,2022-07-10
+Total Single Adults,16299,total_single_adults,2022-07-10
+Individuals (Adults),3025,adult_families_census,2022-07-10
+Safe Haven Utilization,1496,single_adults,2022-07-10
+Drop-in Center Overnight Census,115,single_adults,2022-07-10
+Faith Bed Census,16,single_adults,2022-07-10
+Veterans In Short-term Housing,180,single_adults,2022-07-10
+Criminal Justice Short-term Housing,84,single_adults,2022-07-10
+Children,15907,families_with_children,2022-07-07
+Adults,12706,families_with_children,2022-07-07
+Total Single Adults,16421,total_single_adults,2022-07-07
+Individuals (Adults),2981,adult_families_census,2022-07-07
+Safe Haven Utilization,1484,single_adults,2022-07-07
+Drop-in Center Overnight Census,141,single_adults,2022-07-07
+Faith Bed Census,16,single_adults,2022-07-07
+Veterans In Short-term Housing,182,single_adults,2022-07-07
+Criminal Justice Short-term Housing,84,single_adults,2022-07-07
+Children,15841,families_with_children,2022-07-05
+Adults,12634,families_with_children,2022-07-05
+Total Single Adults,16353,total_single_adults,2022-07-05
+Individuals (Adults),2988,adult_families_census,2022-07-05
+Safe Haven Utilization,1504,single_adults,2022-07-05
+Drop-in Center Overnight Census,135,single_adults,2022-07-05
+Faith Bed Census,19,single_adults,2022-07-05
+Veterans In Short-term Housing,189,single_adults,2022-07-05
+Criminal Justice Short-term Housing,83,single_adults,2022-07-05
+Children,15877,families_with_children,2022-07-04
+Adults,12666,families_with_children,2022-07-04
+Total Single Adults,16149,total_single_adults,2022-07-04
+Individuals (Adults),2969,adult_families_census,2022-07-04
+Safe Haven Utilization,1512,single_adults,2022-07-04
+Drop-in Center Overnight Census,136,single_adults,2022-07-04
+Faith Bed Census,17,single_adults,2022-07-04
+Veterans In Short-term Housing,182,single_adults,2022-07-04
+Criminal Justice Short-term Housing,74,single_adults,2022-07-04
+Children,15630,families_with_children,2022-06-30
+Adults,12437,families_with_children,2022-06-30
+Total Single Adults,16369,total_single_adults,2022-06-30
+Individuals (Adults),2945,adult_families_census,2022-06-30
+Safe Haven Utilization,1502,single_adults,2022-06-30
+Drop-in Center Overnight Census,150,single_adults,2022-06-30
+Faith Bed Census,22,single_adults,2022-06-30
+Veterans In Short-term Housing,189,single_adults,2022-06-30
+Criminal Justice Short-term Housing,86,single_adults,2022-06-30
+Children,15608,families_with_children,2022-06-28
+Adults,12400,families_with_children,2022-06-28
+Total Single Adults,16349,total_single_adults,2022-06-28
+Individuals (Adults),2938,adult_families_census,2022-06-28
+Safe Haven Utilization,1504,single_adults,2022-06-28
+Drop-in Center Overnight Census,153,single_adults,2022-06-28
+Faith Bed Census,19,single_adults,2022-06-28
+Veterans In Short-term Housing,179,single_adults,2022-06-28
+Criminal Justice Short-term Housing,85,single_adults,2022-06-28
+Children,15593,families_with_children,2022-06-26
+Adults,12388,families_with_children,2022-06-26
+Total Single Adults,16180,total_single_adults,2022-06-26
+Individuals (Adults),2936,adult_families_census,2022-06-26
+Safe Haven Utilization,1499,single_adults,2022-06-26
+Drop-in Center Overnight Census,114,single_adults,2022-06-26
+Faith Bed Census,21,single_adults,2022-06-26
+Veterans In Short-term Housing,182,single_adults,2022-06-26
+Criminal Justice Short-term Housing,76,single_adults,2022-06-26
+Children,15502,families_with_children,2022-06-23
+Adults,12266,families_with_children,2022-06-23
+Total Single Adults,16307,total_single_adults,2022-06-23
+Individuals (Adults),2920,adult_families_census,2022-06-23
+Safe Haven Utilization,1491,single_adults,2022-06-23
+Drop-in Center Overnight Census,157,single_adults,2022-06-23
+Faith Bed Census,24,single_adults,2022-06-23
+Veterans In Short-term Housing,173,single_adults,2022-06-23
+Criminal Justice Short-term Housing,87,single_adults,2022-06-23
+Children,15425,families_with_children,2022-06-22
+Adults,12198,families_with_children,2022-06-22
+Total Single Adults,16350,total_single_adults,2022-06-22
+Individuals (Adults),2933,adult_families_census,2022-06-22
+Safe Haven Utilization,1515,single_adults,2022-06-22
+Drop-in Center Overnight Census,163,single_adults,2022-06-22
+Faith Bed Census,28,single_adults,2022-06-22
+Veterans In Short-term Housing,179,single_adults,2022-06-22
+Criminal Justice Short-term Housing,87,single_adults,2022-06-22
+Children,15432,families_with_children,2022-06-20
+Adults,12207,families_with_children,2022-06-20
+Total Single Adults,16207,total_single_adults,2022-06-20
+Individuals (Adults),2933,adult_families_census,2022-06-20
+Safe Haven Utilization,1524,single_adults,2022-06-20
+Drop-in Center Overnight Census,147,single_adults,2022-06-20
+Faith Bed Census,23,single_adults,2022-06-20
+Veterans In Short-term Housing,170,single_adults,2022-06-20
+Criminal Justice Short-term Housing,80,single_adults,2022-06-20
+Children,15234,families_with_children,2022-06-16
+Adults,12055,families_with_children,2022-06-16
+Total Single Adults,16303,total_single_adults,2022-06-16
+Individuals (Adults),2951,adult_families_census,2022-06-16
+Safe Haven Utilization,1497,single_adults,2022-06-16
+Drop-in Center Overnight Census,116,single_adults,2022-06-16
+Faith Bed Census,20,single_adults,2022-06-16
+Veterans In Short-term Housing,182,single_adults,2022-06-16
+Criminal Justice Short-term Housing,87,single_adults,2022-06-16
+Children,15274,families_with_children,2022-06-15
+Adults,12078,families_with_children,2022-06-15
+Total Single Adults,16280,total_single_adults,2022-06-15
+Individuals (Adults),2949,adult_families_census,2022-06-15
+Safe Haven Utilization,1503,single_adults,2022-06-15
+Drop-in Center Overnight Census,121,single_adults,2022-06-15
+Faith Bed Census,24,single_adults,2022-06-15
+Veterans In Short-term Housing,181,single_adults,2022-06-15
+Criminal Justice Short-term Housing,88,single_adults,2022-06-15
+Children,15249,families_with_children,2022-06-14
+Adults,12055,families_with_children,2022-06-14
+Total Single Adults,16278,total_single_adults,2022-06-14
+Individuals (Adults),2919,adult_families_census,2022-06-14
+Safe Haven Utilization,1497,single_adults,2022-06-14
+Drop-in Center Overnight Census,130,single_adults,2022-06-14
+Faith Bed Census,20,single_adults,2022-06-14
+Veterans In Short-term Housing,180,single_adults,2022-06-14
+Criminal Justice Short-term Housing,88,single_adults,2022-06-14
+Children,15260,families_with_children,2022-06-13
+Adults,12038,families_with_children,2022-06-13
+Total Single Adults,16302,total_single_adults,2022-06-13
+Individuals (Adults),2932,adult_families_census,2022-06-13
+Safe Haven Utilization,807,single_adults,2022-06-13
+Drop-in Center Overnight Census,150,single_adults,2022-06-13
+Faith Bed Census,28,single_adults,2022-06-13
+Veterans In Short-term Housing,169,single_adults,2022-06-13
+Criminal Justice Short-term Housing,88,single_adults,2022-06-13
+Children,15293,families_with_children,2022-06-12
+Adults,12037,families_with_children,2022-06-12
+Total Single Adults,16141,total_single_adults,2022-06-12
+Individuals (Adults),2916,adult_families_census,2022-06-12
+Safe Haven Utilization,1505,single_adults,2022-06-12
+Drop-in Center Overnight Census,112,single_adults,2022-06-12
+Faith Bed Census,4,single_adults,2022-06-12
+Veterans In Short-term Housing,170,single_adults,2022-06-12
+Criminal Justice Short-term Housing,80,single_adults,2022-06-12
+Children,15240,families_with_children,2022-06-09
+Adults,11995,families_with_children,2022-06-09
+Total Single Adults,16328,total_single_adults,2022-06-09
+Individuals (Adults),2939,adult_families_census,2022-06-09
+Safe Haven Utilization,1499,single_adults,2022-06-09
+Drop-in Center Overnight Census,131,single_adults,2022-06-09
+Faith Bed Census,16,single_adults,2022-06-09
+Veterans In Short-term Housing,185,single_adults,2022-06-09
+Criminal Justice Short-term Housing,89,single_adults,2022-06-09
+Children,15235,families_with_children,2022-06-08
+Adults,11974,families_with_children,2022-06-08
+Total Single Adults,16331,total_single_adults,2022-06-08
+Individuals (Adults),2923,adult_families_census,2022-06-08
+Safe Haven Utilization,1498,single_adults,2022-06-08
+Drop-in Center Overnight Census,154,single_adults,2022-06-08
+Faith Bed Census,32,single_adults,2022-06-08
+Veterans In Short-term Housing,178,single_adults,2022-06-08
+Criminal Justice Short-term Housing,89,single_adults,2022-06-08
+Children,15212,families_with_children,2022-06-07
+Adults,11957,families_with_children,2022-06-07
+Total Single Adults,16358,total_single_adults,2022-06-07
+Individuals (Adults),2923,adult_families_census,2022-06-07
+Safe Haven Utilization,1503,single_adults,2022-06-07
+Drop-in Center Overnight Census,146,single_adults,2022-06-07
+Faith Bed Census,18,single_adults,2022-06-07
+Veterans In Short-term Housing,173,single_adults,2022-06-07
+Criminal Justice Short-term Housing,88,single_adults,2022-06-07
+Children,15181,families_with_children,2022-06-06
+Adults,11944,families_with_children,2022-06-06
+Total Single Adults,16303,total_single_adults,2022-06-06
+Individuals (Adults),2953,adult_families_census,2022-06-06
+Safe Haven Utilization,1498,single_adults,2022-06-06
+Drop-in Center Overnight Census,153,single_adults,2022-06-06
+Faith Bed Census,27,single_adults,2022-06-06
+Veterans In Short-term Housing,173,single_adults,2022-06-06
+Criminal Justice Short-term Housing,86,single_adults,2022-06-06
+Children,15163,families_with_children,2022-06-05
+Adults,11928,families_with_children,2022-06-05
+Total Single Adults,16239,total_single_adults,2022-06-05
+Individuals (Adults),2930,adult_families_census,2022-06-05
+Safe Haven Utilization,1500,single_adults,2022-06-05
+Drop-in Center Overnight Census,140,single_adults,2022-06-05
+Faith Bed Census,21,single_adults,2022-06-05
+Veterans In Short-term Housing,166,single_adults,2022-06-05
+Criminal Justice Short-term Housing,84,single_adults,2022-06-05
+Children,15131,families_with_children,2022-06-02
+Adults,11893,families_with_children,2022-06-02
+Total Single Adults,16382,total_single_adults,2022-06-02
+Individuals (Adults),2945,adult_families_census,2022-06-02
+Safe Haven Utilization,1484,single_adults,2022-06-02
+Drop-in Center Overnight Census,151,single_adults,2022-06-02
+Faith Bed Census,20,single_adults,2022-06-02
+Veterans In Short-term Housing,179,single_adults,2022-06-02
+Criminal Justice Short-term Housing,88,single_adults,2022-06-02
+Children,15050,families_with_children,2022-06-01
+Adults,11823,families_with_children,2022-06-01
+Total Single Adults,16353,total_single_adults,2022-06-01
+Individuals (Adults),2952,adult_families_census,2022-06-01
+Safe Haven Utilization,1489,single_adults,2022-06-01
+Drop-in Center Overnight Census,155,single_adults,2022-06-01
+Faith Bed Census,27,single_adults,2022-06-01
+Veterans In Short-term Housing,183,single_adults,2022-06-01
+Criminal Justice Short-term Housing,89,single_adults,2022-06-01
+Children,14988,families_with_children,2022-05-31
+Adults,11773,families_with_children,2022-05-31
+Total Single Adults,16327,total_single_adults,2022-05-31
+Individuals (Adults),2965,adult_families_census,2022-05-31
+Safe Haven Utilization,1498,single_adults,2022-05-31
+Drop-in Center Overnight Census,142,single_adults,2022-05-31
+Faith Bed Census,16,single_adults,2022-05-31
+Veterans In Short-term Housing,184,single_adults,2022-05-31
+Criminal Justice Short-term Housing,89,single_adults,2022-05-31
+Children,15069,families_with_children,2022-05-30
+Adults,11820,families_with_children,2022-05-30
+Total Single Adults,16208,total_single_adults,2022-05-30
+Individuals (Adults),2965,adult_families_census,2022-05-30
+Safe Haven Utilization,1497,single_adults,2022-05-30
+Drop-in Center Overnight Census,103,single_adults,2022-05-30
+Faith Bed Census,25,single_adults,2022-05-30
+Veterans In Short-term Housing,181,single_adults,2022-05-30
+Criminal Justice Short-term Housing,83,single_adults,2022-05-30
+Children,14993,families_with_children,2022-05-26
+Adults,11751,families_with_children,2022-05-26
+Total Single Adults,16346,total_single_adults,2022-05-26
+Individuals (Adults),2932,adult_families_census,2022-05-26
+Safe Haven Utilization,1496,single_adults,2022-05-26
+Drop-in Center Overnight Census,84,single_adults,2022-05-26
+Faith Bed Census,20,single_adults,2022-05-26
+Veterans In Short-term Housing,183,single_adults,2022-05-26
+Criminal Justice Short-term Housing,88,single_adults,2022-05-26
+Children,15041,families_with_children,2022-05-25
+Adults,11791,families_with_children,2022-05-25
+Total Single Adults,16360,total_single_adults,2022-05-25
+Individuals (Adults),2944,adult_families_census,2022-05-25
+Safe Haven Utilization,1500,single_adults,2022-05-25
+Drop-in Center Overnight Census,151,single_adults,2022-05-25
+Faith Bed Census,25,single_adults,2022-05-25
+Veterans In Short-term Housing,175,single_adults,2022-05-25
+Criminal Justice Short-term Housing,88,single_adults,2022-05-25
+Children,14977,families_with_children,2022-05-24
+Adults,11725,families_with_children,2022-05-24
+Total Single Adults,16405,total_single_adults,2022-05-24
+Individuals (Adults),2934,adult_families_census,2022-05-24
+Safe Haven Utilization,1500,single_adults,2022-05-24
+Drop-in Center Overnight Census,129,single_adults,2022-05-24
+Faith Bed Census,17,single_adults,2022-05-24
+Veterans In Short-term Housing,174,single_adults,2022-05-24
+Criminal Justice Short-term Housing,87,single_adults,2022-05-24
+Children,14948,families_with_children,2022-05-23
+Adults,11697,families_with_children,2022-05-23
+Total Single Adults,16372,total_single_adults,2022-05-23
+Individuals (Adults),2949,adult_families_census,2022-05-23
+Safe Haven Utilization,1507,single_adults,2022-05-23
+Drop-in Center Overnight Census,147,single_adults,2022-05-23
+Faith Bed Census,32,single_adults,2022-05-23
+Veterans In Short-term Housing,175,single_adults,2022-05-23
+Criminal Justice Short-term Housing,86,single_adults,2022-05-23
+Children,15008,families_with_children,2022-05-22
+Adults,11719,families_with_children,2022-05-22
+Total Single Adults,16320,total_single_adults,2022-05-22
+Individuals (Adults),2947,adult_families_census,2022-05-22
+Safe Haven Utilization,1512,single_adults,2022-05-22
+Drop-in Center Overnight Census,160,single_adults,2022-05-22
+Faith Bed Census,16,single_adults,2022-05-22
+Veterans In Short-term Housing,171,single_adults,2022-05-22
+Criminal Justice Short-term Housing,83,single_adults,2022-05-22
+Children,14947,families_with_children,2022-05-19
+Adults,11646,families_with_children,2022-05-19
+Total Single Adults,16415,total_single_adults,2022-05-19
+Individuals (Adults),2930,adult_families_census,2022-05-19
+Safe Haven Utilization,1502,single_adults,2022-05-19
+Drop-in Center Overnight Census,148,single_adults,2022-05-19
+Faith Bed Census,23,single_adults,2022-05-19
+Veterans In Short-term Housing,175,single_adults,2022-05-19
+Criminal Justice Short-term Housing,88,single_adults,2022-05-19
+Children,14929,families_with_children,2022-05-18
+Adults,11633,families_with_children,2022-05-18
+Total Single Adults,16419,total_single_adults,2022-05-18
+Individuals (Adults),2951,adult_families_census,2022-05-18
+Safe Haven Utilization,1498,single_adults,2022-05-18
+Drop-in Center Overnight Census,156,single_adults,2022-05-18
+Faith Bed Census,32,single_adults,2022-05-18
+Veterans In Short-term Housing,183,single_adults,2022-05-18
+Criminal Justice Short-term Housing,90,single_adults,2022-05-18
+Children,14914,families_with_children,2022-05-16
+Adults,11600,families_with_children,2022-05-16
+Total Single Adults,16373,total_single_adults,2022-05-16
+Individuals (Adults),2945,adult_families_census,2022-05-16
+Safe Haven Utilization,1498,single_adults,2022-05-16
+Drop-in Center Overnight Census,100,single_adults,2022-05-16
+Faith Bed Census,21,single_adults,2022-05-16
+Veterans In Short-term Housing,175,single_adults,2022-05-16
+Criminal Justice Short-term Housing,89,single_adults,2022-05-16
+Children,15020,families_with_children,2022-05-15
+Adults,11671,families_with_children,2022-05-15
+Total Single Adults,16290,total_single_adults,2022-05-15
+Individuals (Adults),2933,adult_families_census,2022-05-15
+Safe Haven Utilization,1502,single_adults,2022-05-15
+Drop-in Center Overnight Census,174,single_adults,2022-05-15
+Faith Bed Census,16,single_adults,2022-05-15
+Veterans In Short-term Housing,171,single_adults,2022-05-15
+Criminal Justice Short-term Housing,82,single_adults,2022-05-15
+Children,14923,families_with_children,2022-05-12
+Adults,11591,families_with_children,2022-05-12
+Total Single Adults,16391,total_single_adults,2022-05-12
+Individuals (Adults),2939,adult_families_census,2022-05-12
+Safe Haven Utilization,1506,single_adults,2022-05-12
+Drop-in Center Overnight Census,178,single_adults,2022-05-12
+Faith Bed Census,18,single_adults,2022-05-12
+Veterans In Short-term Housing,180,single_adults,2022-05-12
+Criminal Justice Short-term Housing,91,single_adults,2022-05-12
+Children,14921,families_with_children,2022-05-11
+Adults,11567,families_with_children,2022-05-11
+Total Single Adults,16443,total_single_adults,2022-05-11
+Individuals (Adults),2911,adult_families_census,2022-05-11
+Safe Haven Utilization,1493,single_adults,2022-05-11
+Drop-in Center Overnight Census,144,single_adults,2022-05-11
+Faith Bed Census,27,single_adults,2022-05-11
+Veterans In Short-term Housing,179,single_adults,2022-05-11
+Criminal Justice Short-term Housing,91,single_adults,2022-05-11
+Children,14871,families_with_children,2022-05-10
+Adults,11517,families_with_children,2022-05-10
+Total Single Adults,16425,total_single_adults,2022-05-10
+Individuals (Adults),2908,adult_families_census,2022-05-10
+Safe Haven Utilization,1497,single_adults,2022-05-10
+Drop-in Center Overnight Census,145,single_adults,2022-05-10
+Faith Bed Census,22,single_adults,2022-05-10
+Veterans In Short-term Housing,187,single_adults,2022-05-10
+Criminal Justice Short-term Housing,89,single_adults,2022-05-10
+Children,14836,families_with_children,2022-05-09
+Adults,11461,families_with_children,2022-05-09
+Total Single Adults,16447,total_single_adults,2022-05-09
+Individuals (Adults),2922,adult_families_census,2022-05-09
+Safe Haven Utilization,1493,single_adults,2022-05-09
+Drop-in Center Overnight Census,107,single_adults,2022-05-09
+Faith Bed Census,24,single_adults,2022-05-09
+Veterans In Short-term Housing,183,single_adults,2022-05-09
+Criminal Justice Short-term Housing,89,single_adults,2022-05-09
+Children,14862,families_with_children,2022-05-05
+Adults,11471,families_with_children,2022-05-05
+Total Single Adults,16415,total_single_adults,2022-05-05
+Individuals (Adults),2915,adult_families_census,2022-05-05
+Safe Haven Utilization,1469,single_adults,2022-05-05
+Drop-in Center Overnight Census,166,single_adults,2022-05-05
+Faith Bed Census,31,single_adults,2022-05-05
+Veterans In Short-term Housing,171,single_adults,2022-05-05
+Criminal Justice Short-term Housing,90,single_adults,2022-05-05
+Children,14863,families_with_children,2022-05-04
+Adults,11462,families_with_children,2022-05-04
+Total Single Adults,16541,total_single_adults,2022-05-04
+Individuals (Adults),2912,adult_families_census,2022-05-04
+Safe Haven Utilization,1468,single_adults,2022-05-04
+Drop-in Center Overnight Census,150,single_adults,2022-05-04
+Faith Bed Census,28,single_adults,2022-05-04
+Veterans In Short-term Housing,166,single_adults,2022-05-04
+Criminal Justice Short-term Housing,90,single_adults,2022-05-04
+Children,14811,families_with_children,2022-05-03
+Adults,11420,families_with_children,2022-05-03
+Total Single Adults,16503,total_single_adults,2022-05-03
+Individuals (Adults),2918,adult_families_census,2022-05-03
+Safe Haven Utilization,1476,single_adults,2022-05-03
+Drop-in Center Overnight Census,191,single_adults,2022-05-03
+Faith Bed Census,21,single_adults,2022-05-03
+Veterans In Short-term Housing,180,single_adults,2022-05-03
+Criminal Justice Short-term Housing,90,single_adults,2022-05-03
+Children,14731,families_with_children,2022-05-02
+Adults,11367,families_with_children,2022-05-02
+Total Single Adults,16532,total_single_adults,2022-05-02
+Individuals (Adults),2946,adult_families_census,2022-05-02
+Safe Haven Utilization,1469,single_adults,2022-05-02
+Drop-in Center Overnight Census,175,single_adults,2022-05-02
+Faith Bed Census,31,single_adults,2022-05-02
+Veterans In Short-term Housing,170,single_adults,2022-05-02
+Criminal Justice Short-term Housing,84,single_adults,2022-05-02
+Children,14765,families_with_children,2022-05-01
+Adults,11413,families_with_children,2022-05-01
+Total Single Adults,16388,total_single_adults,2022-05-01
+Individuals (Adults),2936,adult_families_census,2022-05-01
+Safe Haven Utilization,1462,single_adults,2022-05-01
+Drop-in Center Overnight Census,167,single_adults,2022-05-01
+Faith Bed Census,24,single_adults,2022-05-01
+Veterans In Short-term Housing,173,single_adults,2022-05-01
+Criminal Justice Short-term Housing,80,single_adults,2022-05-01
+Children,14831,families_with_children,2022-04-28
+Adults,11429,families_with_children,2022-04-28
+Total Single Adults,16573,total_single_adults,2022-04-28
+Individuals (Adults),2941,adult_families_census,2022-04-28
+Safe Haven Utilization,1455,single_adults,2022-04-28
+Drop-in Center Overnight Census,146,single_adults,2022-04-28
+Faith Bed Census,22,single_adults,2022-04-28
+Veterans In Short-term Housing,186,single_adults,2022-04-28
+Criminal Justice Short-term Housing,85,single_adults,2022-04-28
+Children,14823,families_with_children,2022-04-27
+Adults,11407,families_with_children,2022-04-27
+Total Single Adults,16590,total_single_adults,2022-04-27
+Individuals (Adults),2930,adult_families_census,2022-04-27
+Safe Haven Utilization,1433,single_adults,2022-04-27
+Drop-in Center Overnight Census,166,single_adults,2022-04-27
+Faith Bed Census,35,single_adults,2022-04-27
+Veterans In Short-term Housing,180,single_adults,2022-04-27
+Criminal Justice Short-term Housing,86,single_adults,2022-04-27
+Children,14820,families_with_children,2022-04-26
+Adults,11387,families_with_children,2022-04-26
+Total Single Adults,16492,total_single_adults,2022-04-26
+Individuals (Adults),2930,adult_families_census,2022-04-26
+Safe Haven Utilization,1429,single_adults,2022-04-26
+Drop-in Center Overnight Census,165,single_adults,2022-04-26
+Faith Bed Census,21,single_adults,2022-04-26
+Veterans In Short-term Housing,172,single_adults,2022-04-26
+Criminal Justice Short-term Housing,88,single_adults,2022-04-26
+Children,14822,families_with_children,2022-04-25
+Adults,11386,families_with_children,2022-04-25
+Total Single Adults,16555,total_single_adults,2022-04-25
+Individuals (Adults),2941,adult_families_census,2022-04-25
+Safe Haven Utilization,1428,single_adults,2022-04-25
+Drop-in Center Overnight Census,149,single_adults,2022-04-25
+Faith Bed Census,34,single_adults,2022-04-25
+Veterans In Short-term Housing,170,single_adults,2022-04-25
+Criminal Justice Short-term Housing,88,single_adults,2022-04-25
+Children,14765,families_with_children,2022-04-24
+Adults,11337,families_with_children,2022-04-24
+Total Single Adults,16409,total_single_adults,2022-04-24
+Individuals (Adults),2928,adult_families_census,2022-04-24
+Safe Haven Utilization,1412,single_adults,2022-04-24
+Drop-in Center Overnight Census,174,single_adults,2022-04-24
+Faith Bed Census,30,single_adults,2022-04-24
+Veterans In Short-term Housing,158,single_adults,2022-04-24
+Criminal Justice Short-term Housing,83,single_adults,2022-04-24
+Children,14678,families_with_children,2022-04-20
+Adults,11253,families_with_children,2022-04-20
+Total Single Adults,16572,total_single_adults,2022-04-20
+Individuals (Adults),2912,adult_families_census,2022-04-20
+Safe Haven Utilization,1407,single_adults,2022-04-20
+Drop-in Center Overnight Census,180,single_adults,2022-04-20
+Faith Bed Census,34,single_adults,2022-04-20
+Veterans In Short-term Housing,184,single_adults,2022-04-20
+Criminal Justice Short-term Housing,87,single_adults,2022-04-20
+Children,14643,families_with_children,2022-04-19
+Adults,11219,families_with_children,2022-04-19
+Total Single Adults,16575,total_single_adults,2022-04-19
+Individuals (Adults),2911,adult_families_census,2022-04-19
+Safe Haven Utilization,1410,single_adults,2022-04-19
+Drop-in Center Overnight Census,170,single_adults,2022-04-19
+Faith Bed Census,24,single_adults,2022-04-19
+Veterans In Short-term Housing,182,single_adults,2022-04-19
+Criminal Justice Short-term Housing,88,single_adults,2022-04-19
+Children,14574,families_with_children,2022-04-18
+Adults,11160,families_with_children,2022-04-18
+Total Single Adults,16592,total_single_adults,2022-04-18
+Individuals (Adults),2913,adult_families_census,2022-04-18
+Safe Haven Utilization,1405,single_adults,2022-04-18
+Drop-in Center Overnight Census,147,single_adults,2022-04-18
+Faith Bed Census,31,single_adults,2022-04-18
+Veterans In Short-term Housing,176,single_adults,2022-04-18
+Criminal Justice Short-term Housing,83,single_adults,2022-04-18
+Children,14574,families_with_children,2022-04-17
+Adults,11146,families_with_children,2022-04-17
+Total Single Adults,16449,total_single_adults,2022-04-17
+Individuals (Adults),2915,adult_families_census,2022-04-17
+Safe Haven Utilization,1397,single_adults,2022-04-17
+Drop-in Center Overnight Census,126,single_adults,2022-04-17
+Faith Bed Census,8,single_adults,2022-04-17
+Veterans In Short-term Housing,172,single_adults,2022-04-17
+Criminal Justice Short-term Housing,75,single_adults,2022-04-17
+Children,14604,families_with_children,2022-04-14
+Adults,11188,families_with_children,2022-04-14
+Total Single Adults,16515,total_single_adults,2022-04-14
+Individuals (Adults),2922,adult_families_census,2022-04-14
+Safe Haven Utilization,1395,single_adults,2022-04-14
+Drop-in Center Overnight Census,152,single_adults,2022-04-14
+Faith Bed Census,27,single_adults,2022-04-14
+Veterans In Short-term Housing,179,single_adults,2022-04-14
+Criminal Justice Short-term Housing,85,single_adults,2022-04-14
+Children,14679,families_with_children,2022-04-13
+Adults,11236,families_with_children,2022-04-13
+Total Single Adults,16540,total_single_adults,2022-04-13
+Individuals (Adults),2917,adult_families_census,2022-04-13
+Safe Haven Utilization,1392,single_adults,2022-04-13
+Drop-in Center Overnight Census,88,single_adults,2022-04-13
+Faith Bed Census,36,single_adults,2022-04-13
+Veterans In Short-term Housing,172,single_adults,2022-04-13
+Criminal Justice Short-term Housing,86,single_adults,2022-04-13
+Children,14740,families_with_children,2022-04-12
+Adults,11289,families_with_children,2022-04-12
+Total Single Adults,16528,total_single_adults,2022-04-12
+Individuals (Adults),2925,adult_families_census,2022-04-12
+Safe Haven Utilization,1395,single_adults,2022-04-12
+Drop-in Center Overnight Census,145,single_adults,2022-04-12
+Faith Bed Census,26,single_adults,2022-04-12
+Veterans In Short-term Housing,174,single_adults,2022-04-12
+Criminal Justice Short-term Housing,88,single_adults,2022-04-12
+Children,14686,families_with_children,2022-04-10
+Adults,11243,families_with_children,2022-04-10
+Total Single Adults,16616,total_single_adults,2022-04-10
+Individuals (Adults),2941,adult_families_census,2022-04-10
+Safe Haven Utilization,1388,single_adults,2022-04-10
+Drop-in Center Overnight Census,161,single_adults,2022-04-10
+Faith Bed Census,30,single_adults,2022-04-10
+Veterans In Short-term Housing,151,single_adults,2022-04-10
+Criminal Justice Short-term Housing,87,single_adults,2022-04-10
+Children,14669,families_with_children,2022-04-07
+Adults,11243,families_with_children,2022-04-07
+Total Single Adults,16610,total_single_adults,2022-04-07
+Individuals (Adults),2939,adult_families_census,2022-04-07
+Safe Haven Utilization,1380,single_adults,2022-04-07
+Drop-in Center Overnight Census,154,single_adults,2022-04-07
+Faith Bed Census,27,single_adults,2022-04-07
+Veterans In Short-term Housing,166,single_adults,2022-04-07
+Criminal Justice Short-term Housing,88,single_adults,2022-04-07
+Children,14660,families_with_children,2022-04-06
+Adults,11232,families_with_children,2022-04-06
+Total Single Adults,16630,total_single_adults,2022-04-06
+Individuals (Adults),2952,adult_families_census,2022-04-06
+Safe Haven Utilization,1377,single_adults,2022-04-06
+Drop-in Center Overnight Census,110,single_adults,2022-04-06
+Faith Bed Census,21,single_adults,2022-04-06
+Veterans In Short-term Housing,170,single_adults,2022-04-06
+Criminal Justice Short-term Housing,90,single_adults,2022-04-06
+Children,14636,families_with_children,2022-04-05
+Adults,11207,families_with_children,2022-04-05
+Total Single Adults,16584,total_single_adults,2022-04-05
+Individuals (Adults),2925,adult_families_census,2022-04-05
+Safe Haven Utilization,1372,single_adults,2022-04-05
+Drop-in Center Overnight Census,171,single_adults,2022-04-05
+Faith Bed Census,22,single_adults,2022-04-05
+Veterans In Short-term Housing,170,single_adults,2022-04-05
+Criminal Justice Short-term Housing,88,single_adults,2022-04-05
+Children,14656,families_with_children,2022-04-04
+Adults,11223,families_with_children,2022-04-04
+Total Single Adults,16568,total_single_adults,2022-04-04
+Individuals (Adults),2941,adult_families_census,2022-04-04
+Safe Haven Utilization,1371,single_adults,2022-04-04
+Drop-in Center Overnight Census,160,single_adults,2022-04-04
+Faith Bed Census,29,single_adults,2022-04-04
+Veterans In Short-term Housing,168,single_adults,2022-04-04
+Criminal Justice Short-term Housing,89,single_adults,2022-04-04
+Children,14637,families_with_children,2022-03-31
+Adults,11182,families_with_children,2022-03-31
+Total Single Adults,16570,total_single_adults,2022-03-31
+Individuals (Adults),2929,adult_families_census,2022-03-31
+Safe Haven Utilization,1284,single_adults,2022-03-31
+Drop-in Center Overnight Census,153,single_adults,2022-03-31
+Faith Bed Census,27,single_adults,2022-03-31
+Veterans In Short-term Housing,177,single_adults,2022-03-31
+Criminal Justice Short-term Housing,94,single_adults,2022-03-31
+Children,14560,families_with_children,2022-03-30
+Adults,11142,families_with_children,2022-03-30
+Total Single Adults,16634,total_single_adults,2022-03-30
+Individuals (Adults),2950,adult_families_census,2022-03-30
+Safe Haven Utilization,1278,single_adults,2022-03-30
+Drop-in Center Overnight Census,155,single_adults,2022-03-30
+Faith Bed Census,28,single_adults,2022-03-30
+Veterans In Short-term Housing,176,single_adults,2022-03-30
+Criminal Justice Short-term Housing,92,single_adults,2022-03-30
+Children,14525,families_with_children,2022-03-29
+Adults,11113,families_with_children,2022-03-29
+Total Single Adults,16695,total_single_adults,2022-03-29
+Individuals (Adults),2907,adult_families_census,2022-03-29
+Safe Haven Utilization,1346,single_adults,2022-03-29
+Drop-in Center Overnight Census,180,single_adults,2022-03-29
+Faith Bed Census,21,single_adults,2022-03-29
+Veterans In Short-term Housing,182,single_adults,2022-03-29
+Criminal Justice Short-term Housing,92,single_adults,2022-03-29
+Children,14570,families_with_children,2022-03-28
+Adults,11145,families_with_children,2022-03-28
+Total Single Adults,16667,total_single_adults,2022-03-28
+Individuals (Adults),2934,adult_families_census,2022-03-28
+Safe Haven Utilization,1349,single_adults,2022-03-28
+Drop-in Center Overnight Census,178,single_adults,2022-03-28
+Faith Bed Census,30,single_adults,2022-03-28
+Veterans In Short-term Housing,169,single_adults,2022-03-28
+Criminal Justice Short-term Housing,93,single_adults,2022-03-28
+Children,14565,families_with_children,2022-03-27
+Adults,11134,families_with_children,2022-03-27
+Total Single Adults,16560,total_single_adults,2022-03-27
+Individuals (Adults),2917,adult_families_census,2022-03-27
+Safe Haven Utilization,1346,single_adults,2022-03-27
+Drop-in Center Overnight Census,177,single_adults,2022-03-27
+Faith Bed Census,28,single_adults,2022-03-27
+Veterans In Short-term Housing,173,single_adults,2022-03-27
+Criminal Justice Short-term Housing,85,single_adults,2022-03-27
+Children,14584,families_with_children,2022-03-23
+Adults,11126,families_with_children,2022-03-23
+Total Single Adults,16624,total_single_adults,2022-03-23
+Individuals (Adults),2927,adult_families_census,2022-03-23
+Safe Haven Utilization,1350,single_adults,2022-03-23
+Drop-in Center Overnight Census,175,single_adults,2022-03-23
+Faith Bed Census,33,single_adults,2022-03-23
+Veterans In Short-term Housing,179,single_adults,2022-03-23
+Criminal Justice Short-term Housing,89,single_adults,2022-03-23
+Children,14586,families_with_children,2022-03-22
+Adults,11121,families_with_children,2022-03-22
+Total Single Adults,16566,total_single_adults,2022-03-22
+Individuals (Adults),2945,adult_families_census,2022-03-22
+Safe Haven Utilization,1353,single_adults,2022-03-22
+Drop-in Center Overnight Census,154,single_adults,2022-03-22
+Faith Bed Census,19,single_adults,2022-03-22
+Veterans In Short-term Housing,173,single_adults,2022-03-22
+Criminal Justice Short-term Housing,93,single_adults,2022-03-22
+Children,14664,families_with_children,2022-03-21
+Adults,11209,families_with_children,2022-03-21
+Total Single Adults,16509,total_single_adults,2022-03-21
+Individuals (Adults),2952,adult_families_census,2022-03-21
+Safe Haven Utilization,1357,single_adults,2022-03-21
+Drop-in Center Overnight Census,171,single_adults,2022-03-21
+Faith Bed Census,25,single_adults,2022-03-21
+Veterans In Short-term Housing,174,single_adults,2022-03-21
+Criminal Justice Short-term Housing,89,single_adults,2022-03-21
+Children,14668,families_with_children,2022-03-20
+Adults,11212,families_with_children,2022-03-20
+Total Single Adults,16501,total_single_adults,2022-03-20
+Individuals (Adults),2919,adult_families_census,2022-03-20
+Safe Haven Utilization,1356,single_adults,2022-03-20
+Drop-in Center Overnight Census,166,single_adults,2022-03-20
+Faith Bed Census,23,single_adults,2022-03-20
+Veterans In Short-term Housing,176,single_adults,2022-03-20
+Criminal Justice Short-term Housing,82,single_adults,2022-03-20
+Children,14604,families_with_children,2022-03-17
+Adults,11165,families_with_children,2022-03-17
+Total Single Adults,16543,total_single_adults,2022-03-17
+Individuals (Adults),2920,adult_families_census,2022-03-17
+Safe Haven Utilization,1354,single_adults,2022-03-17
+Drop-in Center Overnight Census,157,single_adults,2022-03-17
+Faith Bed Census,23,single_adults,2022-03-17
+Veterans In Short-term Housing,171,single_adults,2022-03-17
+Criminal Justice Short-term Housing,93,single_adults,2022-03-17
+Children,14561,families_with_children,2022-03-16
+Adults,11149,families_with_children,2022-03-16
+Total Single Adults,16510,total_single_adults,2022-03-16
+Individuals (Adults),2916,adult_families_census,2022-03-16
+Safe Haven Utilization,1357,single_adults,2022-03-16
+Drop-in Center Overnight Census,161,single_adults,2022-03-16
+Faith Bed Census,19,single_adults,2022-03-16
+Veterans In Short-term Housing,172,single_adults,2022-03-16
+Criminal Justice Short-term Housing,93,single_adults,2022-03-16
+Children,14535,families_with_children,2022-03-15
+Adults,11148,families_with_children,2022-03-15
+Total Single Adults,16542,total_single_adults,2022-03-15
+Individuals (Adults),2933,adult_families_census,2022-03-15
+Safe Haven Utilization,1359,single_adults,2022-03-15
+Drop-in Center Overnight Census,174,single_adults,2022-03-15
+Faith Bed Census,20,single_adults,2022-03-15
+Veterans In Short-term Housing,172,single_adults,2022-03-15
+Criminal Justice Short-term Housing,94,single_adults,2022-03-15
+Children,14544,families_with_children,2022-03-14
+Adults,11158,families_with_children,2022-03-14
+Total Single Adults,16633,total_single_adults,2022-03-14
+Individuals (Adults),2974,adult_families_census,2022-03-14
+Safe Haven Utilization,1354,single_adults,2022-03-14
+Drop-in Center Overnight Census,167,single_adults,2022-03-14
+Faith Bed Census,22,single_adults,2022-03-14
+Veterans In Short-term Housing,165,single_adults,2022-03-14
+Criminal Justice Short-term Housing,93,single_adults,2022-03-14
+Children,14546,families_with_children,2022-03-13
+Adults,11159,families_with_children,2022-03-13
+Total Single Adults,16585,total_single_adults,2022-03-13
+Individuals (Adults),2971,adult_families_census,2022-03-13
+Safe Haven Utilization,1352,single_adults,2022-03-13
+Drop-in Center Overnight Census,128,single_adults,2022-03-13
+Faith Bed Census,25,single_adults,2022-03-13
+Veterans In Short-term Housing,171,single_adults,2022-03-13
+Criminal Justice Short-term Housing,89,single_adults,2022-03-13
+Children,14500,families_with_children,2022-03-10
+Adults,11103,families_with_children,2022-03-10
+Total Single Adults,16603,total_single_adults,2022-03-10
+Individuals (Adults),2975,adult_families_census,2022-03-10
+Safe Haven Utilization,1344,single_adults,2022-03-10
+Drop-in Center Overnight Census,169,single_adults,2022-03-10
+Faith Bed Census,23,single_adults,2022-03-10
+Veterans In Short-term Housing,171,single_adults,2022-03-10
+Criminal Justice Short-term Housing,97,single_adults,2022-03-10
+Children,14533,families_with_children,2022-03-09
+Adults,11110,families_with_children,2022-03-09
+Total Single Adults,16716,total_single_adults,2022-03-09
+Individuals (Adults),2976,adult_families_census,2022-03-09
+Safe Haven Utilization,1346,single_adults,2022-03-09
+Drop-in Center Overnight Census,179,single_adults,2022-03-09
+Faith Bed Census,20,single_adults,2022-03-09
+Veterans In Short-term Housing,171,single_adults,2022-03-09
+Criminal Justice Short-term Housing,97,single_adults,2022-03-09
+Children,14511,families_with_children,2022-03-08
+Adults,11104,families_with_children,2022-03-08
+Total Single Adults,16620,total_single_adults,2022-03-08
+Individuals (Adults),2978,adult_families_census,2022-03-08
+Safe Haven Utilization,1344,single_adults,2022-03-08
+Drop-in Center Overnight Census,140,single_adults,2022-03-08
+Faith Bed Census,18,single_adults,2022-03-08
+Veterans In Short-term Housing,168,single_adults,2022-03-08
+Criminal Justice Short-term Housing,94,single_adults,2022-03-08
+Children,14576,families_with_children,2022-03-07
+Adults,11125,families_with_children,2022-03-07
+Total Single Adults,16589,total_single_adults,2022-03-07
+Individuals (Adults),3001,adult_families_census,2022-03-07
+Safe Haven Utilization,1346,single_adults,2022-03-07
+Drop-in Center Overnight Census,178,single_adults,2022-03-07
+Faith Bed Census,20,single_adults,2022-03-07
+Veterans In Short-term Housing,173,single_adults,2022-03-07
+Criminal Justice Short-term Housing,95,single_adults,2022-03-07
+Children,14628,families_with_children,2022-03-06
+Adults,11178,families_with_children,2022-03-06
+Total Single Adults,16443,total_single_adults,2022-03-06
+Individuals (Adults),2950,adult_families_census,2022-03-06
+Safe Haven Utilization,1349,single_adults,2022-03-06
+Drop-in Center Overnight Census,160,single_adults,2022-03-06
+Faith Bed Census,25,single_adults,2022-03-06
+Veterans In Short-term Housing,166,single_adults,2022-03-06
+Criminal Justice Short-term Housing,93,single_adults,2022-03-06
+Children,14601,families_with_children,2022-03-03
+Adults,11152,families_with_children,2022-03-03
+Total Single Adults,16561,total_single_adults,2022-03-03
+Individuals (Adults),2962,adult_families_census,2022-03-03
+Safe Haven Utilization,1353,single_adults,2022-03-03
+Drop-in Center Overnight Census,163,single_adults,2022-03-03
+Faith Bed Census,20,single_adults,2022-03-03
+Veterans In Short-term Housing,167,single_adults,2022-03-03
+Criminal Justice Short-term Housing,97,single_adults,2022-03-03
+Children,14563,families_with_children,2022-03-01
+Adults,11123,families_with_children,2022-03-01
+Total Single Adults,16621,total_single_adults,2022-03-01
+Individuals (Adults),2982,adult_families_census,2022-03-01
+Safe Haven Utilization,1338,single_adults,2022-03-01
+Drop-in Center Overnight Census,181,single_adults,2022-03-01
+Faith Bed Census,22,single_adults,2022-03-01
+Veterans In Short-term Housing,167,single_adults,2022-03-01
+Criminal Justice Short-term Housing,98,single_adults,2022-03-01
+Children,14560,families_with_children,2022-02-28
+Adults,11122,families_with_children,2022-02-28
+Total Single Adults,16693,total_single_adults,2022-02-28
+Individuals (Adults),3001,adult_families_census,2022-02-28
+Safe Haven Utilization,1338,single_adults,2022-02-28
+Drop-in Center Overnight Census,142,single_adults,2022-02-28
+Faith Bed Census,0,single_adults,2022-02-28
+Veterans In Short-term Housing,170,single_adults,2022-02-28
+Criminal Justice Short-term Housing,94,single_adults,2022-02-28
+Children,14470,families_with_children,2022-02-24
+Adults,11080,families_with_children,2022-02-24
+Total Single Adults,16695,total_single_adults,2022-02-24
+Individuals (Adults),2980,adult_families_census,2022-02-24
+Safe Haven Utilization,1339,single_adults,2022-02-24
+Drop-in Center Overnight Census,156,single_adults,2022-02-24
+Faith Bed Census,19,single_adults,2022-02-24
+Veterans In Short-term Housing,172,single_adults,2022-02-24
+Criminal Justice Short-term Housing,97,single_adults,2022-02-24
+Children,14476,families_with_children,2022-02-23
+Adults,11075,families_with_children,2022-02-23
+Total Single Adults,16699,total_single_adults,2022-02-23
+Individuals (Adults),3003,adult_families_census,2022-02-23
+Safe Haven Utilization,1330,single_adults,2022-02-23
+Drop-in Center Overnight Census,113,single_adults,2022-02-23
+Faith Bed Census,19,single_adults,2022-02-23
+Veterans In Short-term Housing,175,single_adults,2022-02-23
+Criminal Justice Short-term Housing,91,single_adults,2022-02-23
+Children,14507,families_with_children,2022-02-22
+Adults,11101,families_with_children,2022-02-22
+Total Single Adults,16702,total_single_adults,2022-02-22
+Individuals (Adults),3016,adult_families_census,2022-02-22
+Safe Haven Utilization,1338,single_adults,2022-02-22
+Drop-in Center Overnight Census,161,single_adults,2022-02-22
+Faith Bed Census,24,single_adults,2022-02-22
+Veterans In Short-term Housing,172,single_adults,2022-02-22
+Criminal Justice Short-term Housing,94,single_adults,2022-02-22
+Children,14531,families_with_children,2022-02-21
+Adults,11101,families_with_children,2022-02-21
+Total Single Adults,16684,total_single_adults,2022-02-21
+Individuals (Adults),3008,adult_families_census,2022-02-21
+Safe Haven Utilization,1331,single_adults,2022-02-21
+Drop-in Center Overnight Census,140,single_adults,2022-02-21
+Faith Bed Census,26,single_adults,2022-02-21
+Veterans In Short-term Housing,169,single_adults,2022-02-21
+Criminal Justice Short-term Housing,86,single_adults,2022-02-21
+Children,14518,families_with_children,2022-02-17
+Adults,11091,families_with_children,2022-02-17
+Total Single Adults,16619,total_single_adults,2022-02-17
+Individuals (Adults),2996,adult_families_census,2022-02-17
+Safe Haven Utilization,1325,single_adults,2022-02-17
+Drop-in Center Overnight Census,160,single_adults,2022-02-17
+Faith Bed Census,23,single_adults,2022-02-17
+Veterans In Short-term Housing,182,single_adults,2022-02-17
+Criminal Justice Short-term Housing,98,single_adults,2022-02-17
+Children,14462,families_with_children,2022-02-16
+Adults,11055,families_with_children,2022-02-16
+Total Single Adults,16662,total_single_adults,2022-02-16
+Individuals (Adults),3005,adult_families_census,2022-02-16
+Safe Haven Utilization,1323,single_adults,2022-02-16
+Drop-in Center Overnight Census,157,single_adults,2022-02-16
+Faith Bed Census,22,single_adults,2022-02-16
+Veterans In Short-term Housing,181,single_adults,2022-02-16
+Criminal Justice Short-term Housing,98,single_adults,2022-02-16
+Children,14429,families_with_children,2022-02-15
+Adults,11025,families_with_children,2022-02-15
+Total Single Adults,16674,total_single_adults,2022-02-15
+Individuals (Adults),3019,adult_families_census,2022-02-15
+Safe Haven Utilization,1324,single_adults,2022-02-15
+Drop-in Center Overnight Census,172,single_adults,2022-02-15
+Faith Bed Census,31,single_adults,2022-02-15
+Veterans In Short-term Housing,182,single_adults,2022-02-15
+Criminal Justice Short-term Housing,96,single_adults,2022-02-15
+Children,14521,families_with_children,2022-02-14
+Adults,11095,families_with_children,2022-02-14
+Total Single Adults,16628,total_single_adults,2022-02-14
+Individuals (Adults),3051,adult_families_census,2022-02-14
+Safe Haven Utilization,1321,single_adults,2022-02-14
+Drop-in Center Overnight Census,175,single_adults,2022-02-14
+Faith Bed Census,23,single_adults,2022-02-14
+Veterans In Short-term Housing,182,single_adults,2022-02-14
+Criminal Justice Short-term Housing,98,single_adults,2022-02-14
+Children,14576,families_with_children,2022-02-13
+Adults,11137,families_with_children,2022-02-13
+Total Single Adults,16580,total_single_adults,2022-02-13
+Individuals (Adults),3017,adult_families_census,2022-02-13
+Safe Haven Utilization,1315,single_adults,2022-02-13
+Drop-in Center Overnight Census,165,single_adults,2022-02-13
+Faith Bed Census,22,single_adults,2022-02-13
+Veterans In Short-term Housing,163,single_adults,2022-02-13
+Criminal Justice Short-term Housing,92,single_adults,2022-02-13
+Children,14476,families_with_children,2022-02-10
+Adults,11042,families_with_children,2022-02-10
+Total Single Adults,16573,total_single_adults,2022-02-10
+Individuals (Adults),2997,adult_families_census,2022-02-10
+Safe Haven Utilization,1323,single_adults,2022-02-10
+Drop-in Center Overnight Census,146,single_adults,2022-02-10
+Faith Bed Census,23,single_adults,2022-02-10
+Veterans In Short-term Housing,185,single_adults,2022-02-10
+Criminal Justice Short-term Housing,100,single_adults,2022-02-10
+Children,14578,families_with_children,2022-02-09
+Adults,11124,families_with_children,2022-02-09
+Total Single Adults,16567,total_single_adults,2022-02-09
+Individuals (Adults),3004,adult_families_census,2022-02-09
+Safe Haven Utilization,1308,single_adults,2022-02-09
+Drop-in Center Overnight Census,169,single_adults,2022-02-09
+Faith Bed Census,21,single_adults,2022-02-09
+Veterans In Short-term Housing,189,single_adults,2022-02-09
+Criminal Justice Short-term Housing,100,single_adults,2022-02-09
+Children,14532,families_with_children,2022-02-08
+Adults,11092,families_with_children,2022-02-08
+Total Single Adults,16552,total_single_adults,2022-02-08
+Individuals (Adults),2986,adult_families_census,2022-02-08
+Safe Haven Utilization,1292,single_adults,2022-02-08
+Drop-in Center Overnight Census,162,single_adults,2022-02-08
+Faith Bed Census,23,single_adults,2022-02-08
+Veterans In Short-term Housing,185,single_adults,2022-02-08
+Criminal Justice Short-term Housing,97,single_adults,2022-02-08
+Children,14533,families_with_children,2022-02-07
+Adults,11108,families_with_children,2022-02-07
+Total Single Adults,16551,total_single_adults,2022-02-07
+Individuals (Adults),3001,adult_families_census,2022-02-07
+Safe Haven Utilization,1254,single_adults,2022-02-07
+Drop-in Center Overnight Census,118,single_adults,2022-02-07
+Faith Bed Census,23,single_adults,2022-02-07
+Veterans In Short-term Housing,179,single_adults,2022-02-07
+Criminal Justice Short-term Housing,96,single_adults,2022-02-07
+Children,14634,families_with_children,2022-02-06
+Adults,11181,families_with_children,2022-02-06
+Total Single Adults,16576,total_single_adults,2022-02-06
+Individuals (Adults),3015,adult_families_census,2022-02-06
+Safe Haven Utilization,1315,single_adults,2022-02-06
+Drop-in Center Overnight Census,105,single_adults,2022-02-06
+Faith Bed Census,23,single_adults,2022-02-06
+Veterans In Short-term Housing,179,single_adults,2022-02-06
+Criminal Justice Short-term Housing,95,single_adults,2022-02-06
+Children,14591,families_with_children,2022-02-03
+Adults,11162,families_with_children,2022-02-03
+Total Single Adults,16471,total_single_adults,2022-02-03
+Individuals (Adults),3002,adult_families_census,2022-02-03
+Safe Haven Utilization,1313,single_adults,2022-02-03
+Drop-in Center Overnight Census,160,single_adults,2022-02-03
+Faith Bed Census,28,single_adults,2022-02-03
+Veterans In Short-term Housing,184,single_adults,2022-02-03
+Criminal Justice Short-term Housing,97,single_adults,2022-02-03
+Children,14586,families_with_children,2022-02-02
+Adults,11157,families_with_children,2022-02-02
+Total Single Adults,16538,total_single_adults,2022-02-02
+Individuals (Adults),2983,adult_families_census,2022-02-02
+Safe Haven Utilization,1314,single_adults,2022-02-02
+Drop-in Center Overnight Census,143,single_adults,2022-02-02
+Faith Bed Census,21,single_adults,2022-02-02
+Veterans In Short-term Housing,184,single_adults,2022-02-02
+Criminal Justice Short-term Housing,99,single_adults,2022-02-02
+Children,14506,families_with_children,2022-02-01
+Adults,11101,families_with_children,2022-02-01
+Total Single Adults,16602,total_single_adults,2022-02-01
+Individuals (Adults),2997,adult_families_census,2022-02-01
+Safe Haven Utilization,1312,single_adults,2022-02-01
+Drop-in Center Overnight Census,181,single_adults,2022-02-01
+Faith Bed Census,22,single_adults,2022-02-01
+Veterans In Short-term Housing,184,single_adults,2022-02-01
+Criminal Justice Short-term Housing,99,single_adults,2022-02-01
+Children,14583,families_with_children,2022-01-31
+Adults,11147,families_with_children,2022-01-31
+Total Single Adults,16579,total_single_adults,2022-01-31
+Individuals (Adults),3007,adult_families_census,2022-01-31
+Safe Haven Utilization,1305,single_adults,2022-01-31
+Drop-in Center Overnight Census,134,single_adults,2022-01-31
+Faith Bed Census,24,single_adults,2022-01-31
+Veterans In Short-term Housing,178,single_adults,2022-01-31
+Criminal Justice Short-term Housing,100,single_adults,2022-01-31
+Children,14595,families_with_children,2022-01-30
+Adults,11155,families_with_children,2022-01-30
+Total Single Adults,16628,total_single_adults,2022-01-30
+Individuals (Adults),2988,adult_families_census,2022-01-30
+Safe Haven Utilization,1396,single_adults,2022-01-30
+Drop-in Center Overnight Census,169,single_adults,2022-01-30
+Faith Bed Census,20,single_adults,2022-01-30
+Veterans In Short-term Housing,167,single_adults,2022-01-30
+Criminal Justice Short-term Housing,98,single_adults,2022-01-30
+Children,14648,families_with_children,2022-01-27
+Adults,11193,families_with_children,2022-01-27
+Total Single Adults,16696,total_single_adults,2022-01-27
+Individuals (Adults),2983,adult_families_census,2022-01-27
+Safe Haven Utilization,1288,single_adults,2022-01-27
+Drop-in Center Overnight Census,188,single_adults,2022-01-27
+Faith Bed Census,18,single_adults,2022-01-27
+Veterans In Short-term Housing,176,single_adults,2022-01-27
+Criminal Justice Short-term Housing,105,single_adults,2022-01-27
+Children,14592,families_with_children,2022-01-26
+Adults,11139,families_with_children,2022-01-26
+Total Single Adults,16730,total_single_adults,2022-01-26
+Individuals (Adults),2975,adult_families_census,2022-01-26
+Safe Haven Utilization,1298,single_adults,2022-01-26
+Drop-in Center Overnight Census,168,single_adults,2022-01-26
+Faith Bed Census,5,single_adults,2022-01-26
+Veterans In Short-term Housing,171,single_adults,2022-01-26
+Criminal Justice Short-term Housing,106,single_adults,2022-01-26
+Children,14565,families_with_children,2022-01-25
+Adults,11124,families_with_children,2022-01-25
+Total Single Adults,16700,total_single_adults,2022-01-25
+Individuals (Adults),2978,adult_families_census,2022-01-25
+Safe Haven Utilization,1280,single_adults,2022-01-25
+Drop-in Center Overnight Census,172,single_adults,2022-01-25
+Faith Bed Census,5,single_adults,2022-01-25
+Veterans In Short-term Housing,177,single_adults,2022-01-25
+Criminal Justice Short-term Housing,102,single_adults,2022-01-25
+Children,14641,families_with_children,2022-01-24
+Adults,11169,families_with_children,2022-01-24
+Total Single Adults,16690,total_single_adults,2022-01-24
+Individuals (Adults),2998,adult_families_census,2022-01-24
+Safe Haven Utilization,1299,single_adults,2022-01-24
+Drop-in Center Overnight Census,103,single_adults,2022-01-24
+Faith Bed Census,16,single_adults,2022-01-24
+Veterans In Short-term Housing,177,single_adults,2022-01-24
+Criminal Justice Short-term Housing,100,single_adults,2022-01-24
+Children,14554,families_with_children,2022-01-23
+Adults,11111,families_with_children,2022-01-23
+Total Single Adults,16653,total_single_adults,2022-01-23
+Individuals (Adults),2974,adult_families_census,2022-01-23
+Safe Haven Utilization,1302,single_adults,2022-01-23
+Drop-in Center Overnight Census,168,single_adults,2022-01-23
+Faith Bed Census,19,single_adults,2022-01-23
+Veterans In Short-term Housing,171,single_adults,2022-01-23
+Criminal Justice Short-term Housing,97,single_adults,2022-01-23
+Children,14590,families_with_children,2022-01-20
+Adults,11143,families_with_children,2022-01-20
+Total Single Adults,16689,total_single_adults,2022-01-20
+Individuals (Adults),2979,adult_families_census,2022-01-20
+Safe Haven Utilization,1303,single_adults,2022-01-20
+Drop-in Center Overnight Census,150,single_adults,2022-01-20
+Faith Bed Census,19,single_adults,2022-01-20
+Veterans In Short-term Housing,168,single_adults,2022-01-20
+Criminal Justice Short-term Housing,99,single_adults,2022-01-20
+Children,14548,families_with_children,2022-01-19
+Adults,11116,families_with_children,2022-01-19
+Total Single Adults,16626,total_single_adults,2022-01-19
+Individuals (Adults),2973,adult_families_census,2022-01-19
+Safe Haven Utilization,1300,single_adults,2022-01-19
+Drop-in Center Overnight Census,100,single_adults,2022-01-19
+Faith Bed Census,17,single_adults,2022-01-19
+Veterans In Short-term Housing,165,single_adults,2022-01-19
+Criminal Justice Short-term Housing,102,single_adults,2022-01-19
+Children,14597,families_with_children,2022-01-18
+Adults,11162,families_with_children,2022-01-18
+Total Single Adults,16695,total_single_adults,2022-01-18
+Individuals (Adults),2996,adult_families_census,2022-01-18
+Safe Haven Utilization,1301,single_adults,2022-01-18
+Drop-in Center Overnight Census,166,single_adults,2022-01-18
+Faith Bed Census,16,single_adults,2022-01-18
+Veterans In Short-term Housing,168,single_adults,2022-01-18
+Criminal Justice Short-term Housing,102,single_adults,2022-01-18
+Children,14609,families_with_children,2022-01-17
+Adults,11161,families_with_children,2022-01-17
+Total Single Adults,16641,total_single_adults,2022-01-17
+Individuals (Adults),3018,adult_families_census,2022-01-17
+Safe Haven Utilization,1308,single_adults,2022-01-17
+Drop-in Center Overnight Census,156,single_adults,2022-01-17
+Faith Bed Census,24,single_adults,2022-01-17
+Veterans In Short-term Housing,169,single_adults,2022-01-17
+Criminal Justice Short-term Housing,99,single_adults,2022-01-17
+Children,14621,families_with_children,2022-01-13
+Adults,11151,families_with_children,2022-01-13
+Total Single Adults,16557,total_single_adults,2022-01-13
+Individuals (Adults),3006,adult_families_census,2022-01-13
+Safe Haven Utilization,1301,single_adults,2022-01-13
+Drop-in Center Overnight Census,154,single_adults,2022-01-13
+Faith Bed Census,18,single_adults,2022-01-13
+Veterans In Short-term Housing,161,single_adults,2022-01-13
+Criminal Justice Short-term Housing,101,single_adults,2022-01-13
+Children,14662,families_with_children,2022-01-12
+Adults,11169,families_with_children,2022-01-12
+Total Single Adults,16636,total_single_adults,2022-01-12
+Individuals (Adults),3003,adult_families_census,2022-01-12
+Safe Haven Utilization,1302,single_adults,2022-01-12
+Drop-in Center Overnight Census,151,single_adults,2022-01-12
+Faith Bed Census,17,single_adults,2022-01-12
+Veterans In Short-term Housing,164,single_adults,2022-01-12
+Criminal Justice Short-term Housing,99,single_adults,2022-01-12
+Children,14602,families_with_children,2022-01-11
+Adults,11123,families_with_children,2022-01-11
+Total Single Adults,16603,total_single_adults,2022-01-11
+Individuals (Adults),3013,adult_families_census,2022-01-11
+Safe Haven Utilization,1172,single_adults,2022-01-11
+Drop-in Center Overnight Census,183,single_adults,2022-01-11
+Faith Bed Census,19,single_adults,2022-01-11
+Veterans In Short-term Housing,164,single_adults,2022-01-11
+Criminal Justice Short-term Housing,96,single_adults,2022-01-11
+Children,14558,families_with_children,2022-01-10
+Adults,11098,families_with_children,2022-01-10
+Total Single Adults,16578,total_single_adults,2022-01-10
+Individuals (Adults),3009,adult_families_census,2022-01-10
+Safe Haven Utilization,1170,single_adults,2022-01-10
+Drop-in Center Overnight Census,178,single_adults,2022-01-10
+Faith Bed Census,24,single_adults,2022-01-10
+Veterans In Short-term Housing,162,single_adults,2022-01-10
+Criminal Justice Short-term Housing,94,single_adults,2022-01-10
+Children,14596,families_with_children,2022-01-09
+Adults,11121,families_with_children,2022-01-09
+Total Single Adults,16546,total_single_adults,2022-01-09
+Individuals (Adults),3015,adult_families_census,2022-01-09
+Safe Haven Utilization,1165,single_adults,2022-01-09
+Drop-in Center Overnight Census,137,single_adults,2022-01-09
+Faith Bed Census,23,single_adults,2022-01-09
+Veterans In Short-term Housing,145,single_adults,2022-01-09
+Criminal Justice Short-term Housing,88,single_adults,2022-01-09
+Children,14581,families_with_children,2022-01-05
+Adults,11087,families_with_children,2022-01-05
+Total Single Adults,16541,total_single_adults,2022-01-05
+Individuals (Adults),3042,adult_families_census,2022-01-05
+Safe Haven Utilization,1164,single_adults,2022-01-05
+Drop-in Center Overnight Census,122,single_adults,2022-01-05
+Faith Bed Census,20,single_adults,2022-01-05
+Veterans In Short-term Housing,171,single_adults,2022-01-05
+Criminal Justice Short-term Housing,91,single_adults,2022-01-05
+Children,14508,families_with_children,2022-01-04
+Adults,11042,families_with_children,2022-01-04
+Total Single Adults,16565,total_single_adults,2022-01-04
+Individuals (Adults),3023,adult_families_census,2022-01-04
+Safe Haven Utilization,1163,single_adults,2022-01-04
+Drop-in Center Overnight Census,128,single_adults,2022-01-04
+Faith Bed Census,19,single_adults,2022-01-04
+Veterans In Short-term Housing,142,single_adults,2022-01-04
+Criminal Justice Short-term Housing,92,single_adults,2022-01-04
+Children,14589,families_with_children,2022-01-03
+Adults,11120,families_with_children,2022-01-03
+Total Single Adults,16523,total_single_adults,2022-01-03
+Individuals (Adults),3031,adult_families_census,2022-01-03
+Safe Haven Utilization,1162,single_adults,2022-01-03
+Drop-in Center Overnight Census,158,single_adults,2022-01-03
+Faith Bed Census,26,single_adults,2022-01-03
+Veterans In Short-term Housing,139,single_adults,2022-01-03
+Criminal Justice Short-term Housing,89,single_adults,2022-01-03
+Children,14663,families_with_children,2022-01-02
+Adults,11172,families_with_children,2022-01-02
+Total Single Adults,16434,total_single_adults,2022-01-02
+Individuals (Adults),3016,adult_families_census,2022-01-02
+Safe Haven Utilization,937,single_adults,2022-01-02
+Drop-in Center Overnight Census,98,single_adults,2022-01-02
+Faith Bed Census,23,single_adults,2022-01-02
+Veterans In Short-term Housing,169,single_adults,2022-01-02
+Criminal Justice Short-term Housing,79,single_adults,2022-01-02
