@@ -119,7 +119,7 @@ unique_by_agency_new <- raw %>%
                            
                            agency_abb == "hra" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
-                             facility_or_program_type == "HRA-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                             facility_or_program_type == "HRA-administered facilities" | facility_or_program_type == "HRA-administered facilities 1" ~ total_single_adults + total_adults_in_families + total_children,
                            agency_abb == "hpd" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "HPD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
