@@ -101,8 +101,7 @@ library(stringr)
 
 #MOCJ and DOHMH are not in the historical, they first appear here in May 2023
 
-unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv",
-                                     stringsAsFactors = F) %>% 
+unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv") %>% 
   mutate(across(.cols = everything(), .fns = as.character)) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "10", .x))) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
@@ -134,11 +133,14 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
                            agency_abb == "mocj" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "Short-term reentry housing" ~ total_single_adults,
+                           agency_abb == "oti" & 
+                             category == "Total number of individuals utilizing city-administered facilities" &
+                             facility_or_program_type == "Humanitarian Emergency Response and Relief Centers (HERRCs)"~ total,
                            T ~ NA
          ),
          date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
          table = "number of unduplicated individuals",
-         root = "ll37 new report") %>% 
+         root = "ll79 new report") %>% 
   filter(!is.na(count)) %>% 
   select(agency_abb, date, count, table)
 
