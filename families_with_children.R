@@ -104,7 +104,7 @@ library(stringr)
 raw <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv")
 
 unique_by_agency_new <- raw %>% 
-  mutate(across(.cols = everything(), .fns = ~as.character(str_replace_all(.x, ",", "")))) %>% 
+  mutate(across(.cols = everything(), .fns = ~as.character(str_replace_all(.x, ",|#", "")))) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "0", .x))) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
