@@ -20,82 +20,33 @@ library(stringr)
 #write something that will update all of these datsets when there is new data
 
 
-################
-#OLD VERSION - OPEN DATA COMBINED FILES IN SUMMER 2023
-
-# data_links <- list(dhs = "https://data.cityofnewyork.us/resource/2mqz-v5im.json",
-#                 dycd = "https://data.cityofnewyork.us/resource/2232-dj5q.json",
-#                 hpd = "https://data.cityofnewyork.us/resource/mdht-5s6e.json",
-#                 hra = "https://data.cityofnewyork.us/resource/e4ty-r26d.json"
-#            )
-# 
-# 
-# ll37_extract <- function(name, link) {
-#   
-#   table_name <- name
-#   # var <- sym(if_else(table_name == "dhs", "ll37_report_row_name", "category"))
-#   if (table_name == "dhs") {
-#     str_var <- "ll37_report_row_name"
-#   } else {
-#     str_var <- "category"
-#   }
-#   
-#   var <- sym(str_var)
-#   
-#   
-
-#   if(table_name != "hra") {
-#     raw <- read.socrata(link) %>% 
-#       clean_names() %>% 
-#       mutate(table = paste0("total unique individuals in ", table_name, " facilities"))
-#   } else {
-#     raw <- read.socrata(link) %>% 
-#       clean_names() %>% 
-#       mutate(table = paste0("total unique individuals in ", table_name, " facilities")) %>% 
-#       rename(total_adults_in_families = adults_families)
-#   }
-# 
-#   if(table_name == "hpd") {
-#     raw %>%
-#       filter(facility_type == "HPD Facilities Combined (Census Total)" & facility_indicator == "Census Total") %>% 
-#       mutate(count = as.numeric(total_adults) + as.numeric(total_children),
-#              date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
-#       select(date, count, table)
-#   }
-#   else {
-#     raw %>% 
-#       filter({{var}} == value) %>% 
-#       mutate_at(c("total_single_adults", "total_adults_in_families", "total_children"), as.numeric) %>% 
-#       mutate(count = total_single_adults + total_adults_in_families + total_children,
-#              date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d")) %>% 
-#       select(date, count, table)
-#   }
-# }
-################
-
 #historical data - I think we only need to do this once?
-# unique_by_agency_historical <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>% 
+# unique_by_agency_37 <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>%
+#   group_by(agency,data_period) %>% 
+#   filter(!(agency == "Human Resources Administration (HRA)" & category == "Census")) %>% 
 #   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
 #          count = case_when(agency_abb == "dhs" &
 #                              category == "Number of unduplicated persons" &
 #                              facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
 #                            agency_abb == "dycd" &
 #                              category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
-#                            
+# 
 #                            #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
 #                            agency_abb == "hra" &
-#                              category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **" ~ total_single_adults + total_adults_on_families + total_children,
+#                              category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **"~ sum(total_single_adults, na.rm = T) + sum(total_adults_on_families, na.rm = T) + sum(total_children, na.rm = T),
 #                            agency_abb == "hpd" &
 #                              category == "Census Total" ~ total_adults + total_children,
 #                            T ~ NA
 #          ),
 #          date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
 #          table = "number of unduplicated individuals",
-#          root = "ll37 historical") %>% 
-#   filter(!is.na(count)) %>% 
-#   select(agency_abb, date, count, table)
-  
-#ongoing question - should we add na.rm to these sums in case they miss data entry?
+#          root = "ll37 historical") %>%
+#   filter(!is.na(count)) %>%
+#   ungroup() %>% 
+#   select(agency_abb, date, count, table, root) %>% 
+#   filter(date >= as.Date("2019-01-01"))
+# 
+# write_csv(unique_by_agency_37 %>% arrange(date), "./data/ll37_data_unique_by_agency.csv")
 
 #new version
 
@@ -142,40 +93,37 @@ unique_by_agency_new <- raw %>%
          ),
          date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
          table = "number of unduplicated individuals",
-         root = "ll79 new report") %>% 
+         root = "ll79 new report",
+         agency_abb = if_else(agency_abb == "oti", "herrcs", agency_abb)) %>% 
   filter(!is.na(count)) %>% 
-  select(agency_abb, date, count, table)
+  select(agency_abb, date, count, table, root) %>% 
+  arrange(date, agency_abb)
 
 #current version
-unique_by_agency <- read_csv("./data/ll79_data_unique_by_agency.csv",
+
+unique_by_agency_old <- read_csv("./data/ll79_data_unique_by_agency.csv",
                              col_names = T,
-                             col_types = "cDnc")
+                             col_types = "cDncc")
 
 latest_new_data_date <- max(unique_by_agency_new$date,
                             na.rm = T)
 
-latest_old_data_date <- max(unique_by_agency$date,
+latest_old_data_date <- max(unique_by_agency_old$date,
                             na.rm = T)
 
 if (latest_new_data_date > latest_old_data_date) {
   # Write to disk if new data
-  unique_by_agency_new %>%
+  unique_by_agency_historical <- read_csv("./data/ll37_data_unique_by_agency.csv",
+                                          col_names = T,
+                                          col_types = "cDncc")
+    
+  unique_by_agency <- unique_by_agency_new %>%
+    bind_rows(unique_by_agency_historical) %>% 
     arrange(desc(date), agency_abb) %>% 
     write_csv("./data/ll79_data_unique_by_agency.csv")
-}
-
-
-## TODO: Change `table` column to `series(?)` and have it be
-## "number of unduplicated individuals" for all values except
-## hra which will break out "DV" and "HASA" individuals
-
-## add `root` column in final `select()` function to keep
-## in final dataset.
-
-
-
-
   
-
-
+  
+  
+  
+}
 
