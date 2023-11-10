@@ -301,23 +301,80 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   ### Updating Visualization ###
   ## DHS daily total shelter population line graph (UmiCQ)
   
+  dhs_d_total_individuals_dw <- dhs_unhoused_report_full %>% 
+    filter(table == "total_shelter_census" & measure == "Total Individuals") %>% 
+    select(date, count)
   
+  republish_chart(API_KEY = DW_API, chartID = "UmiCQ", 
+                  data = dhs_d_total_individuals_dw, 
+                  notes = paste0(
+                    "These totals include SafeHaven shelters, overnight drop-in centers, veterans shelters, faith-based shelters and \"criminal justice\" shelters housing people who have left jails and prisons as well as shelters for single adults, families with children and adult families. Some daily totals are missing because DHS does not report certain shelter types every day.",
+                    " Data current as of ", format(
+                      max(
+                        dhs_d_total_individuals_dw$date, na.rm = T), 
+                      "%m/%d/%Y"), "." 
+                  ))
+  
+  ### Updating Visualization ###
+  ## DHS daily program breakout line graph (zVEuB)
+  
+  # Dates and series to remove outliers
+  # Savehaven: 
+  # * 2022-06-13
+  # * 2022-09-11
+  # * 2022-09-18
+  # Drop-in overnight:
+  # * 2022-12-07
+  
+  dhs_d_program_dw <- dhs_unhoused_report_full %>% 
+    filter(measure %in% c("Criminal Justice Short-term Housing",
+                          "Drop-in Center Overnight Census",
+                          "Faith Bed Census",
+                          "Safe Haven Utilization",
+                          "Veterans In Short-term Housing")) %>% 
+    select(-table) %>% 
+    pivot_wider(names_from = measure, values_from = count) %>% 
+    rename(`Drop-in Overnight` = `Drop-in Center Overnight Census`,
+           `Faith Bed` = `Faith Bed Census`,
+           SafeHaven = `Safe Haven Utilization`,
+           Veterans = `Veterans In Short-term Housing`)
+  
+  republish_chart(API_KEY = DW_API, chartID = "zVEuB", 
+                  data = dhs_d_program_dw, 
+                  notes = paste0(
+                    "DHS does not publish a report every day, despite a legal mandate. DHS does not report the number of people staying in its stabilization beds.",
+                    " Data current as of ", format(
+                      max(
+                        dhs_d_program_dw$date, na.rm = T), 
+                      "%m/%d/%Y"), "." 
+                  ))
+  
+  ### Updating Visualization ###
+  ## DHS daily family composition breakout line graph (0omhO)
+  
+  dhs_d_fam_comp_dw <- dhs_unhoused_report_full %>% 
+    filter(measure %in% c("Total Single Adults",
+                          "Children",
+                          "Adults",
+                          "Individuals (Adults)")) %>% 
+    filter(!(measure == "Children" & table == "total_shelter_census")) %>% 
+    filter(!(measure == "Adults" & table == "total_shelter_census")) %>% 
+    select(-table) %>% 
+    pivot_wider(names_from = measure, values_from = count) %>% 
+    rename(`Adults with Children` = Adults,
+           `Single Adults` = `Total Single Adults`,
+           `Individuals in Adults Families` = `Individuals (Adults)`)
+  
+  republish_chart(API_KEY = DW_API, chartID = "0omhO", 
+                  data = dhs_d_fam_comp_dw, 
+                  notes = paste0(
+                    "DHS does not publish a report every day, despite a legal mandate. DHS does not report the number of people staying in its stabilization beds.",
+                    " Data current as of ", format(
+                      max(
+                        dhs_d_fam_comp_dw$date, na.rm = T), 
+                      "%m/%d/%Y"), "." 
+                  ))
   
   
 }
-
-### Updating Visualization ###
-
-## DHS daily specific program line graph (zVEuB)
-# Dates and series to remove outliers
-# Savehaven: 
-# * 2022-06-13
-# * 2022-09-11
-# * 2022-09-18
-# Drop-in overnight:
-# * 2022-12-07
-
-
-
-
 
