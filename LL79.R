@@ -7,18 +7,93 @@ library(ggplot2)
 library(janitor)
 library(stringr)
 
-#write something here to update this daily
+DW_API <- Sys.getenv("DW_API_KEY")
 
-#write something that checks if there is new LL37 data each day
-  # write code to update the csv with each of the 4 agency monthly updates
-  # if using datawrapper api only update the chart once all four agency updates are in
+## Function to republish chart via Datawrapper API ##
+republish_chart <- function(API_KEY, chartID, data, subtitle = NULL, 
+                            title = NULL, colors = NULL, 
+                            tooltip = NULL, legend = NULL, 
+                            axes = NULL, notes) {
+  
+  # PUT request to refresh data as per: https://developer.datawrapper.de/reference/putchartsiddata
+  dataRefresh <- PUT(url = paste0("https://api.datawrapper.de/v3/charts/", 
+                                  chartID, "/data"),
+                     add_headers(authorization = paste("Bearer", 
+                                                       API_KEY, 
+                                                       sep = " ")),
+                     body = format_csv(data))
+  
+  call_back <- list(metadata = list())
+  
+  # This section adds chart title, subtitle, colors, tooltip, legend, and axes, if needed
+  if (!is.null(title)) {
+    call_back$title <- title
+  }
+  
+  if (!is.null(subtitle)) {
+    call_back$metadata$describe$intro <- subtitle   
+  }
+  
+  if (!is.null(colors)) {
+    call_back$metadata$visualize$`custom-colors` <- colors
+  }
+  
+  if (!is.null(tooltip)) {
+    call_back$metadata$visualize$tooltip <- tooltip
+  }
+  
+  if (!is.null(legend)) {
+    call_back$metadata$visualize$legend <- legend
+  }
+  
+  if (!is.null(axes)) {
+    call_back$metadata$axes <- axes
+  }
+  
+  # Typically I always need to update the caption, but this can be 
+  # moved to a conditional
+  call_back$metadata$annotate$notes <- notes
+  
+  # PATCH request to update chart properties as per
+  # https://developer.datawrapper.de/reference/patchchartsid
+  notesRes <- PATCH(url = paste0("https://api.datawrapper.de/v3/charts/", 
+                                 chartID),
+                    add_headers(authorization = paste("Bearer", API_KEY, 
+                                                      sep = " ")),
+                    body = call_back,
+                    encode = "json")
+  
+  # POST request to republish chart
+  # https://developer.datawrapper.de/reference/postchartsidpublish
+  publishRes <- POST(
+    url = paste0("https://api.datawrapper.de/v3/charts/", 
+                 chartID, "/publish"),
+    add_headers(authorization = paste("Bearer", 
+                                      API_KEY, 
+                                      sep = " "))
+  )
+  
+  list(dataRefresh, notesRes, publishRes) -> resList
+  
+  # Check for errors
+  if (any(map_lgl(resList, http_error))) {
+    which(map_lgl(resList, http_error))[1] -> errorIdx
+    
+    stop_for_status(resList[[errorIdx]], task = paste0("update step ",
+                                                       errorIdx, 
+                                                       " of chart ", 
+                                                       chartID))
+    
+  } else {
+    message(paste0("Chart ", chartID, " updated successfully"))
+  }
+  
+}
+
 
 #-----------------------------------------------------------------------------------
 
 #Local law 37 datasets
-
-#write something that will update all of these datsets when there is new data
-
 
 #historical data - I think we only need to do this once?
 # unique_by_agency_37 <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>%
@@ -52,9 +127,7 @@ library(stringr)
 
 #MOCJ and DOHMH are not in the historical, they first appear here in May 2023
 
-raw <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv")
-
-unique_by_agency_new <- raw %>% 
+unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv") %>% 
   mutate(across(.cols = everything(), .fns = ~as.character(str_replace_all(.x, ",|#", "")))) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "0", .x))) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
@@ -119,10 +192,20 @@ if (latest_new_data_date > latest_old_data_date) {
     
   unique_by_agency <- unique_by_agency_new %>%
     bind_rows(unique_by_agency_historical) %>% 
-    arrange(desc(date), agency_abb) %>% 
+    arrange(desc(date), agency_abb)
+  
+  unique_by_agency %>% 
     write_csv("./data/ll79_data_unique_by_agency.csv")
   
-  
+  republish_chart(API_KEY = DW_API, chartID = "2CO79", 
+                  data = unique_by_agency, 
+                  notes = paste0(
+                    "Chart reflects most recent LL79 report dated ",
+                    format(
+                      max(
+                        unique_by_agency$date, na.rm = T), 
+                      "%m/%d/%Y"), "." 
+                  ))
   
   
 }

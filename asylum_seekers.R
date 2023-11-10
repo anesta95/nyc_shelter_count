@@ -15,11 +15,6 @@ library(stringr)
 # Monthly asylum seekers reports here:
 # url: https://council.nyc.gov/budget/wp-content/uploads/sites/54/2023/08/Asylum-Seekers-Report-July-2023.pdf
 
-
-
-
-
-
 ##############################################################
 
 report_month <- month(Sys.Date() %m-% months(1), label = T, abbr = F) #gets the previous month
