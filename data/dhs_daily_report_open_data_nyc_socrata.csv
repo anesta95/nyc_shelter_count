@@ -14699,3 +14699,7 @@ date_of_census,measure,count,table
 2023-11-10,total_single_adults_in_shelter,20848,DHS daily census
 2023-11-10,families_with_children_in_shelter,19292,DHS daily census
 2023-11-10,adult_families_in_shelter,2294,DHS daily census
+2023-11-11,total_individuals_in_shelter,89226,DHS daily census
+2023-11-11,total_single_adults_in_shelter,20900,DHS daily census
+2023-11-11,families_with_children_in_shelter,19354,DHS daily census
+2023-11-11,adult_families_in_shelter,2289,DHS daily census
