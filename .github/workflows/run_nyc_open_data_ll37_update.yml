@@ -37,9 +37,9 @@ jobs:
               ${{ runner.os }}-renv-
       - run: R -e 'renv::restore()'
       # execute Rscript
-      - run: Rscript families_with_children.R
-        # env:
-        #   SCT_PW: ${{ secrets.SCT_PW }}
+      - run: Rscript LL79.R
+        env:
+          DW_API_KEY: ${{ secrets.DW_API_KEY }}
       # push to git repo
       - name: Add and commit
         id: add_commit
