@@ -6,6 +6,8 @@ library(purrr)
 library(ggplot2)
 library(janitor)
 library(stringr)
+library(httr)
+library(tidyr)
 
 DW_API <- Sys.getenv("DW_API_KEY")
 
@@ -97,15 +99,15 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 
 #historical data - I think we only need to do this once?
 # unique_by_agency_37 <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>%
-#   group_by(agency,data_period) %>% 
-#   filter(!(agency == "Human Resources Administration (HRA)" & category == "Census")) %>% 
+#   group_by(agency,data_period) %>%
+#   filter(!(agency == "Human Resources Administration (HRA)" & category == "Census")) %>%
 #   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
 #          count = case_when(agency_abb == "dhs" &
 #                              category == "Number of unduplicated persons" &
 #                              facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
 #                            agency_abb == "dycd" &
 #                              category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
-# 
+#
 #                            #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
 #                            agency_abb == "hra" &
 #                              category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **"~ sum(total_single_adults, na.rm = T) + sum(total_adults_on_families, na.rm = T) + sum(total_children, na.rm = T),
@@ -117,10 +119,10 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 #          table = "number of unduplicated individuals",
 #          root = "ll37 historical") %>%
 #   filter(!is.na(count)) %>%
-#   ungroup() %>% 
-#   select(agency_abb, date, count, table, root) %>% 
+#   ungroup() %>%
+#   select(agency_abb, date, count, table, root) %>%
 #   filter(date >= as.Date("2019-01-01"))
-# 
+#
 # write_csv(unique_by_agency_37 %>% arrange(date), "./data/ll37_data_unique_by_agency.csv")
 
 #new version
@@ -197,8 +199,15 @@ if (latest_new_data_date > latest_old_data_date) {
   unique_by_agency %>% 
     write_csv("./data/ll79_data_unique_by_agency.csv")
   
+  unique_by_agency_DW <- unique_by_agency %>% 
+    mutate(agency_abb = toupper(agency_abb)) %>% 
+    pivot_wider(names_from = agency_abb, values_from = count) %>% 
+    select(-table, -root) %>% 
+    mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", (lag(DHS)+lead(DHS))/2, DHS)) %>%  #impute value
+    .[,c("date", "DHS", "HRA", "DYCD", "HPD", "MOCJ", "DOHMH", "HERRCS")]
+  
   republish_chart(API_KEY = DW_API, chartID = "2CO79", 
-                  data = unique_by_agency, 
+                  data = unique_by_agency_DW, 
                   notes = paste0(
                     "Chart reflects most recent LL79 report dated ",
                     format(
