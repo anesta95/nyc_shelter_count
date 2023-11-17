@@ -282,11 +282,36 @@ extract_dhs_daily_data <- function(table_name, list, report_date) {
 dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs, report_date)) %>% 
   mutate(count = as.numeric(str_remove_all(count, ",")))
 
+# Adding in aggregated single adult and total individuals rows
+
+extra_single_adults <- filter(dhs_unhoused_report_new, 
+                              (table == "single_adults" & 
+                                 measure != "Criminal Justice Short-term Housing"
+                               )
+                              ) %>% 
+  pull(count) %>% 
+  sum(., na.rm = T)
+
+dhs_aggregated_rows <- tibble(
+  measure = c("Single Adults", "Total Individuals"),
+  count = c(
+    (filter(dhs_unhoused_report_new, measure == "Total Single Adults")$count + 
+       extra_single_adults),
+    (extra_single_adults + 
+       filter(dhs_unhoused_report_new, measure == "Total Individuals")$count)
+  ),
+  table = c("combined_total_single_adults", "combined_total_shelter_census"),
+  date = unique(dhs_unhoused_report_new$date)
+)
+
+dhs_unhoused_report_new_combo <- bind_rows(dhs_unhoused_report_new,
+                                           dhs_aggregated_rows)
+
 dhs_unhoused_report <- read_csv("./data/dhs_daily_report.csv",
                                 col_names = T,
                                 col_types = "cdcD")
 
-latest_dhs_pdf_new_data_date <- max(dhs_unhoused_report_new$date,
+latest_dhs_pdf_new_data_date <- max(dhs_unhoused_report_new_combo$date,
                             na.rm = T)
 
 latest_dhs_pdf_old_data_date <- max(dhs_unhoused_report$date,
@@ -294,7 +319,7 @@ latest_dhs_pdf_old_data_date <- max(dhs_unhoused_report$date,
 
 if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   # Bind rows
-  dhs_unhoused_report_full <- bind_rows(dhs_unhoused_report_new, dhs_unhoused_report)
+  dhs_unhoused_report_full <- bind_rows(dhs_unhoused_report_new_combo, dhs_unhoused_report)
   # Write to disk if new data
   write_csv(dhs_unhoused_report_full, "./data/dhs_daily_report.csv")
   
@@ -302,7 +327,7 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   ## DHS daily total shelter population line graph (UmiCQ)
   
   dhs_d_total_individuals_dw <- dhs_unhoused_report_full %>% 
-    filter(table == "total_shelter_census" & measure == "Total Individuals") %>% 
+    filter(table == "combined_total_shelter_census" & measure == "Total Individuals") %>% 
     select(date, count)
   
   republish_chart(API_KEY = DW_API, chartID = "UmiCQ", 
@@ -339,6 +364,14 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
            SafeHaven = `Safe Haven Utilization`,
            Veterans = `Veterans In Short-term Housing`)
   
+  # Removing data outlier probable errors for the viz
+  dhs_d_program_dw[which(dhs_d_program_dw$date %in% c(base::as.Date("2022-06-13"),
+                                     base::as.Date("2022-09-11"),
+                                     base::as.Date("2022-09-18"))), "SafeHaven"] <- NA
+  
+  dhs_d_program_dw[which(dhs_d_program_dw$date == base::as.Date("2022-12-07")), 
+                   "Drop-in Overnight"] <- NA
+  
   republish_chart(API_KEY = DW_API, chartID = "zVEuB", 
                   data = dhs_d_program_dw, 
                   notes = paste0(
@@ -353,7 +386,7 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   ## DHS daily family composition breakout line graph (0omhO)
   
   dhs_d_fam_comp_dw <- dhs_unhoused_report_full %>% 
-    filter(measure %in% c("Total Single Adults",
+    filter(measure %in% c("Single Adults",
                           "Children",
                           "Adults",
                           "Individuals (Adults)")) %>% 
@@ -362,7 +395,6 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
     select(-table) %>% 
     pivot_wider(names_from = measure, values_from = count) %>% 
     rename(`Adults with Children` = Adults,
-           `Single Adults` = `Total Single Adults`,
            `Individuals in Adults Families` = `Individuals (Adults)`)
   
   republish_chart(API_KEY = DW_API, chartID = "0omhO", 
