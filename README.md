@@ -23,7 +23,7 @@ As of November 2023 the asylum seekers report template has not been standardized
 
 The `dhs_daily_report.csv` file in the `data` folder is cleaned and tidy version of the [daily DHS report pdfs](https://www.nyc.gov/assets/dhs/downloads/pdf/dailyreport.pdf) on shelter usage statistics released by the NYC Department of Homeless Services.
 
-The `ll79_data_unique-By_agency.csv` file in the `data` folder is the time series data on the shelter population by agency over time from LL37 and LL79 reports.
+The `ll79_data_unique_by_agency.csv` file in the `data` folder is the time series data on the shelter population by agency over time from LL37 and LL79 reports.
 
 The data is available for public use with attribution.
 
