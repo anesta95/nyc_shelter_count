@@ -16,7 +16,7 @@ The data is sourced from city webpages and the open data portal
 - Data on the asylum seeking population is published in pdfs on the City Council Budget webpage
 
 Daily DHS data is scraped from a pdf on the city's webpage each day and saved in this repository, then added to a time series dataset which automatically updates the tracker's charts hosted by City Limits. This pdf data includes single adults in specialized programs that are not included in DHS total counts.
-Monthly LL79 data is pulled from the NYC Open Data portal and knitted together with historical LL37 data. Note that in May 2023, the city changed its reporting process between the laws, changing some field names. The change is detailed in the "root" column that specifies which underlying dataset that data comes from.
+Monthly LL79 data is pulled from the NYC Open Data portal and knitted together with historical LL37 data. Note that in May 2023, the city changed its reporting process between the laws, changing some field names. The change is detailed in the `root` column that specifies which underlying dataset that data comes from.
 As of November 2023 the asylum seekers report template has not been standardized, limiting the ability to automate that data. As is, that data is manually inputted to create summary charts.
 
 ## Use this data
@@ -34,7 +34,7 @@ The data is available for public use with attribution.
 | -------- | ------- | ------- |
 | measure  | character    | The population being counted. Each measure is a data label from the daily report pdf |
 | count | number     | The number of people in that category, that day, according to the pdf table |
-| table    | character   | The name of the table that value is found in in the daily report pdf. Values with the prefix `combined_` are sums of the individual populations recorded in the main tables + uncounted individuals in the single_adults table in the pdf. |
+| table    | character   | The name of the table that value is found in in the daily report pdf. Values with the prefix `combined_` are sums of the individual populations recorded in the main tables + uncounted individuals in the `single_adults` table in the pdf. |
 | date  | date   | The date of the pdf the count came from |
 
 **LL79 Data by Agency**
