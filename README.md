@@ -25,7 +25,7 @@ The `dhs_daily_report.csv` file in the `data` folder is cleaned and tidy version
 
 The `ll79_data_unique_by_agency.csv` file in the `data` folder is the time series data on the shelter population by agency over time from LL37 and LL79 reports.
 
-The data is available for public use with attribution.
+The data is available for public use with attribution. You can cite Patrick Spauster and Adrian Nesta for City Limits
 
 ## Data Dictionaries
 
