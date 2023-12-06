@@ -285,8 +285,11 @@ dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, late
 # Adding in aggregated single adult and total individuals rows
 
 extra_single_adults <- filter(dhs_unhoused_report_new, 
-                              (table == "single_adults" & 
-                                 measure != "Criminal Justice Short-term Housing"
+                              (table == "single_adults" &
+                                 !(measure %in% c("Drop-in Center Clients Served",
+                                                  "Criminal Justice Short-term Housing",
+                                                  "Outreach Contacts",
+                                                  "Outreach Placements"))
                                )
                               ) %>% 
   pull(count) %>% 
@@ -303,6 +306,7 @@ dhs_aggregated_rows <- tibble(
   table = c("combined_total_single_adults", "combined_total_shelter_census"),
   date = unique(dhs_unhoused_report_new$date)
 )
+
 
 dhs_unhoused_report_new_combo <- bind_rows(dhs_unhoused_report_new,
                                            dhs_aggregated_rows)
