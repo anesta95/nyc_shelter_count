@@ -99,18 +99,20 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 
 #historical data - I think we only need to do this once?
 # unique_by_agency_37 <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>%
-#   group_by(agency,data_period) %>%
-#   filter(!(agency == "Human Resources Administration (HRA)" & category == "Census")) %>%
+#   group_by(agency, data_period) %>%
+#   filter((!(agency == "Human Resources Administration (HRA)" & category == "Census")) & 
+#            (!(agency == "Department of Homeless Services (DHS)" & category != "Number of unduplicated persons")) &
+#            (!(agency == "Department of Homeless Services (DHS)" & str_detect(facility_or_program_type, "HRA")))) %>%
 #   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
 #          count = case_when(agency_abb == "dhs" &
 #                              category == "Number of unduplicated persons" &
-#                              facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
+#                              facility_or_program_type == "DHS-administered facilities" ~ sum(total_single_adults, na.rm = T) + total_adults_on_families + total_children,
 #                            agency_abb == "dycd" &
 #                              category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
-#
+# 
 #                            #do we remember why it's just domestic violence for HRA facilities and not emergency and transitional housing?
 #                            agency_abb == "hra" &
-#                              category == "Number of unduplicated persons" & facility_or_program_type == "HRA domestic violence shelters **"~ sum(total_single_adults, na.rm = T) + sum(total_adults_on_families, na.rm = T) + sum(total_children, na.rm = T),
+#                              category == "Number of unduplicated persons" & (facility_or_program_type %in% c("HRA domestic violence shelters **", "HRA domestic violence shelters **(Data)"))~ sum(total_single_adults, na.rm = T) + sum(total_adults_on_families, na.rm = T) + sum(total_children, na.rm = T),
 #                            agency_abb == "hpd" &
 #                              category == "Census Total" ~ total_adults + total_children,
 #                            T ~ NA
@@ -122,7 +124,7 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 #   ungroup() %>%
 #   select(agency_abb, date, count, table, root) %>%
 #   filter(date >= as.Date("2019-01-01"))
-#
+# 
 # write_csv(unique_by_agency_37 %>% arrange(date), "./data/ll37_data_unique_by_agency.csv")
 
 #new version
@@ -132,10 +134,12 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv") %>% 
   mutate(across(.cols = everything(), .fns = ~as.character(str_replace_all(.x, ",|#", "")))) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "0", .x))) %>% 
+  filter(category == "Total number of individuals utilizing city-administered facilities") %>% 
+  group_by(agency, data_period) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
-                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                             facility_or_program_type == "DHS-administered facilities" ~ sum(total_single_adults, na.rm = T) + total_adults_in_families + total_children,
                            agency_abb == "dycd" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
                              facility_or_program_type == "DYCD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
@@ -171,6 +175,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
          root = "ll79 new report",
          agency_abb = if_else(agency_abb == "oti", "herrcs", agency_abb)) %>% 
   filter(!is.na(count)) %>% 
+  ungroup() %>% 
   select(agency_abb, date, count, table, root) %>% 
   arrange(date, agency_abb)
 
