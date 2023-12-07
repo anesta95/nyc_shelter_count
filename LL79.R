@@ -139,7 +139,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
-                             facility_or_program_type == "DHS-administered facilities" ~ sum(total_single_adults, na.rm = T) + total_adults_in_families + total_children,
+                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
                            agency_abb == "dycd" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
                              facility_or_program_type == "DYCD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
@@ -153,15 +153,10 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
                            agency_abb == "hpd" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "HPD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
-                           agency_abb == "dohmh" & 
-                             category == "Total number of individuals utilizing city-administered facilities" &
-                             facility_or_program_type == "Justice-informed supportive housing (JISH)" ~ total_single_adults,
-                           
-                           #not sure if we should keep these last two - as they are supportive housing, it seems, not shelter
-                           
-                           agency_abb == "dohmh" & 
-                             category == "Total number of individuals utilizing city-administered facilities" &
-                             facility_or_program_type == "Justice-informed supportive housing (JISH)" ~ total_single_adults,
+                           #JISH is not shelter!
+                           # agency_abb == "dohmh" & 
+                           #   category == "Total number of individuals utilizing city-administered facilities" &
+                           #   facility_or_program_type == "Justice-informed supportive housing (JISH)" ~ total_single_adults,
                            agency_abb == "mocj" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "Short-term reentry housing" ~ total_single_adults,
@@ -201,6 +196,8 @@ if (latest_new_data_date > latest_old_data_date) {
     bind_rows(unique_by_agency_historical) %>% 
     arrange(desc(date), agency_abb)
   
+  total <- round(sum(filter(unique_by_agency_new, date==as.Date(latest_new_data_date))$count)/1000, 0)
+  
   unique_by_agency %>% 
     write_csv("./data/ll79_data_unique_by_agency.csv")
   
@@ -209,16 +206,20 @@ if (latest_new_data_date > latest_old_data_date) {
     pivot_wider(names_from = agency_abb, values_from = count) %>% 
     select(-table, -root) %>% 
     mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", (lag(DHS)+lead(DHS))/2, DHS)) %>%  #impute value
-    .[,c("date", "DHS", "HRA", "DYCD", "HPD", "MOCJ", "DOHMH", "HERRCS")]
+    .[,c("date", "DHS", "HRA", "DYCD", "HPD", "MOCJ", "HERRCS")]
   
   republish_chart(API_KEY = DW_API, chartID = "2CO79", 
                   data = unique_by_agency_DW, 
+                  subtitle = paste0(
+                    format(total, big.mark = ","),
+                    "K unique individuals slept in NYC shelters in latest reporting month, organized here by agency"
+                  ),
                   notes = paste0(
                     "Chart reflects most recent LL79 report dated ",
                     format(
                       max(
                         unique_by_agency$date, na.rm = T), 
-                      "%m/%d/%Y"), "." 
+                      "%m/%Y"), "." 
                   ))
   
   
