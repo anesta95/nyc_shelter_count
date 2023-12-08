@@ -2,7 +2,7 @@
 
 New York City is facing a historic homelessness crisis. But getting data on how many people are using NYC shelters is complicated. This repository, built in collaboration with City Limits News, seeks to liberate all the available data on New York City's shelter population and publish the data together in one place.
 
-You can view the project tracker and read more at City Limits.
+You can view the project tracker and read more at [City Limits](https://citylimits.org/nyc-shelter-count/).
 
 The repository creates several key datasets for understanding the shelter population in NYC:
 1. A daily count of the population in Department of Homeless Services (DHS) shelter
