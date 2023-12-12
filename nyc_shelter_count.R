@@ -379,7 +379,7 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   republish_chart(API_KEY = DW_API, chartID = "zVEuB", 
                   data = dhs_d_program_dw, 
                   notes = paste0(
-                    "DHS does not publish a report every day, despite a legal mandate. DHS does not report the number of people staying in its stabilization beds.",
+                    "Chart reflects most recent data published by the NYC Department of Homeless Services. DHS does not report the number of people staying in its stabilization beds daily.",
                     " Data current as of ", format(
                       max(
                         dhs_d_program_dw$date, na.rm = T), 
@@ -404,7 +404,7 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   republish_chart(API_KEY = DW_API, chartID = "0omhO", 
                   data = dhs_d_fam_comp_dw, 
                   notes = paste0(
-                    "DHS does not publish a report every day, despite a legal mandate. DHS does not report the number of people staying in its stabilization beds.",
+                    "Chart reflects most recent data published by the NYC Department of Homeless Services.",
                     " Data current as of ", format(
                       max(
                         dhs_d_fam_comp_dw$date, na.rm = T), 
