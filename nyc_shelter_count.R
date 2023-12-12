@@ -337,7 +337,7 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
   republish_chart(API_KEY = DW_API, chartID = "UmiCQ", 
                   data = dhs_d_total_individuals_dw, 
                   notes = paste0(
-                    "These totals include SafeHaven shelters, overnight drop-in centers, veterans shelters, faith-based shelters and \"criminal justice\" shelters housing people who have left jails and prisons as well as shelters for single adults, families with children and adult families. Some daily totals are missing because DHS does not report certain shelter types every day.",
+                    "These totals include SafeHaven shelters, overnight drop-in centers, veterans shelters, and faith-based shelters as well as shelters for single adults, families with children and adult families. Some daily totals are missing because DHS does not report certain shelter types every day.",
                     " Data current as of ", format(
                       max(
                         dhs_d_total_individuals_dw$date, na.rm = T), 
