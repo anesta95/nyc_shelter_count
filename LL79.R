@@ -211,8 +211,9 @@ if (latest_new_data_date > latest_old_data_date) {
   republish_chart(API_KEY = DW_API, chartID = "2CO79", 
                   data = unique_by_agency_DW, 
                   subtitle = paste0(
+                    "NYC Shelters counted ",
                     format(total, big.mark = ","),
-                    "K unique individuals slept in NYC shelters in latest reporting month, organized here by agency"
+                    "K people in latest reporting month, organized here by agency/system"
                   ),
                   notes = paste0(
                     "Chart reflects most recent LL79 report dated ",
