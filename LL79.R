@@ -100,13 +100,13 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 #historical data - I think we only need to do this once?
 # unique_by_agency_37 <- read.socrata("https://data.cityofnewyork.us/resource/bdft-9t6c.csv") %>%
 #   group_by(agency, data_period) %>%
-#   filter((!(agency == "Human Resources Administration (HRA)" & category == "Census")) & 
+#   filter((!(agency == "Human Resources Administration (HRA)" & category == "Census")) &
 #            (!(agency == "Department of Homeless Services (DHS)" & category != "Number of unduplicated persons")) &
 #            (!(agency == "Department of Homeless Services (DHS)" & str_detect(facility_or_program_type, "HRA")))) %>%
 #   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
 #          count = case_when(agency_abb == "dhs" &
 #                              category == "Number of unduplicated persons" &
-#                              facility_or_program_type == "DHS-administered facilities" ~ sum(total_single_adults, na.rm = T) + total_adults_on_families + total_children,
+#                              facility_or_program_type == "DHS-administered facilities" ~ sum(single_men, na.rm = T) + sum(single_women, na.rm = T) + total_adults_on_families + total_children,
 #                            agency_abb == "dycd" &
 #                              category == "number of unduplicated persons - DYCD-administered facilities" ~ total_single_adults + total_adults_on_families + total_children,
 # 
@@ -139,7 +139,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
-                             facility_or_program_type == "DHS-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
+                             facility_or_program_type == "DHS-administered facilities" ~ sum(single_men, na.rm = T) + sum(single_women, na.rm = T) + sum(anyone_of_another_gender, na.rm = T) + total_adults_in_families + total_children,
                            agency_abb == "dycd" & 
                              category == "Total number of individuals utilizing city-administered facilities" & 
                              facility_or_program_type == "DYCD-administered facilities" ~ total_single_adults + total_adults_in_families + total_children,
