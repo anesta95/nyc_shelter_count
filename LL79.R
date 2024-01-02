@@ -196,7 +196,7 @@ if (latest_new_data_date > latest_old_data_date) {
     bind_rows(unique_by_agency_historical) %>% 
     arrange(desc(date), agency_abb)
   
-  total <- round(sum(filter(unique_by_agency_new, date==as.Date(latest_new_data_date))$count)/1000, 0)
+  total <- floor(sum(filter(unique_by_agency_new, date==as.Date(latest_new_data_date))$count)/1000)
   
   unique_by_agency %>% 
     write_csv("./data/ll79_data_unique_by_agency.csv")
@@ -213,7 +213,7 @@ if (latest_new_data_date > latest_old_data_date) {
   republish_chart(API_KEY = DW_API, chartID = "2CO79", 
                   data = unique_by_agency_DW, 
                   subtitle = paste0(
-                    "NYC Shelters counted ",
+                    "NYC Shelters counted approximately",
                     format(total, big.mark = ","),
                     "K people in latest reporting month, organized here by agency/system"
                   ),
