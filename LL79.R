@@ -205,7 +205,9 @@ if (latest_new_data_date > latest_old_data_date) {
     mutate(agency_abb = toupper(agency_abb)) %>% 
     pivot_wider(names_from = agency_abb, values_from = count) %>% 
     select(-table, -root) %>% 
-    mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", (lag(DHS)+lead(DHS))/2, DHS)) %>%  #impute value
+    mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #impute value
+    mutate(DHS = if_else(date == "2019-10-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #correct Oct. '19 DHS undercount value
+    mutate(HRA = if_else(date == "2019-05-01", 8438, HRA)) %>%  #correct HRA type value
     .[,c("date", "DHS", "HRA", "DYCD", "HPD", "MOCJ", "HERRCS")]
   
   republish_chart(API_KEY = DW_API, chartID = "2CO79", 
