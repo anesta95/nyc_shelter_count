@@ -213,6 +213,10 @@ extract_dhs_daily_data <- function(table_name, list, report_date) {
     # and sometimes correct table has 5 columns or six columns
     idx <- detect_index(list, ~nrow(.x) == 11)
     
+    if (idx == 0L) {
+      stop("Full 11 row single adults & family intake table not captured by tabulizer::extract_tables() function.")
+    }
+    
     matrix <- list[[idx]]
     
     safi_initial_df <- as.data.frame(matrix,
