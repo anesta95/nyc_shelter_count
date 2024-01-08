@@ -134,6 +134,7 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiwc-ncpi.csv") %>% 
   mutate(across(.cols = everything(), .fns = ~as.character(str_replace_all(.x, ",|#", "")))) %>% 
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "0", .x))) %>% 
+  mutate_at(vars(category:facility_or_program_type), ~str_trim(str_replace_all(.x, "[0-9]", ""), side = "both")) %>% 
   filter(category == "Total number of individuals utilizing city-administered facilities") %>% 
   group_by(agency, data_period) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
