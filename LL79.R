@@ -161,7 +161,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
                            agency_abb == "mocj" & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "Short-term reentry housing" ~ total_single_adults,
-                           agency_abb == "oti" & 
+                           (agency_abb == "oti"|agency =="Office of Technology & Innovation") & 
                              category == "Total number of individuals utilizing city-administered facilities" &
                              facility_or_program_type == "Humanitarian Emergency Response and Relief Centers (HERRCs)"~ total,
                            T ~ NA
@@ -169,7 +169,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
          date = base::as.Date(paste0(data_period, "01"), format = "%Y%m%d"),
          table = "number of unduplicated individuals",
          root = "ll79 new report",
-         agency_abb = if_else(agency_abb == "oti", "herrcs", agency_abb)) %>% 
+         agency_abb = if_else((agency_abb == "oti"|agency =="Office of Technology & Innovation"), "herrcs", agency_abb)) %>% 
   filter(!is.na(count)) %>% 
   ungroup() %>% 
   select(agency_abb, date, count, table, root) %>% 
