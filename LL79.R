@@ -193,6 +193,9 @@ if (latest_new_data_date > latest_old_data_date) {
                                           col_names = T,
                                           col_types = "cDncc")
     
+  #ensure all series are present in new data, if not, throw error
+  stopifnot(unique_by_agency_new %>% filter(date ==latest_new_data_date) %>% nrow() == 6)
+  
   unique_by_agency <- unique_by_agency_new %>%
     bind_rows(unique_by_agency_historical) %>% 
     arrange(desc(date), agency_abb)
