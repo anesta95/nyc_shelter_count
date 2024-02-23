@@ -634,7 +634,6 @@
       "Package": "renv",
       "Version": "1.0.4",
       "OS_type": null,
-      "NeedsCompilation": "no",
       "Repository": "CRAN",
       "Source": "Repository"
     },
