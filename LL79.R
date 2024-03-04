@@ -136,6 +136,7 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
   mutate_at(vars(families_with_children:data_period), ~as.numeric(if_else(.x == "<10", "0", .x))) %>% 
   mutate_at(vars(category:facility_or_program_type), ~str_trim(str_replace_all(.x, "[0-9]", ""), side = "both")) %>% 
   filter(category == "Total number of individuals utilizing city-administered facilities") %>% 
+  mutate(data_period = if_else(data_period == 202301 & agency == "Department of Youth and Community Development (DYCD)", 202401, data_period)) %>% #fix year typo
   group_by(agency, data_period) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
