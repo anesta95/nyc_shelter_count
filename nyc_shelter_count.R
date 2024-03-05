@@ -390,6 +390,17 @@ if (latest_dhs_pdf_new_data_date > latest_dhs_pdf_old_data_date) {
                       "%m/%d/%Y"), "." 
                   ))
   
+  #faceted version
+  republish_chart(API_KEY = DW_API, chartID = "Y7lcG", 
+                  data = dhs_d_program_dw, 
+                  notes = paste0(
+                    "Chart reflects most recent data published by the NYC Department of Homeless Services. DHS does not report the number of people staying in its stabilization beds daily.",
+                    " Data current as of ", format(
+                      max(
+                        dhs_d_program_dw$date, na.rm = T), 
+                      "%m/%d/%Y"), "." 
+                  ))
+  
   ### Updating Visualization ###
   ## DHS daily family composition breakout line graph (0omhO)
   
