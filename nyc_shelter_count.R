@@ -168,7 +168,8 @@ if (report_date > Sys.Date() | is.na(report_date)) {
 file.rename(from = "./dhs_daily_report_unhoused_report_pdfs/temp_daily_report.pdf",
             to = paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf"))
 
-latest_dhs <- extract_tables(paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf"))
+latest_pdf <- paste0("./dhs_daily_report_unhoused_report_pdfs/", report_date, "_daily_report.pdf")
+latest_dhs <- extract_tables(latest_pdf)
 
 table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
                  "Total Single Adults", "FAMILIES WITH CHILDREN",
@@ -205,8 +206,47 @@ clean_tbls_3_6 <- function(table_name, list, report_date) {
   
 }
 
+backup_parser <- function(latest_pdf, report_date) {
+  daily_report_first_page <- pdf_text(latest_pdf) %>% nth(1)
+  
+  backup_measures <- read_csv("./data/dhs_daily_report.csv",
+           col_names = T,
+           col_types = "cdcD") %>% 
+    filter(table %in% c("single_adults", "family_intake"),
+           str_detect(measure, "\\s{2,}", negate = T)) %>% 
+    mutate(measure = case_when(
+      measure == "Criminal Justice Short-term Housing" ~ "count is also included in the TOTAL",
+      measure == "Families w/children at PATH Overnight (pre 10PM)" ~ "Families w/children at PATH Overnight \\(pre 10PM\\)",
+      T ~ measure
+    )) %>% 
+    pull(measure) %>% 
+    unique()
+  
+  counts <- map_chr(backup_measures, function(x) {
+    count <- str_match(daily_report_first_page, paste0(x, "\\s+(\\d+)"))[,2]
+    return(count)
+  })
+  
+  measures <- read_csv("./data/dhs_daily_report.csv",
+                       col_names = T,
+                       col_types = "cdcD") %>% 
+    filter(table %in% c("single_adults", "family_intake"),
+           str_detect(measure, "\\s{2,}", negate = T)) %>% 
+    pull(measure) %>% 
+    unique()
+  
+  df <- tibble(
+    measure = measures,
+    count = counts,
+    table = c(rep("single_adults", 8), rep("family_intake", 4)),
+    date = report_date
+  )
+  
+  return(df)
+  
+}
 
-extract_dhs_daily_data <- function(table_name, list, report_date) {
+extract_dhs_daily_data <- function(table_name, list, report_date, pdf_name) {
   
   if (table_name == "FAMILY INTAKE") {
     # Now just looking for the 11 row tibble since FAMILY INTAKE can show up in table 1 and two
@@ -214,65 +254,67 @@ extract_dhs_daily_data <- function(table_name, list, report_date) {
     idx <- detect_index(list, ~nrow(.x) == 11)
     
     if (idx == 0L) {
-      stop("Full 11 row single adults & family intake table not captured by tabulizer::extract_tables() function.")
-    }
-    
-    matrix <- list[[idx]]
-    
-    safi_initial_df <- as.data.frame(matrix,
-                                  stringsAsFactors = F)
-    
-    single_adults_col <- map_lgl(safi_initial_df, ~any(str_detect(.x, "SINGLE ADULTS"))) %>% 
-                          which() %>% 
-                          unname()
-    family_intake_col <- map_lgl(safi_initial_df, ~any(str_detect(.x, "FAMILY INTAKE"))) %>% 
-                         which() %>% 
-                         unname()
-    
-    family_intake_row <- which(safi_initial_df[, family_intake_col] == "FAMILY INTAKE")
-    single_adults_row <- which(safi_initial_df[, single_adults_col] == "SINGLE ADULTS")
-    
-    # Check to see if SINGLE ADULTS and FAMILY INTAKE column headers are on the same 
-    # row. If not throw an error
-    if (single_adults_row != family_intake_row) {
-      stop(simpleError("SINGLE ADULTS and FAMILY INTAKE rows are not aligned."))
-    }
-    
-    # Dynamic way to only select four columns we need.
-    safi_cols <- c(single_adults_col, single_adults_col + 1, family_intake_col, family_intake_col + 1)
-    
-    safi_unselected <- safi_initial_df %>%
-      slice(single_adults_row:nrow(.)) %>% 
-      row_to_names(row_number = 1) %>% 
-      clean_names()
-    
-    cleaned_safi <- safi_unselected[, safi_cols]
-
-    names(cleaned_safi) <- c("single_adults", "single_adults_count", "family_intake", "family_intake_count")    
-  
-    cj_count <- cleaned_safi %>% 
-      pull(single_adults_count) %>% 
-      stri_remove_empty() %>% 
-      last()
-    
-    sa_no_cj <- cleaned_safi %>% 
-      slice(1:7) %>% 
-      select(c(single_adults, single_adults_count))
-    
-    sa_cj <- sa_no_cj %>% 
-      bind_rows(tibble(single_adults = "Criminal Justice Short-term Housing",
-                       single_adults_count = cj_count)) %>% 
-      rename(measure = single_adults, count = single_adults_count) %>% 
-      mutate(table = "single_adults", date = report_date)
-    
-    fi_no_sa <- cleaned_safi %>% 
-      slice(1:4) %>% 
-      select(c(family_intake, family_intake_count)) %>% 
-      rename(measure = family_intake, count = family_intake_count) %>% 
-      mutate(table = "family_intake", date = report_date)
-    
-    df <- bind_rows(sa_cj, fi_no_sa)
+      message("Full 11 row single adults & family intake table not captured by tabulizer::extract_tables() function.\nRunning backup parser")
+      df <- backup_parser(latest_pdf = pdf_name, report_date = report_date)
+    } else {
       
+      matrix <- list[[idx]]
+      
+      safi_initial_df <- as.data.frame(matrix,
+                                       stringsAsFactors = F)
+      
+      single_adults_col <- map_lgl(safi_initial_df, ~any(str_detect(.x, "SINGLE ADULTS"))) %>% 
+        which() %>% 
+        unname()
+      family_intake_col <- map_lgl(safi_initial_df, ~any(str_detect(.x, "FAMILY INTAKE"))) %>% 
+        which() %>% 
+        unname()
+      
+      family_intake_row <- which(safi_initial_df[, family_intake_col] == "FAMILY INTAKE")
+      single_adults_row <- which(safi_initial_df[, single_adults_col] == "SINGLE ADULTS")
+      
+      # Check to see if SINGLE ADULTS and FAMILY INTAKE column headers are on the same 
+      # row. If not throw an error
+      if (single_adults_row != family_intake_row) {
+        stop(simpleError("SINGLE ADULTS and FAMILY INTAKE rows are not aligned."))
+      }
+      
+      # Dynamic way to only select four columns we need.
+      safi_cols <- c(single_adults_col, single_adults_col + 1, family_intake_col, family_intake_col + 1)
+      
+      safi_unselected <- safi_initial_df %>%
+        slice(single_adults_row:nrow(.)) %>% 
+        row_to_names(row_number = 1) %>% 
+        clean_names()
+      
+      cleaned_safi <- safi_unselected[, safi_cols]
+      
+      names(cleaned_safi) <- c("single_adults", "single_adults_count", "family_intake", "family_intake_count")    
+      
+      cj_count <- cleaned_safi %>% 
+        pull(single_adults_count) %>% 
+        stri_remove_empty() %>% 
+        last()
+      
+      sa_no_cj <- cleaned_safi %>% 
+        slice(1:7) %>% 
+        select(c(single_adults, single_adults_count))
+      
+      sa_cj <- sa_no_cj %>% 
+        bind_rows(tibble(single_adults = "Criminal Justice Short-term Housing",
+                         single_adults_count = cj_count)) %>% 
+        rename(measure = single_adults, count = single_adults_count) %>% 
+        mutate(table = "single_adults", date = report_date)
+      
+      fi_no_sa <- cleaned_safi %>% 
+        slice(1:4) %>% 
+        select(c(family_intake, family_intake_count)) %>% 
+        rename(measure = family_intake, count = family_intake_count) %>% 
+        mutate(table = "family_intake", date = report_date)
+      
+      df <- bind_rows(sa_cj, fi_no_sa)
+      
+    }
     
   } else {
     df <- clean_tbls_3_6(table_name = table_name, list = list, report_date = report_date)
@@ -283,7 +325,7 @@ extract_dhs_daily_data <- function(table_name, list, report_date) {
   
 }
 
-dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs, report_date)) %>% 
+dhs_unhoused_report_new <- map_dfr(table_names, ~extract_dhs_daily_data(.x, latest_dhs, report_date, latest_pdf)) %>% 
   mutate(count = as.numeric(str_remove_all(count, ",")))
 
 # Adding in aggregated single adult and total individuals rows
