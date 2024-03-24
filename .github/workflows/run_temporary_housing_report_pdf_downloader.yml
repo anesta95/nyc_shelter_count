@@ -1,0 +1,24 @@
+name: Download latest temporary housing monthly report
+
+on:
+  schedule:
+    - cron: '12 2 3,8,13 * *' # 2:12 UTC on the third 9th and 14th of the month
+  workflow_dispatch:
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v4
+    - name: Fetch latest data
+      run: |-
+        wget -O ./temporary_housing_report_pdfs/temp_temporary_housing_report.pdf https://www.nyc.gov/assets/operations/downloads/pdf/temporary_housing_report.pdf
+        python3 rename_temp_housing_report.py
+    - name: Add and commit
+      id: add_commit
+      uses: EndBug/add-and-commit@v9.1.3
+      with:
+        committer_name: Automated
+        committer_email: actions@users.noreply.github.com
+        message: "Downloaded latest Temporary Housing Report PDF"
