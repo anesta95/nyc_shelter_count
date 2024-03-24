@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v4
     - name: Fetch latest data
       run: |-
-        wget -O ./temporary_housing_report_unhoused_report_pdfs/temp_temporary_housing_report.pdf https://www.nyc.gov/assets/operations/downloads/pdf/temporary_housing_report.pdf
+        wget -O ./temporary_housing_report_pdfs/temp_temporary_housing_report.pdf https://www.nyc.gov/assets/operations/downloads/pdf/temporary_housing_report.pdf
         python3 rename_temp_housing_report.py
     - name: Add and commit
       id: add_commit
