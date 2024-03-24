@@ -2,7 +2,7 @@ name: Download latest temporary housing monthly report
 
 on:
   schedule:
-    - cron: '47 1 * * *' # 1:47 UTC everyday
+    - cron: '12 2 3,8,13 * *' # 2:12 UTC on the third 9th and 14th of the month
   workflow_dispatch:
 
 jobs:
