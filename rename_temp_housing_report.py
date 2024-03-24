@@ -29,4 +29,8 @@ def rename_file(formatted_date):
     except FileExistsError:
         print("Error: A file with the new name already exists.")
 
-rename_file(formatted_date)
+
+if os.path.exists(f"temporary_housing_report_pdfs/temporary_housing_report_{formatted_date}.pdf"):
+    print(f"Error: File for '{formatted_date}' already exists.")
+else:
+    rename_file(formatted_date)
