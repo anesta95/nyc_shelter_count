@@ -15,7 +15,7 @@ The data is sourced from city webpages and the open data portal
 - Data on the monthly population in all city facilities comes from the Local Law 37 (historical) and Local Law 79 (current) temporary housing assistance usage reports published monthly as pdfs and with limited data available on NYC open data
 - Data on the asylum seeking population is published in pdfs on the City Council Budget webpage
 
-Additional data on shelter exits scraped from the city's monthly temporary housing report is available in a companion repository, [NYC Shelter Exits](https://github.com/pspauster/shelter-exits)
+Additional data on shelter exits scraped from the city's monthly temporary housing report is available in a companion repository, [NYC Shelter Exits](https://github.com/pspauster/shelter-exits).
 
 Daily DHS data is scraped from a pdf on the city's webpage each day and saved in this repository, then added to a time series dataset which automatically updates the tracker's charts hosted by City Limits. This pdf data includes single adults in specialized programs that are not included in DHS total counts.
 Monthly LL79 data is pulled from the NYC Open Data portal and knitted together with historical LL37 data. Note that in May 2023, the city changed its reporting process between the laws, changing some field names. The change is detailed in the `root` column that specifies which underlying dataset that data comes from.
