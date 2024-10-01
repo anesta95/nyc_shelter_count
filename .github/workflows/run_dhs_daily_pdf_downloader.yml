@@ -2,7 +2,7 @@ name: Download latest DHS shelter daily report
 
 on:
   schedule:
-    - cron: '47 1 * * *' # 1:47 UTC everyday
+    - cron: '47 1 * * *'
   workflow_dispatch:
 
 jobs:
