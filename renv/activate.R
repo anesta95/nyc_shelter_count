@@ -368,7 +368,8 @@ local({
       quiet    = TRUE
     )
   
-    if ("headers" %in% names(formals(utils::download.file))) {
+    if ("headers" %in% names(formals(utils::download.file)))
+    {
       headers <- renv_bootstrap_download_custom_headers(url)
       if (length(headers) && is.character(headers))
         args$headers <- headers
@@ -456,8 +457,9 @@ local({
   
         # add custom headers if available -- note that
         # utils::available.packages() will pass this to download.file()
-        if ("headers" %in% names(formals(utils::download.file))) {
-          headers <- renv_bootstrap_download_custom_headers(repos)
+        if ("headers" %in% names(formals(utils::download.file)))
+        {
+          headers <- renv_bootstrap_download_custom_headers(url)
           if (length(headers) && is.character(headers))
             args$headers <- headers
         }

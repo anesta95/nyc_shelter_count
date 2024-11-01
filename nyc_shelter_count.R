@@ -97,6 +97,9 @@ republish_chart <- function(API_KEY, chartID, data, subtitle = NULL,
 
 
 # Reading partial DHS data from Socrata Open NYC database:
+# TODO: Need to backfill this with dates that the entire repo was not running
+# 2024-09-09 to 2024-09-31
+
 dhs_census_socrata_new <- read.socrata("https://data.cityofnewyork.us/resource/3pjg-ncn9.json") %>% 
   pivot_longer(cols = -date_of_census, names_to = "measure", values_to = "count") %>% 
   mutate(table = "DHS daily census",
@@ -177,19 +180,30 @@ table_names <- c("FAMILY INTAKE", "TOTAL SHELTER CENSUS",
 
 clean_tbls_3_6 <- function(table_name, list, report_date) {
   
-  idx <- detect_index(list, ~any(str_detect(.x, table_name)))
+  if (table_name == "Total Single Adults") {
+    idx <- detect_index(
+      list, ~any(str_detect(.x, table_name)
+      )
+    )
+  } else {
+    idx <- detect_index(
+      list, ~any(str_detect(names(.x), table_name)
+      )
+    )
+  }
   
   matrix <- list[[idx]]
   
   partial_df <- as.data.frame(matrix, stringsAsFactors = F) %>% 
-                row_to_names(row_number = 1) %>% 
+                # row_to_names(row_number = 1) %>% 
                 clean_names()
   
   if (table_name == "Total Single Adults") {
     df <- partial_df %>% 
-          rename(measure = x, count = single_adults) %>% 
+          rename(measure = 1, count = 2) %>% 
           mutate(table = make_clean_names(table_name),
-                 date = report_date)
+                 date = report_date,
+                 count = as.character(count))
     
   } else {
     col_name <- sym(make_clean_names(table_name))
