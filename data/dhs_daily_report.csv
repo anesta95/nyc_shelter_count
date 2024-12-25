@@ -1,4 +1,30 @@
 measure,count,table,date
+Drop-in Center Clients Served,315,single_adults,2024-12-23
+Drop-in Center Overnight Census,96,single_adults,2024-12-23
+Faith Bed Census,19,single_adults,2024-12-23
+Outreach Contacts,258,single_adults,2024-12-23
+Outreach Placements,23,single_adults,2024-12-23
+Safe Haven Utilization,1995,single_adults,2024-12-23
+Veterans In Short-term Housing,174,single_adults,2024-12-23
+Criminal Justice Short-term Housing,NA,single_adults,2024-12-23
+Families with Children Requesting Temporary Housing,134,family_intake,2024-12-23
+Adult Families Requesting Temporary Housing,16,family_intake,2024-12-23
+Families Placed in Overnight Accommodations,0,family_intake,2024-12-23
+Families w/children at PATH Overnight (pre 10PM),0,family_intake,2024-12-23
+Adults,54414,total_shelter_census,2024-12-23
+Children,32609,total_shelter_census,2024-12-23
+Total Individuals,87023,total_shelter_census,2024-12-23
+Men,16080,total_single_adults,2024-12-23
+Women,5486,total_single_adults,2024-12-23
+Total Single Adults,21566,total_single_adults,2024-12-23
+Families,19044,families_with_children,2024-12-23
+Adults,28782,families_with_children,2024-12-23
+Children,32609,families_with_children,2024-12-23
+Individuals,61391,families_with_children,2024-12-23
+Families,1895,adult_families_census,2024-12-23
+Individuals (Adults),4066,adult_families_census,2024-12-23
+Single Adults,23850,combined_total_single_adults,2024-12-23
+Total Individuals,89307,combined_total_shelter_census,2024-12-23
 Drop-in Center Clients Served,427,single_adults,2024-12-22
 Drop-in Center Overnight Census,146,single_adults,2024-12-22
 Faith Bed Census,8,single_adults,2024-12-22
