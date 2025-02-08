@@ -633,8 +633,9 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.1.0",
+      "Version": "1.1.1",
       "OS_type": null,
+      "NeedsCompilation": "no",
       "Repository": "CRAN",
       "Source": "Repository"
     },
