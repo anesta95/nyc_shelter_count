@@ -1,4 +1,8 @@
 date_of_census,measure,count,table
+2025-02-27,total_individuals_in_shelter,84796,DHS daily census
+2025-02-27,total_single_adults_in_shelter,21869,DHS daily census
+2025-02-27,families_with_children_in_shelter,18177,DHS daily census
+2025-02-27,adult_families_in_shelter,1950,DHS daily census
 2025-02-26,total_individuals_in_shelter,84848,DHS daily census
 2025-02-26,total_single_adults_in_shelter,21939,DHS daily census
 2025-02-26,families_with_children_in_shelter,18163,DHS daily census
@@ -403,6 +407,10 @@ date_of_census,measure,count,table
 2024-11-18,total_single_adults_in_shelter,21474,DHS daily census
 2024-11-18,families_with_children_in_shelter,19150,DHS daily census
 2024-11-18,adult_families_in_shelter,1894,DHS daily census
+2024-11-17,total_individuals_in_shelter,87615,DHS daily census
+2024-11-17,total_single_adults_in_shelter,21477,DHS daily census
+2024-11-17,families_with_children_in_shelter,19193,DHS daily census
+2024-11-17,adult_families_in_shelter,1894,DHS daily census
 2024-11-16,total_individuals_in_shelter,87462,DHS daily census
 2024-11-16,total_single_adults_in_shelter,21439,DHS daily census
 2024-11-16,families_with_children_in_shelter,19157,DHS daily census
@@ -771,6 +779,10 @@ date_of_census,measure,count,table
 2024-08-17,total_single_adults_in_shelter,20344,DHS daily census
 2024-08-17,families_with_children_in_shelter,19382,DHS daily census
 2024-08-17,adult_families_in_shelter,1854,DHS daily census
+2024-08-16,total_individuals_in_shelter,87594,DHS daily census
+2024-08-16,total_single_adults_in_shelter,20380,DHS daily census
+2024-08-16,families_with_children_in_shelter,19402,DHS daily census
+2024-08-16,adult_families_in_shelter,1869,DHS daily census
 2024-08-15,total_individuals_in_shelter,87729,DHS daily census
 2024-08-15,total_single_adults_in_shelter,20409,DHS daily census
 2024-08-15,families_with_children_in_shelter,19439,DHS daily census
@@ -3063,6 +3075,10 @@ date_of_census,measure,count,table
 2023-01-26,total_single_adults_in_shelter,20910,DHS daily census
 2023-01-26,families_with_children_in_shelter,13310,DHS daily census
 2023-01-26,adult_families_in_shelter,2731,DHS daily census
+2023-01-25,total_individuals_in_shelter,69530,DHS daily census
+2023-01-25,total_single_adults_in_shelter,20829,DHS daily census
+2023-01-25,families_with_children_in_shelter,13232,DHS daily census
+2023-01-25,adult_families_in_shelter,2732,DHS daily census
 2023-01-24,total_individuals_in_shelter,69640,DHS daily census
 2023-01-24,total_single_adults_in_shelter,20904,DHS daily census
 2023-01-24,families_with_children_in_shelter,13247,DHS daily census
@@ -3271,6 +3287,10 @@ date_of_census,measure,count,table
 2022-12-04,total_single_adults_in_shelter,19951,DHS daily census
 2022-12-04,families_with_children_in_shelter,12285,DHS daily census
 2022-12-04,adult_families_in_shelter,2333,DHS daily census
+2022-12-03,total_individuals_in_shelter,64291,DHS daily census
+2022-12-03,total_single_adults_in_shelter,19872,DHS daily census
+2022-12-03,families_with_children_in_shelter,12314,DHS daily census
+2022-12-03,adult_families_in_shelter,2341,DHS daily census
 2022-12-02,total_individuals_in_shelter,64213,DHS daily census
 2022-12-02,total_single_adults_in_shelter,19888,DHS daily census
 2022-12-02,families_with_children_in_shelter,12295,DHS daily census
@@ -3587,6 +3607,10 @@ date_of_census,measure,count,table
 2022-09-15,total_single_adults_in_shelter,18149,DHS daily census
 2022-09-15,families_with_children_in_shelter,11024,DHS daily census
 2022-09-15,adult_families_in_shelter,1764,DHS daily census
+2022-09-14,total_individuals_in_shelter,56067,DHS daily census
+2022-09-14,total_single_adults_in_shelter,18146,DHS daily census
+2022-09-14,families_with_children_in_shelter,10968,DHS daily census
+2022-09-14,adult_families_in_shelter,1728,DHS daily census
 2022-09-13,total_individuals_in_shelter,55727,DHS daily census
 2022-09-13,total_single_adults_in_shelter,18027,DHS daily census
 2022-09-13,families_with_children_in_shelter,10907,DHS daily census
@@ -4595,6 +4619,10 @@ date_of_census,measure,count,table
 2022-01-13,total_single_adults_in_shelter,16557,DHS daily census
 2022-01-13,families_with_children_in_shelter,8456,DHS daily census
 2022-01-13,adult_families_in_shelter,1437,DHS daily census
+2022-01-12,total_individuals_in_shelter,45470,DHS daily census
+2022-01-12,total_single_adults_in_shelter,16636,DHS daily census
+2022-01-12,families_with_children_in_shelter,8467,DHS daily census
+2022-01-12,adult_families_in_shelter,1435,DHS daily census
 2022-01-11,total_individuals_in_shelter,45341,DHS daily census
 2022-01-11,total_single_adults_in_shelter,16603,DHS daily census
 2022-01-11,families_with_children_in_shelter,8437,DHS daily census
@@ -4675,6 +4703,14 @@ date_of_census,measure,count,table
 2021-12-23,total_single_adults_in_shelter,16667,DHS daily census
 2021-12-23,families_with_children_in_shelter,8467,DHS daily census
 2021-12-23,adult_families_in_shelter,1470,DHS daily census
+2021-12-22,total_individuals_in_shelter,45390,DHS daily census
+2021-12-22,total_single_adults_in_shelter,16657,DHS daily census
+2021-12-22,families_with_children_in_shelter,8407,DHS daily census
+2021-12-22,adult_families_in_shelter,1477,DHS daily census
+2021-12-21,total_individuals_in_shelter,45618,DHS daily census
+2021-12-21,total_single_adults_in_shelter,16664,DHS daily census
+2021-12-21,families_with_children_in_shelter,8480,DHS daily census
+2021-12-21,adult_families_in_shelter,1484,DHS daily census
 2021-12-20,total_individuals_in_shelter,45596,DHS daily census
 2021-12-20,total_single_adults_in_shelter,16688,DHS daily census
 2021-12-20,families_with_children_in_shelter,8463,DHS daily census
@@ -5323,6 +5359,10 @@ date_of_census,measure,count,table
 2021-07-13,total_single_adults_in_shelter,16583,DHS daily census
 2021-07-13,families_with_children_in_shelter,8282,DHS daily census
 2021-07-13,adult_families_in_shelter,1680,DHS daily census
+2021-07-12,total_individuals_in_shelter,45654,DHS daily census
+2021-07-12,total_single_adults_in_shelter,16624,DHS daily census
+2021-07-12,families_with_children_in_shelter,8282,DHS daily census
+2021-07-12,adult_families_in_shelter,1691,DHS daily census
 2021-07-12,total_individuals_in_shelter,45654,DHS daily census
 2021-07-12,total_single_adults_in_shelter,16624,DHS daily census
 2021-07-12,families_with_children_in_shelter,8282,DHS daily census
@@ -6843,6 +6883,10 @@ date_of_census,measure,count,table
 2020-06-28,total_single_adults_in_shelter,17523,DHS daily census
 2020-06-28,families_with_children_in_shelter,10657,DHS daily census
 2020-06-28,adult_families_in_shelter,2261,DHS daily census
+2020-06-27,total_individuals_in_shelter,55626,DHS daily census
+2020-06-27,total_single_adults_in_shelter,17506,DHS daily census
+2020-06-27,families_with_children_in_shelter,10691,DHS daily census
+2020-06-27,adult_families_in_shelter,2271,DHS daily census
 2020-06-26,total_individuals_in_shelter,55513,DHS daily census
 2020-06-26,total_single_adults_in_shelter,17472,DHS daily census
 2020-06-26,families_with_children_in_shelter,10662,DHS daily census
@@ -6883,6 +6927,10 @@ date_of_census,measure,count,table
 2020-06-17,total_single_adults_in_shelter,17494,DHS daily census
 2020-06-17,families_with_children_in_shelter,10774,DHS daily census
 2020-06-17,adult_families_in_shelter,2286,DHS daily census
+2020-06-16,total_individuals_in_shelter,55936,DHS daily census
+2020-06-16,total_single_adults_in_shelter,17463,DHS daily census
+2020-06-16,families_with_children_in_shelter,10783,DHS daily census
+2020-06-16,adult_families_in_shelter,2298,DHS daily census
 2020-06-15,total_individuals_in_shelter,56070,DHS daily census
 2020-06-15,total_single_adults_in_shelter,17479,DHS daily census
 2020-06-15,families_with_children_in_shelter,10800,DHS daily census
@@ -6915,6 +6963,10 @@ date_of_census,measure,count,table
 2020-06-08,total_single_adults_in_shelter,17493,DHS daily census
 2020-06-08,families_with_children_in_shelter,10821,DHS daily census
 2020-06-08,adult_families_in_shelter,2312,DHS daily census
+2020-06-07,total_individuals_in_shelter,56149,DHS daily census
+2020-06-07,total_single_adults_in_shelter,17499,DHS daily census
+2020-06-07,families_with_children_in_shelter,10830,DHS daily census
+2020-06-07,adult_families_in_shelter,2313,DHS daily census
 2020-06-06,total_individuals_in_shelter,56022,DHS daily census
 2020-06-06,total_single_adults_in_shelter,17436,DHS daily census
 2020-06-06,families_with_children_in_shelter,10810,DHS daily census
