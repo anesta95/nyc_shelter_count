@@ -208,6 +208,7 @@ if (latest_new_data_date > latest_old_data_date) {
   
   unique_by_agency_DW <- unique_by_agency %>% 
     mutate(agency_abb = toupper(agency_abb)) %>% 
+    distinct() %>% #there is a duplicated row in the city data from 2024-09-01
     pivot_wider(names_from = agency_abb, values_from = count) %>% 
     select(-table, -root) %>% 
     mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #impute value
