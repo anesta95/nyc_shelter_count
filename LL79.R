@@ -137,6 +137,9 @@ unique_by_agency_new <- read.socrata("https://data.cityofnewyork.us/resource/jiw
   mutate_at(vars(category:facility_or_program_type), ~str_trim(str_replace_all(.x, "[0-9]", ""), side = "both")) %>% 
   filter(category == "Total number of individuals utilizing city-administered facilities") %>% 
   mutate(data_period = if_else(data_period == 202301 & agency == "Department of Youth and Community Development (DYCD)", 202401, data_period)) %>% #fix year typo
+  filter(!(is.na(data_period_notes) & data_period == "202409" & agency == "Department of Homeless Services (DHS)" & 
+             category == "Total number of individuals utilizing city-administered facilities" & 
+             facility_or_program_type == "DHS-administered facilities")) %>% #duplicate row in admin data
   group_by(agency, data_period) %>% 
   mutate(agency_abb = tolower(gsub("[()]", "", str_extract(agency, "\\([^)]+\\)"))),
          count = case_when(agency_abb == "dhs" & 
@@ -212,6 +215,7 @@ if (latest_new_data_date > latest_old_data_date) {
     pivot_wider(names_from = agency_abb, values_from = count) %>% 
     select(-table, -root) %>% 
     mutate(DHS = if_else(is.na(DHS) & date == "2021-09-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #impute value
+    mutate(DHS = if_else(is.na(DHS) & date == "2023-09-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #impute value
     mutate(DHS = if_else(date == "2019-10-01", round((lag(DHS)+lead(DHS))/2), DHS)) %>%  #correct Oct. '19 DHS undercount value
     mutate(HRA = if_else(date == "2019-05-01", 8438, HRA)) %>%  #correct HRA type value
     .[,c("date", "DHS", "HRA", "DYCD", "HPD", "MOCJ", "HERRCS")]
