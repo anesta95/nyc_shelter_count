@@ -1,4 +1,30 @@
 measure,count,table,date
+Drop-in Center Clients Served,542,single_adults,2025-08-05
+Drop-in Center Overnight Census,276,single_adults,2025-08-05
+Faith Bed Census,18,single_adults,2025-08-05
+Outreach Contacts,386,single_adults,2025-08-05
+Outreach Placements,66,single_adults,2025-08-05
+Safe Haven Utilization,1920,single_adults,2025-08-05
+Veterans In Short-term Housing,193,single_adults,2025-08-05
+Criminal Justice Short-term Housing,NA,single_adults,2025-08-05
+Families with Children Requesting Temporary Housing,152,family_intake,2025-08-05
+Adult Families Requesting Temporary Housing,28,family_intake,2025-08-05
+Families Placed in Overnight Accommodations,0,family_intake,2025-08-05
+Families w/children at PATH Overnight (pre 10PM),0,family_intake,2025-08-05
+Adults,54504,total_shelter_census,2025-08-05
+Children,31072,total_shelter_census,2025-08-05
+Total Individuals,85576,total_shelter_census,2025-08-05
+Men,16517,total_single_adults,2025-08-05
+Women,6319,total_single_adults,2025-08-05
+Total Single Adults,22836,total_single_adults,2025-08-05
+Families,17921,families_with_children,2025-08-05
+Adults,26837,families_with_children,2025-08-05
+Children,31072,families_with_children,2025-08-05
+Individuals,57909,families_with_children,2025-08-05
+Families,2233,adult_families_census,2025-08-05
+Individuals (Adults),4831,adult_families_census,2025-08-05
+Single Adults,25243,combined_total_single_adults,2025-08-05
+Total Individuals,87983,combined_total_shelter_census,2025-08-05
 Drop-in Center Clients Served,527,single_adults,2025-08-04
 Drop-in Center Overnight Census,268,single_adults,2025-08-04
 Faith Bed Census,17,single_adults,2025-08-04
