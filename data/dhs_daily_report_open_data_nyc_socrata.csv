@@ -1,4 +1,8 @@
 date_of_census,measure,count,table
+2025-08-31,total_individuals_in_shelter,85530,DHS daily census
+2025-08-31,total_single_adults_in_shelter,22876,DHS daily census
+2025-08-31,families_with_children_in_shelter,17904,DHS daily census
+2025-08-31,adult_families_in_shelter,2221,DHS daily census
 2025-08-30,total_individuals_in_shelter,85517,DHS daily census
 2025-08-30,total_single_adults_in_shelter,22860,DHS daily census
 2025-08-30,families_with_children_in_shelter,17912,DHS daily census
